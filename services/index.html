@@ -116,10 +116,13 @@
 		.section, .menu {
 			overflow: hidden;
 			display: block;
-			width: 95%;
+			width: 90%;
 			margin: 0 auto;
 			padding-bottom: 48px;
 		}
+        h1 {
+            font-size:max(36px, 3.3vw) !important;
+        }
 	}
 	ul li {
 		font-size:22px;
@@ -198,7 +201,11 @@
 		font-size: 50px;
 		line-height: 75px;
 	}
-	
+	.contacttitle {
+        font-family: M;
+        font-size: 40px;
+        text-transform: uppercase;
+    }
 	.animating h2::before {
 		animation: changeText;
 		animation-duration: 5s;
@@ -449,6 +456,7 @@
 		<div class="section">
 			<div class="contact" id="contact">
 				<div class="m">
+                    <p class="contacttitle">contact</p>
 					<a href="#"><img loading="lazy" src="../img/lm.svg" /></a>
 					<a href="mailto:info@switchboard-plus.com"><img loading="lazy" src="../img/em.svg" /></a>
 					<a href="tel:+1845-444-8273"><img loading="lazy" src="../img/pm.svg" /></a>
