@@ -260,13 +260,37 @@
             .n.d > div > a {
                 padding: 0;
             }
+            .fr img {
+                padding: 3%;
+                max-width: 600px;
+                margin: 0 auto;
+            }
             h1 {
                 font-size:64px;
             }
             .fr .c5 {
                 align-content: center;
             }
-            
+            .c6.dn::before {
+                content: '';
+                width: 60%;
+                position: absolute;
+                background: url('../m/w1.webp');
+                display: block;
+                height: 60%;
+                left: 0;
+                top: -10%;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: top left;
+                z-index: 3;
+            }
+            .c6.dn {
+                justify-content: end !important;
+            }
+            .c6.dn div {
+                z-index: 5;
+            }
             p {
                 font-size:20px;
                 line-height: 27px;
@@ -319,10 +343,9 @@
             .s.g.cf p {
                 font-weight: bold;
             }
-            .fr .c7 img.d {
-                margin-top: calc(-150px - 6%);
-                z-index: 3;
-                position: relative;
+            .fr .c6 img.d {
+                max-width: 600px;
+                margin: 0 auto;
             }
             .s.g.fr .c6 {
                 flex-direction: column;
@@ -513,34 +536,78 @@
           flex-direction: column;
           justify-content: center;
         }
-
+        .service h4 {
+            font-family: ro, Arial;
+            font-size: 24px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            margin-top:40px;
+        }
+        .service {
+            padding: 12px;
+            margin-top: 20px;
+        }
+        .service::before {
+            width: 30px;
+            height: 30px;
+            background-size: contain !important;
+            content: ' ';
+            position: absolute;
+            top: 10px;
+            left: 8px;
+            background-repeat: no-repeat;
+        }
+        .service p {
+            max-width: 480px;
+        }
+        .cl3 .c12 .service {
+            position:relative;
+        }
+        .srv1::before {
+            background: url('../m/srv1.png');
+        }
+        .srv2::before {
+            background: url('../m/srv2.png');
+        }
+        .srv3::before {
+            background: url('../m/srv3.png');
+        }
+        .srv4::before {
+            background: url('../m/srv4.png');
+        }
+        .srv5::before {
+            background: url('../m/srv5.png');
+        }
+        .c4.service.srv1 {
+            align-content: start;
+        }
         @font-face {
             font-family: 'ro';
             font-display:swap;
-            src: url('f/ro.woff2') format('embedded-opentype'),
-            url('f/ro.woff2') format('woff2'), 
-            url('f/ro.woff2') format('woff'),
-            url('f/ro.woff2')  format('truetype'),
-            url('f/ro.woff2') format('svg');
+            src: url('../f/ro.woff2') format('embedded-opentype'),
+            url('../f/ro.woff2') format('woff2'), 
+            url('../f/ro.woff2') format('woff'),
+            url('../f/ro.woff2')  format('truetype'),
+            url('../f/ro.woff2') format('svg');
         }
         @font-face {
             font-family: 'os';
             font-display:swap;
-            src: url('f/os.woff2') format('embedded-opentype'),
-            url('f/os.woff2') format('woff2'), 
-            url('f/os.woff2') format('woff'),
-            url('f/os.woff2')  format('truetype'),
-            url('f/os.woff2') format('svg');
+            src: url('../f/os.woff2') format('embedded-opentype'),
+            url('../f/os.woff2') format('woff2'), 
+            url('../f/os.woff2') format('woff'),
+            url('../f/os.woff2')  format('truetype'),
+            url('../f/os.woff2') format('svg');
         }
         @font-face {
             font-family: 'rol';
             font-display:swap;
-            src: url('f/rol.woff2') format('embedded-opentype'),
-            url('f/rol.woff2') format('woff2'), 
-            url('f/rol.woff2') format('woff'),
-            url('f/rol.woff2')  format('truetype'),
-            url('f/rol.woff2') format('svg');
-        }
+            src: url('../f/rol.woff2') format('embedded-opentype'),
+            url('../f/rol.woff2') format('woff2'), 
+            url('../f/rol.woff2') format('woff'),
+            url('../f/rol.woff2')  format('truetype'),
+            url('../f/rol.woff2') format('svg');
+        } 
         h1, h2, h3, h4, p {
             color:#1C204E;
         }
@@ -575,67 +642,18 @@
             </div>
         </div>
         <div class="s g fr">
-            <div class="c5">
+            <div class="c6">
+                <img src="../m/f1.webp" />
+            </div>
+            <div class="c6">
                 <div>
-                    <h1>YOUR PHONES<br>BUT <span>SMARTER.</span></h1>
-                    <p>
-                        Leverage Cloud PBX to more effectively onboard employees, manage and scale your voice services.
+                    <h1><span>FAXING <br>& INTERNET FAXING</span></h1>
+                    <p>One of the many amazing features of Switchboard is our faxing and internet faxing features. Our faxing feature works well with any exisiting fax machines for those who prefer the machine compared to faxing through a computer.
                     </p>
-                    <a href="#" class="mb">Services</a>
-                    <a href="#" class="lmb">Learn More</a>
+                    <p> For our internet faxing feature, you will have an easy to use faxing portal that makes sending faxes from your computer easy. All sent and recieved faxes will also be stored there, so it easy to go back to and can be deleted at any time. </p>
                 </div>
             </div>
-            <div class="c7">
-                <img class="d" src="m/a1.webp" />
-            </div>
-        </div>
-        <div class="s g sd d">
-            <img loading="lazy" src="m/s1.svg" />
-        </div>
-        <div class="s g sd m">
-            <img loading="lazy" src="m/s1m.svg" />
-            <h2>ALL YOUR CALLS AND NOTIFICATIONS IN ONE PLACE</h2>
-            <p>With Switchboard Plus, you can easily manage your calls and voicemail, and you can even integrate it with your CRM system to get even more out of your phone system. This can help you save time and be more productive.</p>
-        </div>
-        <div class="s g tr">
-            <div class="c12">
-                <h2>WHAT WE PROVIDE</h2>
-                <p>Switchboard Plus offers a number of benefits to businesses of all sizes, including:</p>
-            </div>
-            <div class="c12">
-                <img loading="lazy" class="d" src="m/s2.svg" />
-                <img loading="lazy" class="m" src="m/s2m.svg" />
-            </div>
-        </div>
-        <div class="s g fr">
-            <div class="c3 m">
-                <img loading="lazy" src="m/s3m.webp" />
-            </div>
-            <div class="c6">
-                <h3>Switchboard Plus is a <span>powerful VoIP phone system</span> that gives you the <span>features and flexibility</span> you need to stay connected with your customers and colleagues.</h3>
-            </div>
-            <div class="c6 d">
-                <img loading="lazy" src="m/s3.webp" />
-            </div>
-        </div>
-        <div class="s g fi">
-            <div class="c12">
-                <div class="c6">
-                    <h3>Sustainability</h3>
-                    <p>Switchboard Plus is a cloud-based VoIP phone system, which means that it does not require any physical hardware to operate. This makes it a more environmentally sustainable option than traditional phone systems, which require a large amount of energy to power and cool.</p>
-                </div>
-                <div class="c6">
-                    <img loading="lazy" src="m/s4.svg" />
-                </div>
-            </div>
-        </div>
-        <div class="s g si">
-            <div class="c6">
-                <img loading="lazy" src="m/s6.webp" />
-            </div>
-            <div class="c6">
-                <h3>We guarantee that we will lower your phone bill, or we will write you a $1,000 check for the time you spent.</h3>
-            </div>
+            
         </div>
         <div id="contact" class="s g cf">
             <div class="c6">
