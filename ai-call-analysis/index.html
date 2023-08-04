@@ -149,7 +149,7 @@
                 margin: 0 auto;
                 margin-top: 10vh;
             }
-            .c1, .c2, .c3, .c4, .c5, .c6, .c12 {
+            .c1, .c2, .c3, .c4, .c5, .c6, .c12, .c8 {
                 width: 100%;
             }
             .f.s:nth-of-type(2) {
@@ -353,6 +353,12 @@
         }
         .s.g.cf .bold + a {
             font-family: os, Arial;
+        }
+        .s.g.fw {
+            padding: 0;
+        }
+        .s.g.fr h2 {
+            margin-top: 18px;
         }
         .t {
             z-index: 5;
@@ -559,22 +565,29 @@
             position:relative;
         }
         .srv1::before {
-            background: url('../m/srv1.png');
+            background: url('../m/vi1.png');
         }
         .srv2::before {
-            background: url('../m/srv2.png');
+            background: url('../m/vi2.png');
         }
         .srv3::before {
-            background: url('../m/srv3.png');
+            background: url('../m/vi3.png');
         }
         .srv4::before {
-            background: url('../m/srv4.png');
+            background: url('../m/vi4.png');
         }
         .srv5::before {
-            background: url('../m/srv5.png');
+            background: url('../m/vi5.png');
+        }
+        .srv6::before {
+            background: url('../m/vi6.png');
         }
         .c4.service.srv1 {
             align-content: start;
+        }
+        .s.g.fr .c6 img {
+            max-width: 480px;
+            margin: 0 auto;
         }
         @font-face {
             font-family: 'ro';
@@ -609,6 +622,18 @@
         #cc {
             color:white;
         }
+        .c4.service > div {
+            border: 0.5px solid #D2D2D291;
+            padding: 0px 18px;
+        }
+        .c12.centext h3 {
+            font-weight: lighter;
+            font-family: os;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            display: block !important;
+        }
     </style>
     <body>
         <div class="t">
@@ -638,41 +663,76 @@
             </div>
         </div>
         <div class="s g fr">
-            <div class="c6 m">
-                <img class="m" src="../m/w2.webp" />
+            <div class="c4">
+                <h2>Sentiment AI <br>Call Analysis</h2>
             </div>
-            <div class="c6 dn">
-                <div>
-                    <h1>GREAT <span>CUSTOMER EXPERIENCE</span><br>STARTS HERE</h1>
-                </div>
+            <div class="c8">
+                <p>
+                    The essence of human feelings extends beyond mere words - it resides within the nuances of sarcastic intonation, delicate facial gestures, empathetic winces of discomfort, laughter intertwined with unease, sighs signaling relief, and a plethora of other subtleties. We are here to assist in deciphering the unspoken.
+                </p>
             </div>
-            <div class="c6">
-                <img class="d" src="../m/w2.webp" />
+        </div>
+        <div class="s g fw">
+            <img src="../m/aibg.svg" />
+        </div>
+        <div class="s g cl3">
+            <div class="c12 centext">
+                <h3>Advancing empathic technology with the most accurate and nuanced models to date</h3>
             </div>
         </div>
         <div class="s g cl3">
             <div class="c12">
-                <div class="c4 service srv1">
-                    <h4>Music and messages on hold </h4>
-                    <p>Holding music can easily be changed and can even have messages spliced into the hold music as well.</p>
+                <div class="c4 service">
+                    <div>
+                        <h4>Expressive Language</h4>
+                        <p>Measure 53 emotions reliably expressed by the subtleties of language.</p>    
+                    </div>
                 </div>
-                <div class="c4 service srv2">
-                    <h4>Multi-level IVR</h4>
-                    <p>The first thing anyone who dials your number hears. The IVR attendant lists multiple options for the caller to go through and can be nested/multilayered.</p>
+                <div class="c4 service">
+                    <div>
+                        <h4>Vocal Call Types</h4>
+                        <p>Explore vocal utterances by inferring probabilities of 67 descriptors, like laugh', 'sigh', 'shriek', 'oh', 'ahh', 'mhm', and more.</p>    
+                    </div>
                 </div>
-                <div class="c4 service srv3">
-                    <h4>Indentify callers in</h4>
-                    <p>Shows a caller’s number and associated name. Can set different caller ID numbers for a user, group, or entire system.</p>
+                <div class="c4 service">
+                    <div>
+                        <h4>Valence & Arousal</h4>
+                        <p>Predict perceived valence and arousal in facial expression, vocal bursts, speech, or language.</p>    
+                    </div>
                 </div>
             </div>
             <div class="c12">
-                <div class="c4 service srv4">
-                    <h4>Call queues</h4>
-                    <p>Linking callers to a group of agents with a specific specialization, such as sales or service.</p>
+                <div class="c4 service">
+                    <div>
+                        <h4>Speech Prosody</h4>
+                        <p>Discover over 25 patterns of tune, rhythm, and timbre that imbue everyday speech with complex and blended meanings.</p>    
+                    </div>
                 </div>
-                <div class="c4 service srv5">
-                    <h4>Call Park </h4>
-                    <p>Put calls into a “parking lot” that any other user can pick up that parked call.</p>
+                <div class="c4 service">
+                    <div>
+                        <h4>Dynamic Reaction</h4>
+                        <p>Measure dynamic patterns in facial expression over time that are correlated with over 20 distinct reports.</p>    
+                    </div>
+                </div>
+                <div class="c4 service">
+                    <div>
+                        <h4>Sentiment</h4>
+                        <p>Measure the distribution of possible sentiments expressed in a sentence, negative to positive, neutral, or ambiguous.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="c12">
+                <div class="c4 service">
+                    <div>
+                        <h4>Facial Expression</h4>
+                        <p>Differentiate 37 kinds of facial movement that are recognized as conveying distinct meanings and the many ways they are blended.</p>    
+                    </div>
+                </div>
+                <div class="c4 service">
+                    <div>
+                        <h4>Vocal Expression</h4>
+                        <p>Differentiate 28 kinds of vocal expression recognized as conveying distinct meanings and the many ways they are blended.</p>
+                    </div>
                 </div>
             </div>
         </div>
