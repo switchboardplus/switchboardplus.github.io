@@ -1,0 +1,2132 @@
+[
+  {
+    "Afghanistan": {
+      "Mobile": {
+        "cost": "0.38"
+      },
+      "Regular": {
+        "cost": "0.28"
+      }
+    }
+  },
+  {
+    "Albania": {
+      "Mobile": {
+        "cost": "0.37"
+      },
+      "Regular": {
+        "cost": "0.12"
+      }
+    }
+  },
+  {
+    "Algeria": {
+      "Mobile": {
+        "cost": "0.22"
+      },
+      "Landline": {
+        "cost": "0.11"
+      }
+    }
+  },
+  {
+    "American Samoa": {
+      "Regular": {
+        "cost": "0.12"
+      },
+      "Mobile": {
+        "cost": "0.29"
+      }
+    }
+  },
+  {
+    "Andorra": {
+      "Regular": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "Angola": {
+      "Mobile": {
+        "cost": "0.22"
+      },
+      "Regular": {
+        "cost": "0.15"
+      }
+    }
+  },
+  {
+    "Anguilla": {
+      "Mobile": {
+        "cost": "0.29"
+      },
+      "Regular": {
+        "cost": "0.29"
+      }
+    }
+  },
+  {
+    "Antarctica": {
+      "Regular": {
+        "cost": "2.08"
+      }
+    }
+  },
+  {
+    "Antigua and Barbuda": {
+      "Mobile": {
+        "cost": "0.2"
+      }
+    }
+  },
+  {
+    "Argentina": {
+      "Regular": {
+        "cost": "0.16"
+      },
+      "Mobile": {
+        "cost": "cost"
+      },
+      "Landline": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "Armenia": {
+      "Mobile": {
+        "cost": "0.24"
+      },
+      "Regular": {
+        "cost": "0.14"
+      },
+      "Yerevan": {
+        "cost": "0.11"
+      }
+    }
+  },
+  {
+    "Aruba": {
+      "Mobile": {
+        "cost": "0.28"
+      },
+      "Regular": {
+        "cost": "0.234"
+      }
+    }
+  },
+  {
+    "Australia": {
+      "Australia NGN": {
+        "cost": "0.039"
+      },
+      "Christmas and Cocos Islands": {
+        "cost": "0.039"
+      },
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.18"
+      },
+      "Mobile Included": {
+        "cost": "0.11"
+      },
+      "Non-Geo Destination": {
+        "cost": "0.039"
+      },
+      "Other": {
+        "cost": "0.039"
+      },
+      "Premium Rate": {
+        "cost": "0.039"
+      },
+      "Special rate": {
+        "cost": "0.039"
+      },
+      "Toll Free": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "Austria": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.22"
+      },
+      "Nomadic Number": {
+        "cost": "0.039"
+      },
+      "Other": {
+        "cost": "0.039"
+      },
+      "Premium Rate": {
+        "cost": "0.039"
+      },
+      "Toll Free": {
+        "cost": "0"
+      }
+    }
+  },
+  {
+    "Azerbaijan": {
+      "Mobile": {
+        "cost": "0.3"
+      },
+      "Regular": {
+        "cost": "0.3"
+      }
+    }
+  },
+  {
+    "Bahamas": {
+      "Mobile": {
+        "cost": "0.292"
+      },
+      "Regular": {
+        "cost": "0.292"
+      },
+      "Toll Free": {
+        "cost": "0.292"
+      }
+    }
+  },
+  {
+    "Bahrain": {
+      "Mobile": {
+        "cost": "0.235"
+      },
+      "Regular": {
+        "cost": "0.18"
+      },
+      "Toll Free": {
+        "cost": "0.18"
+      }
+    }
+  },
+  {
+    "Bangladesh": {
+      "Mobile": {
+        "cost": "0.069"
+      },
+      "Regular": {
+        "cost": "0.069"
+      }
+    }
+  },
+  {
+    "Barbados": {
+      "Mobile": {
+        "cost": "0.3"
+      },
+      "Regular": {
+        "cost": "0.28"
+      }
+    }
+  },
+  {
+    "Belarus": {
+      "Mobile": {
+        "cost": "0.11"
+      },
+      "Regular": {
+        "cost": "0.041"
+      }
+    }
+  },
+  {
+    "Belgium": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.22"
+      },
+      "Special Services": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "Belize": {
+      "Mobile": {
+        "cost": "0.36"
+      },
+      "Regular": {
+        "cost": "0.36"
+      }
+    }
+  },
+  {
+    "Benin": {
+      "Mobile": {
+        "cost": "0.19"
+      },
+      "Regular": {
+        "cost": "0.19"
+      }
+    }
+  },
+  {
+    "Bermuda": {
+      "Mobile": {
+        "cost": "0.155"
+      },
+      "Regular": {
+        "cost": "0.07"
+      }
+    }
+  },
+  {
+    "Bhutan": {
+      "Mobile": {
+        "cost": "0.229"
+      }
+    }
+  },
+  {
+    "Bolivia": {
+      "Mobile": {
+        "cost": "0.17"
+      },
+      "Regular": {
+        "cost": "0.15"
+      }
+    }
+  },
+  {
+    "Bosnia and Herzegovina": {
+      "Mobile": {
+        "cost": "0.35"
+      },
+      "Regular": {
+        "cost": "0.08"
+      }
+    }
+  },
+  {
+    "Botswana": {
+      "Mobile": {
+        "cost": "0.13"
+      },
+      "Regular": {
+        "cost": "0.13"
+      }
+    }
+  },
+  {
+    "Brazil": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.14"
+      }
+    }
+  },
+  {
+    "British Indian Ocean Territory": {
+      "Regular": {
+        "cost": "5.87"
+      }
+    }
+  },
+  {
+    "British Virgin Islands": {
+      "Mobile": {
+        "cost": "0.5"
+      },
+      "Regular": {
+        "cost": "0.5"
+      }
+    }
+  },
+  {
+    "Brunei": {
+      "Mobile": {
+        "cost": "0.12"
+      },
+      "Regular": {
+        "cost": "0.08"
+      }
+    }
+  },
+  {
+    "Bulgaria": {
+      "Mobile": {
+        "cost": "0.13"
+      },
+      "Regular": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "Burkina Faso": {
+      "Mobile": {
+        "cost": "0.17"
+      },
+      "Regular": {
+        "cost": "0.17"
+      }
+    }
+  },
+  {
+    "Burundi": {
+      "Mobile": {
+        "cost": "0.5"
+      }
+    }
+  },
+  {
+    "Cambodia": {
+      "Mobile": {
+        "cost": "0.19"
+      },
+      "Regular": {
+        "cost": "0.15"
+      }
+    }
+  },
+  {
+    "Cameroon": {
+      "Mobile": {
+        "cost": "0.21"
+      },
+      "Regular": {
+        "cost": "0.21"
+      }
+    }
+  },
+  {
+    "Canada": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.039"
+      },
+      "Premium Rate": {
+        "cost": "0.039"
+      },
+      "Special Services": {
+        "cost": "0.039"
+      },
+      "Toll Free": {
+        "cost": "0"
+      }
+    }
+  },
+  {
+    "Cape Verde": {
+      "Mobile": {
+        "cost": "0.29"
+      },
+      "Regular": {
+        "cost": "0.29"
+      }
+    }
+  },
+  {
+    "Cayman Islands": {
+      "Mobile": {
+        "cost": "0.18"
+      },
+      "Regular": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "Central African Republic": {
+      "Mobile": {
+        "cost": "0.5"
+      }
+    }
+  },
+  {
+    "Chad": {
+      "Mobile": {
+        "cost": "0.21"
+      },
+      "Regular": {
+        "cost": "0.21"
+      }
+    }
+  },
+  {
+    "Chile": {
+      "Regular": {
+        "cost": "0.16"
+      },
+      "Mobile": {
+        "cost": "0.14"
+      },
+      "Landline": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "China": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "Colombia": {
+      "Mobile": {
+        "cost": "0.19"
+      },
+      "Regular": {
+        "cost": "0.17"
+      }
+    }
+  },
+  {
+    "Comoros": {
+      "Mobile": {
+        "cost": "0.57"
+      }
+    }
+  },
+  {
+    "Congo": {
+      "Mobile": {
+        "cost": "0.25"
+      },
+      "Regular": {
+        "cost": "0.25"
+      }
+    }
+  },
+  {
+    "Cook Islands": {
+      "Regular": {
+        "cost": "0.29"
+      }
+    }
+  },
+  {
+    "Costa Rica": {
+      "Mobile": {
+        "cost": "0.15"
+      },
+      "Regular": {
+        "cost": "0.12"
+      }
+    }
+  },
+  {
+    "Croatia": {
+      "Mobile": {
+        "cost": "0.12"
+      },
+      "Regular": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "Cuba": {
+      "Mobile": {
+        "cost": "0.59"
+      },
+      "Regular": {
+        "cost": "0.45"
+      }
+    }
+  },
+  {
+    "Curaçao": {
+      "Mobile": {
+        "cost": "0.23"
+      },
+      "Regular": {
+        "cost": "0.23"
+      }
+    }
+  },
+  {
+    "Cyprus": {
+      "Mobile": {
+        "cost": "0.12"
+      },
+      "Regular": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "Czech Republic": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.22"
+      }
+    }
+  },
+  {
+    "Denmark": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.17"
+      }
+    }
+  },
+  {
+    "Djibouti": {
+      "Mobile": {
+        "cost": "0.38"
+      },
+      "Regular": {
+        "cost": "0.38"
+      }
+    }
+  },
+  {
+    "Dominica": {
+      "Mobile": {
+        "cost": "0.45"
+      },
+      "Regular": {
+        "cost": "0.45"
+      }
+    }
+  },
+  {
+    "Dominican Republic": {
+      "Mobile": {
+        "cost": "0.26"
+      },
+      "Regular": {
+        "cost": "0.13"
+      }
+    }
+  },
+  {
+    "East Timor": {
+      "Mobile": {
+        "cost": "0.59"
+      },
+      "Regular": {
+        "cost": "0.39"
+      }
+    }
+  },
+  {
+    "Ecuador": {
+      "Mobile": {
+        "cost": "0.19"
+      },
+      "Regular": {
+        "cost": "0.17"
+      }
+    }
+  },
+  {
+    "Egypt": {
+      "Mobile": {
+        "cost": "0.17"
+      },
+      "Regular": {
+        "cost": "0.17"
+      }
+    }
+  },
+  {
+    "El Salvador": {
+      "Mobile": {
+        "cost": "0.17"
+      },
+      "Regular": {
+        "cost": "0.17"
+      }
+    }
+  },
+  {
+    "Equatorial Guinea": {
+      "Mobile": {
+        "cost": "0.37"
+      }
+    }
+  },
+  {
+    "Eritrea": {
+      "Mobile": {
+        "cost": "0.52"
+      }
+    }
+  },
+  {
+    "Estonia": {
+      "Mobile": {
+        "cost": "0.15"
+      },
+      "Regular": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "Ethiopia": {
+      "Mobile": {
+        "cost": "0.25"
+      }
+    }
+  },
+  {
+    "Falkland Islands": {
+      "Mobile": {
+        "cost": "0.45"
+      },
+      "Regular": {
+        "cost": "0.45"
+      }
+    }
+  },
+  {
+    "Faroe Islands": {
+      "Mobile": {
+        "cost": "0.23"
+      },
+      "Regular": {
+        "cost": "0.13"
+      }
+    }
+  },
+  {
+    "Fiji": {
+      "Mobile": {
+        "cost": "0.48"
+      }
+    }
+  },
+  {
+    "Finland": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.039"
+      },
+      "Special Services": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "France": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.089"
+      },
+      "Special Services": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "French Guiana": {
+      "Mobile": {
+        "cost": "0.45"
+      }
+    }
+  },
+  {
+    "French Polynesia": {
+      "Mobile": {
+        "cost": "0.29"
+      }
+    }
+  },
+  {
+    "Gabon": {
+      "Mobile": {
+        "cost": "0.25"
+      }
+    }
+  },
+  {
+    "Gambia": {
+      "Mobile": {
+        "cost": "0.35"
+      }
+    }
+  },
+  {
+    "Georgia": {
+      "Mobile": {
+        "cost": "0.19"
+      },
+      "Regular": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "Germany": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.22"
+      },
+      "Special Services": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "Ghana": {
+      "Mobile": {
+        "cost": "0.25"
+      }
+    }
+  },
+  {
+    "Gibraltar": {
+      "Mobile": {
+        "cost": "0.23"
+      },
+      "Regular": {
+        "cost": "0.13"
+      }
+    }
+  },
+  {
+    "Greece": {
+      "Mobile": {
+        "cost": "0.14"
+      },
+      "Regular": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "Greenland": {
+      "Mobile": {
+        "cost": "0.41"
+      },
+      "Regular": {
+        "cost": "0.41"
+      }
+    }
+  },
+  {
+    "Grenada": {
+      "Mobile": {
+        "cost": "0.45"
+      },
+      "Regular": {
+        "cost": "0.45"
+      }
+    }
+  },
+  {
+    "Guadeloupe": {
+      "Mobile": {
+        "cost": "0.45"
+      }
+    }
+  },
+  {
+    "Guam": {
+      "Mobile": {
+        "cost": "0.23"
+      },
+      "Regular": {
+        "cost": "0.23"
+      }
+    }
+  },
+  {
+    "Guatemala": {
+      "Mobile": {
+        "cost": "0.13"
+      },
+      "Regular": {
+        "cost": "0.13"
+      }
+    }
+  },
+  {
+    "Guinea": {
+      "Mobile": {
+        "cost": "0.21"
+      },
+      "Regular": {
+        "cost": "0.21"
+      }
+    }
+  },
+  {
+    "Guinea-Bissau": {
+      "Mobile": {
+        "cost": "0.49"
+      }
+    }
+  },
+  {
+    "Guyana": {
+      "Mobile": {
+        "cost": "0.39"
+      },
+      "Regular": {
+        "cost": "0.39"
+      }
+    }
+  },
+  {
+    "Haiti": {
+      "Mobile": {
+        "cost": "0.49"
+      }
+    }
+  },
+  {
+    "Honduras": {
+      "Mobile": {
+        "cost": "0.28"
+      },
+      "Regular": {
+        "cost": "0.28"
+      }
+    }
+  },
+  {
+    "Hong Kong": {
+      "Landline": {
+        "cost": "0.029"
+      },
+      "Mobile": {
+        "cost": "0.029"
+      }
+    }
+  },
+  {
+    "Hungary": {
+      "Landline": {
+        "cost": "0.029"
+      },
+      "Mobile": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "Iceland": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.25"
+      }
+    }
+  },
+  {
+    "India": {
+      "Landline": {
+        "cost": "0.029"
+      },
+      "Mobile": {
+        "cost": "0.029"
+      },
+      "Premium Rate": {
+        "cost": "0.029"
+      }
+    }
+  },
+  {
+    "Indonesia": {
+      "Mobile": {
+        "cost": "0.15"
+      },
+      "Regular": {
+        "cost": "0.13"
+      }
+    }
+  },
+  {
+    "Iran": {
+      "Mobile": {
+        "cost": "0.33"
+      }
+    }
+  },
+  {
+    "Iraq": {
+      "Mobile": {
+        "cost": "0.18"
+      },
+      "Regular": {
+        "cost": "0.18"
+      }
+    }
+  },
+  {
+    "Ireland": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.19"
+      }
+    }
+  },
+  {
+    "Israel": {
+      "Mobile": {
+        "cost": "0.17"
+      },
+      "Regular": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "Italy": {
+      "Landline": {
+        "cost": "0.029"
+      },
+      "Mobile": {
+        "cost": "0.22"
+      }
+    }
+  },
+  {
+    "Ivory Coast": {
+      "Mobile": {
+        "cost": "0.24"
+      },
+      "Regular": {
+        "cost": "0.24"
+      }
+    }
+  },
+  {
+    "Jamaica": {
+      "Mobile": {
+        "cost": "0.25"
+      }
+    }
+  },
+  {
+    "Japan": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.25"
+      }
+    }
+  },
+  {
+    "Jordan": {
+      "Mobile": {
+        "cost": "0.23"
+      },
+      "Regular": {
+        "cost": "0.12"
+      }
+    }
+  },
+  {
+    "Kazakhstan": {
+      "Mobile": {
+        "cost": "0.18"
+      },
+      "Regular": {
+        "cost": "0.041"
+      }
+    }
+  },
+  {
+    "Kenya": {
+      "Mobile": {
+        "cost": "0.14"
+      }
+    }
+  },
+  {
+    "Kiribati": {
+      "Mobile": {
+        "cost": "0.29"
+      }
+    }
+  },
+  {
+    "Kosovo": {
+      "Mobile": {
+        "cost": "0.16"
+      }
+    }
+  },
+  {
+    "Kuwait": {
+      "Mobile": {
+        "cost": "0.13"
+      },
+      "Regular": {
+        "cost": "0.11"
+      }
+    }
+  },
+  {
+    "Kyrgyzstan": {
+      "Mobile": {
+        "cost": "0.2"
+      },
+      "Regular": {
+        "cost": "0.11"
+      }
+    }
+  },
+  {
+    "Laos": {
+      "Mobile": {
+        "cost": "0.16"
+      }
+    }
+  },
+  {
+    "Latvia": {
+      "Mobile": {
+        "cost": "0.17"
+      },
+      "Regular": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "Lebanon": {
+      "Mobile": {
+        "cost": "0.3"
+      },
+      "Regular": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "Lesotho": {
+      "Mobile": {
+        "cost": "0.13"
+      }
+    }
+  },
+  {
+    "Liberia": {
+      "Mobile": {
+        "cost": "0.37"
+      }
+    }
+  },
+  {
+    "Libya": {
+      "Mobile": {
+        "cost": "0.13"
+      }
+    }
+  },
+  {
+    "Liechtenstein": {
+      "Landline": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "Lithuania": {
+      "Mobile": {
+        "cost": "0.17"
+      },
+      "Regular": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "Luxembourg": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.18"
+      }
+    }
+  },
+  {
+    "Macau": {
+      "Mobile": {
+        "cost": "0.13"
+      },
+      "Regular": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "Madagascar": {
+      "Mobile": {
+        "cost": "0.32"
+      },
+      "Regular": {
+        "cost": "0.32"
+      }
+    }
+  },
+  {
+    "Malawi": {
+      "Mobile": {
+        "cost": "0.5"
+      }
+    }
+  },
+  {
+    "Malaysia": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.12"
+      }
+    }
+  },
+  {
+    "Maldives": {
+      "Mobile": {
+        "cost": "0.19"
+      }
+    }
+  },
+  {
+    "Mali": {
+      "Mobile": {
+        "cost": "0.17"
+      }
+    }
+  },
+  {
+    "Malta": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.18"
+      }
+    }
+  },
+  {
+    "Marshall Islands": {
+      "Regular": {
+        "cost": "0.57"
+      }
+    }
+  },
+  {
+    "Martinique": {
+      "Mobile": {
+        "cost": "0.45"
+      }
+    }
+  },
+  {
+    "Mauritania": {
+      "Mobile": {
+        "cost": "0.54"
+      }
+    }
+  },
+  {
+    "Mauritius": {
+      "Mobile": {
+        "cost": "0.14"
+      }
+    }
+  },
+  {
+    "Mayotte": {
+      "Mobile": {
+        "cost": "0.28"
+      }
+    }
+  },
+  {
+    "Mexico": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.15"
+      },
+      "Premium Rate": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "Micronesia": {
+      "Regular": {
+        "cost": "0.47"
+      }
+    }
+  },
+  {
+    "Moldova": {
+      "Mobile": {
+        "cost": "0.13"
+      },
+      "Regular": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "Monaco": {
+      "Mobile": {
+        "cost": "0.23"
+      },
+      "Regular": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "Mongolia": {
+      "Mobile": {
+        "cost": "0.13"
+      }
+    }
+  },
+  {
+    "Montenegro": {
+      "Mobile": {
+        "cost": "0.18"
+      },
+      "Regular": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "Montserrat": {
+      "Mobile": {
+        "cost": "0.45"
+      }
+    }
+  },
+  {
+    "Morocco": {
+      "Mobile": {
+        "cost": "0.17"
+      }
+    }
+  },
+  {
+    "Mozambique": {
+      "Mobile": {
+        "cost": "0.45"
+      }
+    }
+  },
+  {
+    "Myanmar": {
+      "Mobile": {
+        "cost": "0.15"
+      },
+      "Regular": {
+        "cost": "0.15"
+      }
+    }
+  },
+  {
+    "Namibia": {
+      "Mobile": {
+        "cost": "0.17"
+      }
+    }
+  },
+  {
+    "Nauru": {
+      "Regular": {
+        "cost": "0.87"
+      }
+    }
+  },
+  {
+    "Nepal": {
+      "Mobile": {
+        "cost": "0.15"
+      }
+    }
+  },
+  {
+    "Netherlands": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.13"
+      }
+    }
+  },
+  {
+    "Netherlands Antilles": {
+      "Mobile": {
+        "cost": "0.45"
+      }
+    }
+  },
+  {
+    "New Caledonia": {
+      "Mobile": {
+        "cost": "0.29"
+      }
+    }
+  },
+  {
+    "New Zealand": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "Nicaragua": {
+      "Mobile": {
+        "cost": "0.17"
+      }
+    }
+  },
+  {
+    "Niger": {
+      "Mobile": {
+        "cost": "0.5"
+      }
+    }
+  },
+  {
+    "Nigeria": {
+      "Mobile": {
+        "cost": "0.13"
+      }
+    }
+  },
+  {
+    "Niue": {
+      "Regular": {
+        "cost": "0.87"
+      }
+    }
+  },
+  {
+    "Norfolk Island": {
+      "Regular": {
+        "cost": "5.87"
+      }
+    }
+  },
+  {
+    "North Korea": {
+      "Mobile": {
+        "cost": "1.54"
+      }
+    }
+  },
+  {
+    "North Macedonia": {
+      "Mobile": {
+        "cost": "0.26"
+      },
+      "Regular": {
+        "cost": "0.12"
+      }
+    }
+  },
+  {
+    "Northern Mariana Islands": {
+      "Mobile": {
+        "cost": "0.23"
+      }
+    }
+  },
+  {
+    "Norway": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.19"
+      }
+    }
+  },
+  {
+    "Oman": {
+      "Mobile": {
+        "cost": "0.25"
+      },
+      "Regular": {
+        "cost": "0.17"
+      }
+    }
+  },
+  {
+    "Pakistan": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.19"
+      }
+    }
+  },
+  {
+    "Palau": {
+      "Regular": {
+        "cost": "0.47"
+      }
+    }
+  },
+  {
+    "Palestine": {
+      "Mobile": {
+        "cost": "0.17"
+      },
+      "Regular": {
+        "cost": "0.17"
+      }
+    }
+  },
+  {
+    "Panama": {
+      "Mobile": {
+        "cost": "0.39"
+      }
+    }
+  },
+  {
+    "Papua New Guinea": {
+      "Mobile": {
+        "cost": "0.59"
+      }
+    }
+  },
+  {
+    "Paraguay": {
+      "Mobile": {
+        "cost": "0.35"
+      },
+      "Regular": {
+        "cost": "0.18"
+      }
+    }
+  },
+  {
+    "Peru": {
+      "Mobile": {
+        "cost": "0.17"
+      },
+      "Regular": {
+        "cost": "0.17"
+      }
+    }
+  },
+  {
+    "Philippines": {
+      "Mobile": {
+        "cost": "0.13"
+      },
+      "Regular": {
+        "cost": "0.041"
+      }
+    }
+  },
+  {
+    "Poland": {
+      "Landline": {
+        "cost": "0.029"
+      },
+      "Mobile": {
+        "cost": "0.089"
+      }
+    }
+  },
+  {
+    "Portugal": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.089"
+      }
+    }
+  },
+  {
+    "Puerto Rico": {
+      "Mobile": {
+        "cost": "0.23"
+      }
+    }
+  },
+  {
+    "Qatar": {
+      "Mobile": {
+        "cost": "0.13"
+      }
+    }
+  },
+  {
+    "Réunion": {
+      "Mobile": {
+        "cost": "0.28"
+      }
+    }
+  },
+  {
+    "Romania": {
+      "Mobile": {
+        "cost": "0.13"
+      },
+      "Regular": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "Russia": {
+      "Mobile": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "Rwanda": {
+      "Mobile": {
+        "cost": "0.25"
+      }
+    }
+  },
+  {
+    "Saint Barthélemy": {
+      "Mobile": {
+        "cost": "0.45"
+      }
+    }
+  },
+  {
+    "Saint Helena": {
+      "Regular": {
+        "cost": "5.87"
+      }
+    }
+  },
+  {
+    "Saint Kitts and Nevis": {
+      "Mobile": {
+        "cost": "0.45"
+      }
+    }
+  },
+  {
+    "Saint Lucia": {
+      "Mobile": {
+        "cost": "0.45"
+      }
+    }
+  },
+  {
+    "Saint Martin (French part)": {
+      "Mobile": {
+        "cost": "0.45"
+      }
+    }
+  },
+  {
+    "Saint Pierre and Miquelon": {
+      "Mobile": {
+        "cost": "0.45"
+      }
+    }
+  },
+  {
+    "Saint Vincent and the Grenadines": {
+      "Mobile": {
+        "cost": "0.45"
+      }
+    }
+  },
+  {
+    "Samoa": {
+      "Mobile": {
+        "cost": "0.48"
+      }
+    }
+  },
+  {
+    "San Marino": {
+      "Mobile": {
+        "cost": "0.13"
+      }
+    }
+  },
+  {
+    "São Tomé and Príncipe": {
+      "Mobile": {
+        "cost": "0.49"
+      }
+    }
+  },
+  {
+    "Saudi Arabia": {
+      "Mobile": {
+        "cost": "0.25"
+      },
+      "Regular": {
+        "cost": "0.15"
+      }
+    }
+  },
+  {
+    "Senegal": {
+      "Mobile": {
+        "cost": "0.17"
+      }
+    }
+  },
+  {
+    "Serbia": {
+      "Mobile": {
+        "cost": "0.17"
+      },
+      "Regular": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "Seychelles": {
+      "Mobile": {
+        "cost": "0.27"
+      }
+    }
+  },
+  {
+    "Sierra Leone": {
+      "Mobile": {
+        "cost": "0.38"
+      }
+    }
+  },
+  {
+    "Singapore": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.029"
+      }
+    }
+  },
+  {
+    "Sint Maarten": {
+      "Mobile": {
+        "cost": "0.45"
+      }
+    }
+  },
+  {
+    "Slovakia": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.15"
+      }
+    }
+  },
+  {
+    "Slovenia": {
+      "Mobile": {
+        "cost": "0.15"
+      }
+    }
+  },
+  {
+    "Solomon Islands": {
+      "Mobile": {
+        "cost": "0.57"
+      }
+    }
+  },
+  {
+    "Somalia": {
+      "Mobile": {
+        "cost": "0.5"
+      }
+    }
+  },
+  {
+    "South Africa": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.22"
+      }
+    }
+  },
+  {
+    "South Korea": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.25"
+      }
+    }
+  },
+  {
+    "South Sudan": {
+      "Mobile": {
+        "cost": "0.43"
+      }
+    }
+  },
+  {
+    "Spain": {
+      "Landline": {
+        "cost": "0.029"
+      },
+      "Mobile": {
+        "cost": "0.089"
+      }
+    }
+  },
+  {
+    "Sri Lanka": {
+      "Mobile": {
+        "cost": "0.19"
+      },
+      "Regular": {
+        "cost": "0.17"
+      }
+    }
+  },
+  {
+    "Sudan": {
+      "Mobile": {
+        "cost": "0.11"
+      }
+    }
+  },
+  {
+    "Suriname": {
+      "Mobile": {
+        "cost": "0.38"
+      },
+      "Regular": {
+        "cost": "0.38"
+      }
+    }
+  },
+  {
+    "Swaziland": {
+      "Mobile": {
+        "cost": "0.13"
+      }
+    }
+  },
+  {
+    "Sweden": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.25"
+      }
+    }
+  },
+  {
+    "Switzerland": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.18"
+      }
+    }
+  },
+  {
+    "Syria": {
+      "Mobile": {
+        "cost": "0.18"
+      }
+    }
+  },
+  {
+    "Taiwan": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.029"
+      }
+    }
+  },
+  {
+    "Tajikistan": {
+      "Mobile": {
+        "cost": "0.2"
+      },
+      "Regular": {
+        "cost": "0.11"
+      }
+    }
+  },
+  {
+    "Tanzania": {
+      "Mobile": {
+        "cost": "0.24"
+      }
+    }
+  },
+  {
+    "Thailand": {
+      "Mobile": {
+        "cost": "0.029"
+      }
+    }
+  },
+  {
+    "Thuraya (Mobile Satellite service)": {
+      "cost": "4.42"
+    }
+  },
+  {
+    "Togo": {
+      "Mobile": {
+        "cost": "0.24"
+      }
+    }
+  },
+  {
+    "Tokelau": {
+      "Regular": {
+        "cost": "7.57"
+      }
+    }
+  },
+  {
+    "Tonga": {
+      "Mobile": {
+        "cost": "0.57"
+      }
+    }
+  },
+  {
+    "Trinidad and Tobago": {
+      "Mobile": {
+        "cost": "0.45"
+      }
+    }
+  },
+  {
+    "Tunisia": {
+      "Mobile": {
+        "cost": "0.17"
+      }
+    }
+  },
+  {
+    "Turkey": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.22"
+      }
+    }
+  },
+  {
+    "Turkmenistan": {
+      "Mobile": {
+        "cost": "0.15"
+      },
+      "Regular": {
+        "cost": "0.11"
+      }
+    }
+  },
+  {
+    "Turks and Caicos Islands": {
+      "Mobile": {
+        "cost": "0.45"
+      }
+    }
+  },
+  {
+    "Tuvalu": {
+      "Regular": {
+        "cost": "1.47"
+      }
+    }
+  },
+  {
+    "Uganda": {
+      "Mobile": {
+        "cost": "0.25"
+      }
+    }
+  },
+  {
+    "Ukraine": {
+      "Mobile": {
+        "cost": "0.13"
+      },
+      "Regular": {
+        "cost": "0.041"
+      }
+    }
+  },
+  {
+    "United Arab Emirates": {
+      "Landline": {
+        "cost": "0.15"
+      },
+      "Mobile": {
+        "cost": "0.13"
+      },
+      "Special Services": {
+        "cost": "0.15"
+      }
+    }
+  },
+  {
+    "United Kingdom": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.25"
+      },
+      "Special Services": {
+        "cost": "0.039"
+      }
+    }
+  },
+  {
+    "United States of America": {
+      "Landline": {
+        "cost": "0.039"
+      },
+      "Mobile": {
+        "cost": "0.13"
+      }
+    }
+  },
+  {
+    "Uruguay": {
+      "Mobile": {
+        "cost": "0.39"
+      },
+      "Regular": {
+        "cost": "0.2"
+      }
+    }
+  },
+  {
+    "US Virgin Islands": {
+      "Mobile": {
+        "cost": "0.45"
+      }
+    }
+  },
+  {
+    "Uzbekistan": {
+      "Mobile": {
+        "cost": "0.19"
+      },
+      "Regular": {
+        "cost": "0.041"
+      }
+    }
+  },
+  {
+    "Vanuatu": {
+      "Mobile": {
+        "cost": "0.45"
+      }
+    }
+  },
+  {
+    "Vatican City": {
+      "Mobile": {
+        "cost": "0.45"
+      }
+    }
+  },
+  {
+    "Venezuela": {
+      "Mobile": {
+        "cost": "0.11"
+      }
+    }
+  },
+  {
+    "Vietnam": {
+      "Mobile": {
+        "cost": "0.15"
+      },
+      "Regular": {
+        "cost": "0.15"
+      }
+    }
+  },
+  {
+    "Wallis and Futuna": {
+      "Mobile": {
+        "cost": "0.87"
+      }
+    }
+  },
+  {
+    "Yemen": {
+      "Mobile": {
+        "cost": "0.17"
+      }
+    }
+  },
+  {
+    "Zambia": {
+      "Mobile": {
+        "cost": "0.24"
+      }
+    }
+  },
+  {
+    "Zimbabwe": {
+      "Mobile": {
+        "cost": "0.15"
+      }
+    }
+  }
+]
