@@ -318,52 +318,91 @@
         .s.g.fr .c3.m {
           position: relative;
         }
-      }
 
+        .spanishContainer span, #outputTranslation div span {
+            font-family: os, Ariel;
+            font-size: 28px;
+            line-height: 52px;
+        }
+        .spanishContainer {
+            display: block;
+            overflow: hidden;
+        }
+        #englishOpener, #spanishOpener, #transcriptionImage {
+            max-width: 570px;
+            display: block;
+            width: 60%;
+            float: left;
+            height: 32px;
+        }
+        .englishContainer span {
+            display: block;
+        }
+        .englishContainer {
+            display: block;
+            overflow: hidden;
+            padding: 12px;
+            background: #E9E9E9;
+            border-radius: 12px;
+        }
+        #translate, #transcribe {
+            padding: 6px 22px;
+            margin-left: 12px;
+            border-radius: 12px;
+            outline: 0;
+            border: 0;
+            color: white;
+            font-size: 16px;
+            background-color: #5614C4;
+        }
+        .spanishContainer span {
+            width: 100%;
+            float: left;
+            display: block;
+        }
+        #outputTranslation > span {
+            color: #54D448;
+            margin-top: 12px !important;
+            display: block;
+            margin-bottom: 12px;
+            font-family: os, Ariel;
+        }
+      }
       @media screen and (min-width:1080px) {
         .m {
           display: none;
         }
-
         .l {
           width: 140px;
         }
-
         .n div:hover {
           background-color: #D9D9D9;
         }
-
         .n div:hover div {
           display: block;
           background-color: #D9D9D9;
         }
-
         .n div div {
           position: absolute;
           display: none;
           margin: 6px -22px;
         }
-
         .n.d>div>a {
           padding: 0;
         }
-
         .fr img {
             padding: 3%;
             margin: 0;
             width: 130% !important;
             margin-left: -16%;
         }
-
         h1 {
           font-size: 54px;
           text-align: center;
         }
-
         .fr .c5 {
           align-content: center;
         }
-
         .c6.dn::before {
           content: '';
           width: 60%;
@@ -378,34 +417,27 @@
           background-position: top left;
           z-index: 3;
         }
-
         .c6.dn {
           justify-content: end !important;
         }
-
         .c6.dn div {
           z-index: 5;
         }
-
         p {
           font-size: 20px;
           line-height: 27px;
         }
-
         .f.s .c6:nth-of-type(2) {
           justify-content: right;
         }
-
         .f.s .c6:nth-of-type(2) img,
         .f.s .c6:nth-of-type(1) * {
           width: 80%;
         }
-
         .s.g.d .c12 {
           flex-direction: column;
           align-items: center;
         }
-
         h2 {
             font-size: 48px;
             font-family: os, Arial, Helvetica, sans-serif;
@@ -413,7 +445,53 @@
             line-height: 52px;
             max-width: 1080px;
         }
-
+        .spanishContainer span, #outputTranslation div span {
+            font-family: os, Ariel;
+            font-size: 28px;
+            line-height: 52px;
+        }
+        .spanishContainer {
+            display: block;
+            overflow: hidden;
+        }
+        #englishOpener, #spanishOpener, #transcriptionImage {
+            max-width: 570px;
+            display: block;
+            width: 70%;
+            float: left;
+        }
+        .englishContainer span {
+            display: block;
+        }
+        .englishContainer {
+            display: block;
+            overflow: hidden;
+            padding: 12px;
+            background: #E9E9E9;
+            border-radius: 12px;
+        }
+        #translate, #transcribe {
+            padding: 12px 48px;
+            margin-left: 12px;
+            border-radius: 12px;
+            outline: 0;
+            border: 0;
+            color: white;
+            font-size: 28px;
+            background-color: #5614C4;
+        }
+        .spanishContainer span {
+            width: 100%;
+            float: left;
+            display: block;
+        }
+        #outputTranslation > span {
+            color: #54D448;
+            margin-top: 12px !important;
+            display: block;
+            margin-bottom: 12px;
+            font-family: os, Ariel;
+        }
         h3 {
           font-size: 30px;
         }
@@ -838,7 +916,14 @@
         justify-content: start;
         align-items: start;
         }
-
+        #outputTranscription > span {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            margin-top: 12px;
+            font-family: os, Ariel;
+            color: #54D448;
+        }
     </style>
   </head>
   <body data-new-gr-c-s-check-loaded="8.908.0" data-gr-ext-installed="" data-new-gr-c-s-loaded="8.908.0">
@@ -890,7 +975,7 @@
         </div>
       </div>
     </div>
-    <div class="s g sd d au">
+    <div class="s g sd au">
         <div class="c12">
             <h2>Our translation feature breaks down language barriers effortlessly.</h2>
             <p>Receive a voicemail in a language you don't understand? Not a problem. SwitchboardPlus translates it into your preferred language, ensuring you never miss important information due to linguistic differences.</p>
@@ -922,10 +1007,10 @@
 
         </div>
     </div>
-    <div class="s g sd d">
+    <div class="s g sd ">
         <img loading="lazy" src="../m/s1.svg" width="1382" height="374" style="height: auto !important" alt="Switchboard Plus image">
     </div>
-    <div class="s g sd d au">
+    <div class="s g sd au">
         <div class="c12">
             <h2>Imagine receiving a voicemail and instantly having it transcribed into text!</h2>
             <p>Neatly organized and accessible at your fingertips. No more replaying messages repeatedly to catch every word. SwitchboardPlus seamlessly converts voicemails into written form, allowing you to read and respond with unparalleled efficiency.</p>
@@ -938,7 +1023,7 @@
                 </audio>
                 <div id="outputTranscription" style="display: none;">
                     <span>Ready!</span>
-                    <p class="ttitle">transcription</p>
+                    <p class="ttitle">Transcription</p>
                     <p class="tcontent">
                         Whether you're a busy professional juggling multiple languages or an international business dealing with diverse clientele, SwitchboardPlus streamlines your voicemail management process like never before. Say goodbye to missed opportunities and hello to clear, concise communication, all thanks to SwitchboardPlus. Experience the future of voicemail today.
                     </p>
