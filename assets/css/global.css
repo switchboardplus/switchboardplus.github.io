@@ -735,3 +735,6 @@ nav>.dropdown>a,nav>a {
   .row.learnmore {
 	padding-bottom: 64px;
 }
+::-webkit-input-placeholder {
+    color:white !important;
+}
