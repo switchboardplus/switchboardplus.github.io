@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/sub.css">
+    <style>
+      /* Page Specific global */
+      /* Light Page */
+      body {
+        background: #F3F3F3;
+      }
+
+      a,
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      ul,
+      li,
+      nav a {
+        color: #1C204E;
+      }
+
+      .wrapper .line {
+        background: #1c204e;
+      }
+
+      .section.s1>img {
+        width: 100%;
+      }
+
+      .s1 {
+        color: white;
+        text-align: center;
+      }
+
+      .row.internal {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+        margin-bottom: 18px;
+      }
+
+      .row.internal>.col-6 {
+        flex: 1;
+        display: flex;
+        align-items: stretch;
+      }
+      .person {
+            margin: 0 auto;
+            width: 250px;
+        }
+
+        .personImg img, picture img, picture source {
+            width: 250px;
+            border-radius: 50%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .personImg::before {
+            position: absolute;
+            content: '';
+            background-image: url('../m/el.svg');
+            width: 250px;
+            height: 250px;
+            z-index: -1;
+            margin-left: 19px;
+            transform: rotate(104deg);
+            margin-top: -10px;
+            background-repeat: no-repeat;
+        }
+        .row.ourteam .col-12 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .name p {
+            font-family: l, 'Open Sans', Arial;
+            font-size: 20px;
+            line-height: 26px;
+            font-weight: lighter;
+            font-size: 20x;
+            text-align: center;
+            color: #2B354E;
+            margin-bottom: 10px;
+        }
+        .title p {
+            font-size: 20px;
+            line-height: 26px;
+            font-family: l, 'Open Sans', Arial;
+            font-weight: lighter;
+            text-align: center;
+            color: #7D7D7D;
+            margin-top: 3px !important;
+        }
+        .row.compliancecg p {
+          font-family: l, 'Open Sans', Arial;
+          font-size: 20px;
+          line-height: 26px;
+          max-width: 800px;
+          margin: 0 auto;
+          margin-top:12px;
+        }
+        
+      .row.ourteamintro h2 {
+        text-align: center;
+      }
+      .row.grids {
+        align-items: flex-start;
+      }
+      .row.grids h2 {
+        font-size: 28px;
+        line-height: 28px;
+        margin-bottom: 12px;
+      }
+      .row.grids p {
+        font-family: l, 'Open Sans', Arial;
+        font-weight: lighter;
+        font-size: 18px;
+        line-height: 24px;
+      }
+      .row.grids .aboutcard {
+        padding: 12px;
+      }
+      .row.compliancecg {
+        margin-top: 32px;
+        margin-bottom: 32px;
+        text-align: center;
+      }
+      /* Page Specific Mobile */
+      @media (max-width: 992px) {
+        h1 {
+          margin-top: 10px;
+        }
+
+        h1,
+        h1 span {
+          text-align: left;
+          font-size: 36px;
+          font-family: b;
+          max-width: 67%;
+        }
+
+        .scontent p,
+        .scontent p b,
+        .scontent p u {
+          font-family: l, 'Open Sans', Arial;
+          text-align: left;
+          text-decoration: none;
+          font-weight: lighter;
+        }
+
+        .inline-imgs {
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+        }
+      }
+      @media screen and (min-width: 800px) and (max-width: 1200px) {
+        .section .col-3 {
+          width: 50%;
+          flex: 0 0 50% !important;
+          max-width: unset;
+
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="container">
+        <div class="logo d">
+          <img src="../m/logoalt.svg" alt="Logo">
+        </div>
+        <div class="logo m">
+          <img src="../m/logom.svg" class="light" alt="Logo">
+          <img src="../m/logom.svg" class="dark" alt="Logo">
+        </div>
+        <a class="nas2 m" href="../quote/">Get a Quote</a>
+        <nav>
+          <a href="../">Home</a>
+          <a href="../about/">About</a>
+          <div class="dropdown">
+            <a href="#">Services</a>
+            <span class="dropdown-arrow m">&gt;</span>
+            <!-- Added span for '>' symbol -->
+            <div class="dropdown-content">
+              <div>
+                <a href="../call-management/"><h4>Advanced Call Management</h4></a>
+                <ul>
+                  <li><a href="../call-management/">Custom Call Flow</a></li>
+                  <li><a href="../call-management/">Call Forwarding & Routing</a></li>
+                  <li><a href="../call-management/">Call Logs & Caller ID</a></li>
+                  <li><a href="../call-management/">Call Park & Shared Lines</a></li>
+                  <li><a href="../call-management/">Do Not Disturb</a></li>
+                  <li><a href="../call-management/">Dial by Extension & Name</a></li>
+                  <li><a href="../call-management/">Ring Groups & Time-Based Routing</a></li>
+                </ul>
+                <a href="../voicemail/"><h4>Voicemail and Messaging</h4></a>
+                <ul>
+                  <li><a href="../voicemail/">Voicemail Messaging</a></li>
+                  <li><a href="../voicemail/">Voicemail Transcription</a></li>
+                  <li><a href="../voicemail/">Instant Messaging and Presence</a></li>
+                  <li><a href="../voicemail/">Intercom One-to-One</a></li>
+                </ul>
+              </div>
+              <div>
+                <a href="../faxing/"><h4>Faxing</h4></a>
+                <ul>
+                  <li><a href="../faxing/">Faxing Services</a></li>
+                </ul>
+                <a href="../contact-center/"><h4>Contact Center & Call Enhancements</h4></a>
+                <ul>
+                  <li><a href="../contact-center/">Auto Attendant/Virtual Receptionist</a></li>
+                  <li><a href="../contact-center/">Contact Center</a></li>
+                  <li><a href="../contact-center/">Find Me/Follow Me</a></li>
+                  <li><a href="../contact-center/">Dashboard/Heads-Up Display</a></li>
+                  <li><a href="../contact-center/">Music on Hold</a></li>
+                </ul>
+                <a href="../conferencing-and-collaboration/"><h4>Conferencing and Collaboration</h4></a>
+                <ul>
+                  <li><a href="../conferencing-and-collaboration/">Conferencing and Video Conferencing</a></li>
+                  <li><a href="../conferencing-and-collaboration/">Conference Room Management</a></li>
+                  <li><a href="../conferencing-and-collaboration/">One-on-One Video</a></li>
+                  <li><a href="../conferencing-and-collaboration/">Paging Groups</a></li>
+                </ul>
+              </div>
+              <div>
+                <a href="../security/"><h4>Security and Compliance</h4></a>
+                <ul>
+                  <li><a href="../security/">Encryption</a></li>
+                  <li><a href="../security/">Enhanced 911 Service</a></li>
+                  <li><a href="../security/">Caller-ID</a></li>
+                  <li><a href="../security/">Call Recording Advanced</a></li>
+                </ul>
+                <a href="../device-and-number-management/"><h4>Device and Number Management</h4></a>
+                <ul>
+                  <li><a href="../device-and-number-management/">IP Desk Phones</a></li>
+                  <li><a href="../device-and-number-management/">Softphones</a></li>
+                  <li><a href="../device-and-number-management/">Hot Desking</a></li>
+                  <li><a href="../device-and-number-management/">Local Phone Numbers</a></li>
+                  <li><a href="../device-and-number-management/">Toll-Free Numbers</a></li>
+                </ul>
+                <a class="m" href="../intl-rates/"><h4>International Call Rates</h4></a>
+              </div>
+              <a href="../intl-rates/" class="d intlnav">International Call Rates</a>
+            </div>
+          </div>
+          <a href="../contact/">Contact</a>
+          <a class="nas2 d" href="../quote/">Get a Quote</a>
+        </nav>
+        <div class="wrapper m">
+          <div class="line half start"></div>
+          <div class="line"></div>
+          <div class="line half end"></div>
+        </div>
+      </div>
+      <div class="cert_burger">
+        <p>Certificates:</p>
+        <br>
+        <img src="../m/icons-m.svg" alt="Certifications" loading="lazy" />
+      </div>
+    </div>
+    <div class="section s1">
+      <div class="scontent">
+        <h1>About</h1>
+        <p>Manage in-person spaces with Conference Room Management to streamline scheduling and resources. For personal discussions, One-on-One Video provides direct, face-to-face interaction—perfect for quick updates. Finally, Paging Groups let you broadcast announcements or urgent news to multiple users simultaneously, ensuring everyone remains informed and aligned.</p>
+      </div>
+    </div>
+    <div class="section s2">
+      <div class="container">
+        <div class="row grids">
+          <div class="col-4">
+            <div class="aboutcard">
+              <h2>Industry-Leading Compliance</h2>
+              <p>Switchboard Plus meets rigorous security standards like SOC II, GDPR, and CCPA. By continuously adopting new frameworks, we ensure your data remains protected and compliant.</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="aboutcard">
+              <h2>Data Ownership & Privacy</h2>
+              <p>Your data stays yours. We never use it outside your permissions, maintaining full alignment with privacy regulations and your specific requirements.</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="aboutcard">
+              <h2>Secure Hosting</h2>
+              <p>We host your data in sandboxed, single-tenant environments with dedicated VPCs, isolating your information for maximum protection and regulatory compliance.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row grids">
+          <div class="col-4">
+            <div class="aboutcard">
+              <h2>Audit Logging</h2>
+              <p>Gain visibility into data usage with configurable logs. Export them to your SIEM for monitoring and receive alerts that support consistent compliance.</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="aboutcard">
+              <h2>Strict Permissions</h2>
+              <p>We enforce immediate changes to access rights, letting only authorized individuals see the data they're permitted to view-no exceptions.</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="aboutcard">
+              <h2>Robust Encryption</h2>
+              <p>All data is encrypted at rest with AES 256 and in transit with TLS 1.2+. We deploy strong exfiltration controls to keep information secure.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row compliancecg">
+          <div class="col-12">
+            <img src="../m/compliancecg.svg" loading="lazy" alt="Compliance" />
+            <p>We align with OWASP best practices to combat threats like injection and broken access control. For PCI DSS, we employ measures that protect payment card data and uphold confidentiality, integrity, and availability.</p>
+          </div>
+        </div>
+        <div class="row ourteamintro">
+          <div class="col-12">
+            <h2>Our Team</h2>
+          </div>
+        </div>
+        <div class="row ourteam">
+          <div class="col-12">
+            <div class="col-3">
+              <div class="person">
+                <div class="personImg">
+                  <picture>
+                    <source type="image/avif" srcset="../m/team/avif/nmv3.avif">
+                    <img alt="Nick Martin" src="../m/team/webp/nmv3.png">
+                  </picture>
+                </div>
+                <div class="name">
+                  <p>Nick Martin</p>
+                </div>
+                <div class="title">
+                  <p>CEO</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="person">
+                <div class="personImg">
+                  <picture>
+                    <source type="image/avif" srcset="../m/team/avif/mo.avif">
+                    <img alt="Mo Abdelalim" src="../m/team/webp/mo.jpg">
+                  </picture>
+                </div>
+                <div class="name">
+                  <p>Mo Abdelalim</p>
+                </div>
+                <div class="title">
+                  <p>Director of Engineering - Web</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="person">
+                <div class="personImg">
+                  <picture>
+                    <source type="image/avif" srcset="../m/team/avif/jordan.avif">
+                    <img alt="Jordan Mesches" src="../m/team/webp/jordan.png">
+                  </picture>
+                </div>
+                <div class="name">
+                  <p>Jordan Mesches</p>
+                </div>
+                <div class="title">
+                  <p>Engineering Manager</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="person">
+                <div class="personImg">
+                  <picture>
+                    <source type="image/avif" srcset="../m/team/avif/mark.avif">
+                    <img alt="Mark Brayman" src="../m/team/webp/mark.jpg">
+                  </picture>
+                </div>
+                <div class="name">
+                  <p>Mark Brayman</p>
+                </div>
+                <div class="title">
+                  <p>Director of Operations</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="person">
+                <div class="personImg">
+                  <picture>
+                    <source type="image/avif" srcset="../m/team/avif/angelr.avif">
+                    <img alt="Angel Rojas" src="../m/team/webp/angelr.jpg">
+                  </picture>
+                </div>
+                <div class="name">
+                  <p>Angel Rojas</p>
+                </div>
+                <div class="title">
+                  <p>Guardian Analyst II</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="person">
+                <div class="personImg">
+                  <picture>
+                    <source type="image/avif" srcset="../m/team/avif/nicole.avif">
+                    <img alt="Nicole Shakarishvili" src="../m/team/webp/nicole.png">
+                  </picture>
+                </div>
+                <div class="name">
+                  <p>Nicole Shakarishvili</p>
+                </div>
+                <div class="title">
+                  <p>UI/UX Architect</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="person">
+                <div class="personImg">
+                  <picture>
+                    <source type="image/avif" srcset="../m/team/avif/matt.avif">
+                    <img alt="Matthew Pisano" src="../m/team/webp/matt.jpg">
+                  </picture>
+                </div>
+                <div class="name">
+                  <p>Matthew Pisano</p>
+                </div>
+                <div class="title">
+                  <p>Guardian Engineer I</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="person">
+                <div class="personImg">
+                  <picture>
+                    <source type="image/avif" srcset="../m/team/avif/isaiah.avif">
+                    <img alt="Isaiah Pratt" src="../m/team/webp/isaiah.jpg">
+                  </picture>
+                </div>
+                <div class="name">
+                  <p>Isaiah Pratt</p>
+                </div>
+                <div class="title">
+                  <p>Executive Assistant</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="person">
+                <div class="personImg">
+                  <picture>
+                    <source type="image/avif" srcset="../m/team/webp/francisco.jpg">
+                    <img alt="Francisco Rosa" src="../m/team/webp/francisco.jpg">
+                  </picture>
+                </div>
+                <div class="name">
+                  <p>Francisco Rosa</p>
+                </div>
+                <div class="title">
+                  <p>Manager - ITOps</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="person">
+                <div class="personImg">
+                  <picture>
+                    <source type="image/avif" srcset="../m/team/avif/michael.avif">
+                    <img alt="Michael Nkadi" src="../m/team/webp/michael.png">
+                  </picture>
+                </div>
+                <div class="name">
+                  <p>Michael Nkadi</p>
+                </div>
+                <div class="title">
+                  <p>Network Architect</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="person">
+                <div class="personImg">
+                  <picture>
+                    <source type="image/avif" srcset="../m/team/avif/nicklas.avif">
+                    <img alt="Niklas Hallstein" src="../m/team/webp/nicklas.jpg">
+                  </picture>
+                </div>
+                <div class="name">
+                  <p>Niklas Hallstein</p>
+                </div>
+                <div class="title">
+                  <p>Guardian Engineer I</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="person">
+                <div class="personImg">
+                  <picture>
+                    <source type="image/avif" srcset="../m/team/sungmin.jpeg">
+                    <img alt="Sungmin Kim" src="../m/team/sungmin.jpeg">
+                  </picture>
+                </div>
+                <div class="name">
+                  <p>Sungmin Kim</p>
+                </div>
+                <div class="title">
+                  <p>Guardian Engineer I</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="person">
+                <div class="personImg">
+                  <picture>
+                    <source type="image/avif" srcset="../m/team/avif/bryce.avif">
+                    <img alt="Bryce Haynes" src="../m/team/webp/bryce.jpg">
+                  </picture>
+                </div>
+                <div class="name">
+                  <p>Bryce Haynes</p>
+                </div>
+                <div class="title">
+                  <p>Guardian Analyst I</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="person">
+                <div class="personImg">
+                  <picture>
+                    <source type="image/avif" srcset="../m/team/avif/jason.avif">
+                    <img alt="Jason Brewer" src="../m/team/webp/jason.jpg">
+                  </picture>
+                </div>
+                <div class="name">
+                  <p>Jason Brewer</p>
+                </div>
+                <div class="title">
+                  <p>Guardian Analyst I</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="person">
+                <div class="personImg">
+                  <picture>
+                    <source type="image/avif" srcset="../m/team/avif/castulo.avif">
+                    <img alt="Castulo Velazquez" src="../m/team/castulo.jpg">
+                  </picture>
+                </div>
+                <div class="name">
+                  <p>Castulo Velazquez</p>
+                </div>
+                <div class="title">
+                  <p>Guardian Analyst I</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="person">
+                <div class="personImg">
+                  <picture>
+                    <source type="image/avif" srcset="../m/team/avif/holder.avif">
+                    <img alt="Abhinav Srinivasan" src="../m/team/webp/holder.jpg">
+                  </picture>
+                </div>
+                <div class="name">
+                  <p>Abhinav Srinivasan</p>
+                </div>
+                <div class="title">
+                  <p>Guardian Analyst I</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="person">
+                <div class="personImg">
+                  <picture>
+                    <source type="image/avif" srcset="../m/team/avif/alan.avif">
+                    <img alt="Alan Rojas" src="../m/team/alan.jpg">
+                  </picture>
+                </div>
+                <div class="name">
+                  <p>Alan Rojas</p>
+                </div>
+                <div class="title">
+                  <p>Guardian Analyst I</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="person">
+                <div class="personImg">
+                  <picture>
+                    <source type="image/avif" srcset="../m/team/avif/bohdan.avif">
+                    <img alt="Bohdan Nakonechnyi" src="../m/team/bohdan.jpg">
+                  </picture>
+                </div>
+                <div class="name">
+                  <p>Bohdan Nakonechnyi</p>
+                </div>
+                <div class="title">
+                  <p>Guardian Analyst I</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="person">
+                <div class="personImg">
+                  <picture>
+                    <source type="image/avif" srcset="../m/team/avif/wilson.avif">
+                    <img alt="Warren Wilson" src="../m/team/webp/wilson.jpg">
+                  </picture>
+                </div>
+                <div class="name">
+                  <p>Warren Wilson</p>
+                </div>
+                <div class="title">
+                  <p>Guardian Analyst I</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="person">
+                <div class="personImg">
+                  <picture>
+                    <source type="image/avif" srcset="../m/team/avif/bruno.avif">
+                    <img alt="Bruno Rocha" src="../m/team/webp/bruno.jpg">
+                  </picture>
+                </div>
+                <div class="name">
+                  <p>Bruno Rocha</p>
+                </div>
+                <div class="title">
+                  <p>Network Administrator</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section s4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="guarentee">
+              <p>We <b>guarantee</b> that we will <b>lower your phone bill</b>, or <b>we will write you a $1,000 check</b> for the time you spent. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section s5" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <a href="tel:+18454448273">
+              <p>845-444-8273</p>
+            </a>
+            <p class="bold">63 John Street #3 <br>Kingston, NY 12401 </p>
+            <a href="mailto:connect@switchboard-plus.com">connect@switchboard-plus.com</a>
+          </div>
+          <div class="col-6">
+            <form action="https://cgnew.wpengine.com/apis/sb/home/" method="POST">
+              <input type="text" aria-label="Name" name="name" placeholder="Your Name">
+              <input type="text" aria-label="Business Name" name="bname" placeholder="Business Name">
+              <input type="tel" aria-label="Phone" name="phone" placeholder="Phone">
+              <input type="email" aria-label="Email" name="email" placeholder="Email">
+              <input type="text" aria-label="Message" name="message" placeholder="Message">
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section s6">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <img src="../m/logoalt.svg" loading="lazy" alt="Logo" />
+          </div>
+          <div class="col-9">
+            <div class="inline-imgs d">
+              <img src="../m/iso.svg" loading="lazy" alt="ISO" />
+              <img src="../m/hipaa.svg" loading="lazy" alt="HIPAA" />
+              <img src="../m/wfw.svg" loading="lazy" alt="Certified Carbon-Negative By Worldsfastest.com" />
+            </div>
+            <div class="inline-imgs m">
+              <img src="../m/cert_mobile.svg" loading="lazy" alt="Certificates; ISO, HIPAA and Certified Carbon" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section s7 footermenu">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="../faxing/">Faxing </a></li>
+              <li><a href="../call-management/">Advanced Call Management</a></li>
+              <li><a href="../security/">Security and Compliance</a></li>
+              <li><a href="../contact-center/">Contact Center & Call Enhancements</a></li>
+              <li><a href="../device-and-number-management/">Device and Number Management</a></li>
+              <li><a href="../voicemail/">Voicemail and Messaging</a></li>
+              <li><a href="../conferencing-and-collaboration/">Conferencing and Collaboration</a></li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <h3>About</h3>
+            <ul>
+              <li><a href="../about/">About us</a></li>
+              <li><a href="../contact/">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <a href="tel:+18454448273"><p>845-444-8273</p></a>
+            <p class="bold">63 John Street #3 <br>Kingston, NY 12401 </p>
+            <a href="mailto:connect@switchboard-plus.com">connect@switchboard-plus.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const BurgerIcon = document.querySelector('.wrapper');
+        const nav = document.querySelector('.nav nav');
+        const navContainer = document.querySelector('.nav');
+        const wrapperMenu = document.querySelector('.wrapper');
+        if (BurgerIcon && nav && navContainer) {
+          BurgerIcon.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            navContainer.classList.toggle('open');
+            wrapperMenu.classList.toggle('open');
+            const isOpen = navContainer.classList.contains('open');
+            BurgerIcon.setAttribute('aria-expanded', isOpen);
+          });
+          // Allow toggling with Enter key for keyboard accessibility
+          BurgerIcon.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+              nav.classList.toggle('active');
+              navContainer.classList.toggle('open');
+              const isOpen = navContainer.classList.contains('open');
+              BurgerIcon.setAttribute('aria-expanded', isOpen);
+            }
+          });
+        }
+      });
+      document.addEventListener('DOMContentLoaded', () => {
+        // Select the dropdown-arrow element
+        const dropdownArrow = document.querySelector('.dropdown-arrow');
+        const dropdownElement = document.querySelector('.dropdown');
+        // Select the < nav > element within the.nav container
+        const nav = document.querySelector('.nav'); // Adjust selector if necessary
+        // Ensure both elements exist
+        if (dropdownArrow && nav && window.innerWidth < 920) {
+          dropdownElement.addEventListener('click', (event) => {
+            // Check if the user clicked directly on an element that matches ".dropdown-content div a"
+            if (event.target.matches('.dropdown-content div a h4')) {
+              // Do nothing here so the default behavior (e.g., navigation) is preserved
+              return;
+            }
+            // Otherwise, run dropdown toggle behavior
+            event.preventDefault();
+            nav.classList.toggle('level2');
+            dropdownArrow.textContent = dropdownArrow.textContent === '>' ? '<' : '>';
+          });
+        }
+      });
+      document.addEventListener('click', e => e.target.matches('.logo img') && (window.location.href='../'));
+    </script>
+  </body>
+</html>

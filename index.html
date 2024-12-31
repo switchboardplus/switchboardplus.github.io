@@ -1,684 +1,950 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <link rel="shortcut icon" href="https://switchboard-plus.com/favicon.png" type="image/x-icon">
-        <title>Switchboard Plus - Multi-level IVR and Cloud PBX in Kingston, Ulster, New York</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="UTF-8">
-        <meta property="og:title" content="Switchboard Plus - Multi-level IVR and Cloud PBX in Kingston, Ulster, New York">
-        <meta property="og:site_name" content="Switchboard Plus">
-        <meta property="og:url" content="https://Switchboard-plus.com">
-        <meta property="og:description" content="Switchboard Plus is a Multi-Level IVR Provider in Kingston, Ulster, New York. We Provide today's technology when it comes to IVR and Cloud PBXf">
-        <meta property="og:type" content="business.business">
-        <meta property="og:image" content="">
-        <meta property="twitter:image" content="">
-        <meta name="description" content="Switchboard Plus is a Multi-Level IVR Provider in Kingston, Ulster, New York. We Provide today's technology when it comes to IVR and Cloud PBXf">
-        <meta name="keywords" content="">
-        <meta name="robots" content="index, follow">
-        <meta name="language" content="English">
-        <meta name="revisit-after" content="21 days">
-    </head>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/global.css">
     <style>
-        * {
-            box-sizing: border-box;
-            color:#1E1E1E;
-            scroll-behavior: smooth;
+      /* Page Specific global */
+      .section.s1>img {
+        width: 100%;
+        max-height: 600px;
+        margin: 0 auto;
+      }
+      .section.s2 h2 {
+        max-width: 680px;
+        margin: 0 auto;
+        margin-top: 64px;
+      }
+      .imgc img {
+        width: 65px;
+      }
+      .s1 {
+        color: white;
+        text-align: center;
+      }
+      .benefit {
+        background: white;
+        padding: 15px 30px;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      }
+      .static_benefit.money::after {
+        content: ' ';
+        color: black !important;
+        background: url('m/money_b.svg');
+        height: 36px;
+        width: 36px;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: 95%;
+        top: -23px;
+        z-index: 55555;
+        right: 0;
+      }
+
+      .benefit p, .benefit .static_benefit h2 {
+        color: #333;
+        margin-top: 0;
+      }
+      .benefit .static_benefit h2 {
+        font-size:32px;
+        line-height: 36px;
+      }
+      .benefit p {
+        font-family: l, 'Open Sans', Arial;
+        font-weight: lighter;
+        width: 100%;;
+      }
+      .static_benefit {
+        display: flex;
+        align-content: baseline;
+        width: 100%;
+        align-items: center;
+      }
+
+      .static_benefit img {
+        width: 65px;
+      }
+      .col-4 .benefit p {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+        margin: 0;
+        opacity: 0; /* optional, for a smoother fade-in */
+      }
+
+      .col-4 .benefit:hover p {
+        max-height: 300px; /* adjust as needed */
+        opacity: 1;        /* optional, for smooth fade-in */
+      }
+
+      .s1 p {
+        font-size: 24px;
+        max-width: 618px;
+        margin: 0 auto;
+      }
+
+      .section.s2 {
+        color: white;
+        text-align: center;
+      }
+
+      .section.s2 p {
+        font-size: 24px;
+        max-width: 900px;
+        margin: 21px auto;
+      }
+      .s2 .benefit p {
+        margin: 0 auto;
+      }
+      .section.s3 {
+        align-items: center;
+        display: flex;
+        text-align: center;
+      }
+
+      .section.s3 {
+        margin-top: 64px;
+        margin-bottom: 64px;
+      }
+
+      .section.s3 img {
+        margin-top: 36px;
+      }
+
+      .box1 {
+        display: flex;
+        align-items: flex-start;
+        gap: 5%;
+        width: 100%;
+        padding-left: 36px;
+        padding-bottom: 24px;
+      }
+
+      .imgc {
+        flex: 0 0 15%;
+      }
+      .contentc {
+        flex: 0 0 80%;
+      }
+
+      .box1 h3 {
+        font-family: b;
+        color: white;
+        font-size: 32px;
+        margin-top: 0;
+        margin-bottom: 12px;
+        max-width: 420px;
+        line-height: 34px;
+      }
+
+      .box1 p {
+        font-family: r, 'Open Sans', Arial;
+        color: white;
+        max-width: 420px;
+        font-weight: lighter;
+        font-size: 20px;
+      }
+
+      .section.s4 .row {
+        align-items: flex-start;
+      }
+
+      .section.s4 .row h2 {
+        margin-top: 0 !important;
+        max-width: 500px;
+      }
+
+      /* animation */
+      .hi_row {
+        display: flex;
+        width: 100%;
+        max-width: 1080px;
+        margin: 0 auto;
+      }
+
+      .hi_content {
+        background-color: #685ABC;
+        border-radius: 12px;
+      }
+
+      .hi_col {
+        width: 33.3333%;
+        padding: 8px;
+        overflow: hidden;
+        position: relative;
+        color: black;
+        /* Ensure text color is black */
+        transition: width 0.6s ease, background-color 0.3s, color 0.3s;
+      }
+
+      .hi_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 580px;
+        transition: flex-direction 0.6s ease;
+      }
+
+      .hi_video_container {
+        width: 100%;
+        transition: width 0.3s ease;
+      }
+
+      .hi_video_container video {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 12px;
+      }
+
+      .hi_title_static {
+        margin-top: 10px;
+        font-size: 32px;
+        color: white;
+        padding: 6px;
+        /* Ensure the title text is visible */
+      }
+
+      .hi_text_container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        position: relative;
+        padding-top: 70px;
+        transition: opacity 0.2s ease-in 0.3s, padding-top 0.5s ease-in 0.3s;
+      }
+
+      .hi_title {
+        margin-top: 10px;
+        color: white;
+        /* Text color when visible on hover */
+      }
+
+      .hi_text_content {
+        margin-top: 10px;
+        color: white;
+        /* Text color when visible on hover */
+      }
+
+      /* Hover effect for background color and text color */
+      @media screen and (min-width: 992px) {
+        .hi_col:hover {
+          background-color: #685ABC;
+          color: white;
+          /* Change text color to white on hover */
         }
-        body {
-            background: #FBFBFB;
-            margin: 0;
+
+        /* Smoothly adjust column widths on hover */
+        .hi_row:hover .hi_col {
+          width: 25%;
         }
-        .t, .s {
-            display: flex;
-            padding: 2.7% 8%;
-            flex-wrap: wrap;
+
+        .hi_row .hi_col:hover {
+          width: 50%;
         }
-        .n, .b {
-            width: calc(100% - 160px);
-            display: flex;
-            justify-content: center;
+
+        /* Adjust video container width on hover */
+        .hi_col:hover .hi_video_container {
+          width: 30%;
         }
-        .n a, .n > div {
-            padding: 10px 22px;
-            font-size: 20px;
-            text-decoration: none;
-            font-family: os, Arial;
-            display: block;
-            cursor: pointer;
-            font-weight: 300;
+
+        .hi_col:hover .hi_content {
+          flex-direction: row;
+          align-items: flex-start;
         }
-        .n div div a {
-            margin: 0;
+
+        .hi_col:hover .hi_text_container {
+          opacity: 1;
+          visibility: visible;
+          padding-top: 0px;
         }
-        .b {
-            cursor: pointer;
-            font-size: 50px;
-            width: 33%;
-            line-height: 7vw;
+
+        .hi_col:hover .hi_text_container {
+          order: 1;
+          width: 70%;
         }
-        .c12 {
-            width: 100%;
+
+        .hi_col:hover .hi_video_container {
+          order: 2;
         }
-        .c6 {
-            width: 50%;
+
+        /* Hide the static title on hover */
+        .hi_col:hover .hi_title_static {
+          display: none;
         }
-        .c5 {
-            width: 41.66%;
+        .row.benefits {
+            align-items: baseline !important;
         }
-        .c4 {
-            width: 33.33%;
-        }
-        .c2 {
-            width: 16.66%;
-        }
-        .c1 {
-            width: 8.33%;
-        }
-        .c8 {
-            width: 66.66%;
-        }
-        .c9 {
-            width: 75%;
-        }
-        .c3 {
-            width: 25%;
-        }
-        .c7 {
-            width: 58.33%;
-        }
-        .c1, .c2, .c3, .c4, .c5, .c6, .c12, .c8, .c9, .c3 {
-            display:flex;
-            flex-wrap: wrap;
-        }
-        h1, h2, h3 {
-            font-family: ro, Helvetica;
-        }
+      }
+      /* Ensure static title is visible before hover */
+      .hi_col .hi_title_static {
+        display: block;
+        opacity: 1;
+      }
+      .hi_text_content,
+      .hi_title {
+        padding: 8px;
+      }
+      .hi_col {
+        border-radius: 12px !important;
+      }
+      .hi_text_content p a {
+        display: block;
+        color: #FFC727;
+        text-decoration: none;
+        margin-top:15px;
+        margin-bottom: 15px;
+      }
+
+      .hi_text_content p {
+        font-size: 18px;
+        line-height: 24px;
+        font-family: l, 'Open Sans', Arial;
+        font-weight: lighter;
+        margin-top: 0;
+      }
+
+      .hi_title {
+        margin-bottom: 0;
+      }
+
+      .hi_text_content>a {
+        text-decoration: none;
+      }
+
+      .hi_text_content {
+        margin-top: 0;
+      }
+
+      .hi_title {
+        margin-top: 0;
+      }
+
+      .hi_icon_list {
+        width: 140%;
+      }
+
+      .hi_icon_list>div {
+        display: flex;
+      }
+      .hi_icon_list img {
+        display: flex;
+      }
+      .hi_icon_list>div {
+        align-items: center;
+        margin-bottom: 12px;
+      }
+      .hi_icon_list>div p {
+        font-family: b, 'Open Sans', Arial;
+        font-weight: bold;
+        margin-bottom: 0;
+        margin-left: 12px;
+        font-size: 21px;
+      }
+      .hi_icon_list>div img {
+        width: 33px;
+        height: 33px;
+      }
+      /* Page Specific Mobile */
+      @media (max-width: 992px) {
         h1 {
-            font-family: rol, Arial, Helvetica, sans-serif;
-            font-weight: 300;
-            margin-bottom: 0;
-            margin-top: 0;
+          margin-top:-40px;
         }
-        h1 span {
-            font-family: ro, Arial, Helvetica, sans-serif;
-            font-weight: 800;
+        .scontent {
+          min-height: calc(100vh - 200px);
         }
-        p {
-            font-family: os, Helvetica;
-            font-weight: 300;
+        .hi_video_container video {
+          height: 300px;
+          object-fit: cover;
+          object-position: 65% 15%;
         }
-        @media screen and (max-width:1080px) {
-            .d {
-                display: none;
-            }
-            .l {
-                width: 67%;
-            }
-            .l p {
-                font-size: 36px;
-                font-weight: 500;
-                font-family: l, Arial;
-                margin: 0;
-            }
-            .mb, .lmb {
-                font-size: 20px !important;
-                padding: 8px 12px !important;
-                margin-left: 5%;
-            }
-            .s.g.sd.m h2 {
-                font-size:30px;
-            }
-            .n {
-                width: 100%;
-                flex-wrap: wrap;
-                margin-top: 20vh;
-                padding-bottom: 20vh;
-            }
-            .m.b {
-                justify-content: right;
-            }
-            .n a, .n div {
-                width: 100%;
-                text-align: center;
-            }
-            .t {
-                margin-top: 40px;
-            }
-            .c {
-                max-width: 130px;
-                margin: 0 auto;
-                margin-top: 10vh;
-            }
-            .c1, .c2, .c3, .c4, .c5, .c6, .c12 {
-                width: 100%;
-            }
-            .f.s:nth-of-type(2) {
-                flex-direction: column-reverse;
-            }
-            .f.s:nth-of-type(2) img.m {
-                margin: 0% -10%;
-                width: 120vw;
-            }
-            .f.s.m {
-                background-color: #fff;
-            }
-            .f.s h1 {
-                margin-top: -10%;
-            }
-            .s.g.ar h2, .s.g.ar p {
-                color: #FBFBFB;
-            }
-            .s.g.ar {
-                background-color: #fff;
-                padding-bottom: 32px;
-            }
-            .s.g.cf {
-                background-color: #1C204E;
-            }
-            .s.g.cf .c6 {
-                margin-bottom: 32px;
-            }
-            .s.g.ar::before {
-                width: 100%;
-                content: '';
-                height: 1px;
-                color: black;
-                background-color: black;
-                margin: 20px auto;
-            }
-            .gb {
-                width: 100%;
-                text-align: center;
-            }
-            p {
-                font-size:24px;
-            }
-            h2, h3 {
-                font-size: 32px;
-            }
-            .s.g.in {
-                background: #fff;
-            }
-            .s.g.in p, .s.g.in h3 {
-                color: #000;
-            }
-            .s.g.in p {
-                padding-bottom: 64px;
-            }
-            .s.g.in {
-                background: #fff;
-            }
-            .s.g.in p, .s.g.in h3 {
-                color: #000;
-            }
-            .s.g.in p {
-                padding-bottom: 64px;
-            }
-            .s.g.fo svg {
-                margin: 30px auto;
-            }
-            .s.g.fo {
-                background: #000;
-            }
-            .n > div > a {
-                display: none;
-            }
-            .s.g.fr h3 {
-              width: 70%;
-             margin-left: 30%;
-            }
-            .s.g.fr .c3.m img {
-                width: 30%;
-                position: absolute;
-                left: -10%;
-                top: 90px;
-            }
-            .s.g.fr .c3.m {
-                position: relative;
-            }
+        .mobile_arrow.m {
+          margin-bottom: 64px;
+        }
 
+        .mobile_arrow.m img {
+          width: 48px;
+          margin-top: 6px;
         }
-        @media screen and (min-width:1080px) {
-            .m {
-                display: none;
-            }
-            .l {
-                width: 140px;
-            }
-            .n div:hover {
-                background-color: #D9D9D9;
-            }
-            .n div:hover div {
-                display: block;
-                background-color: #D9D9D9;
-            }
-            .n div div {
-                position: absolute;
-                display: none;
-                margin: 6px -22px;
-            }
-            .n.d > div > a {
-                padding: 0;
-            }
-            h1 {
-                font-size:64px;
-            }
-            .fr .c5 {
-                align-content: center;
-            }
-            
-            p {
-                font-size:20px;
-                line-height: 27px;
-            }
-            .f.s .c6:nth-of-type(2) {
-                justify-content: right;
-            }
-            .f.s .c6:nth-of-type(2) img, .f.s .c6:nth-of-type(1) *{
-                width: 80%;
-            }
-            .s.g.d .c12 {
-                flex-direction: column;
-                align-items: center;
-            }
-            h2 {
-                font-size:42px;
-                font-family: ro, Arial, Helvetica, sans-serif;
-            }
-            h3 {
-                font-size:30px;
-            }
-            .s.g {
-                background-color: #FBFBFB;
-            }
-            .s.g.fo {
-                background-color: #000;
-            }
-            .s.g.ar .c12 {
-                background-color: #000;
-                padding: 32px;
-                border-radius: 25px;
-                box-shadow: 10px 10px 10px 10px black;
-            }
-            .s.g.ar .c6, .s.g.in .c6, .s.g.cf .c6 {
-                padding: 1% 7%;
-                align-content: center;
-            }
-            .s.g.in .c3, .s.g.in .c9 {
-                align-content: baseline;
-            }
-            .in .c9, .in .c3 {
-                margin-bottom: 36px;
-            }
-            .s.g.cf {
-                background-color:#1C204E;
-            }
-            .s.g.cf h3, .s.g.cf p {
-                color: #000;
-            }
-            .s.g.cf p {
-                font-weight: bold;
-            }
-            .fr .c7 img.d {
-                margin-top: calc(-150px - 6%);
-                z-index: 3;
-                position: relative;
-            }
-            .s.g.fr .c6 {
-                flex-direction: column;
-                justify-content: center;
-            }
-            .s.g.fr .c6.d img {
-                max-width: 400px;
-                margin: 0 auto;
-            }
+        .col-4 .benefit p {
+          max-height: unset !important;
+          overflow: hidden;
+          transition: max-height 0.3s ease, opacity 0.3s ease;
+          margin: 0;
+          opacity: 1; /* optional, for a smoother fade-in */
+          font-size: 20px;
+          text-align: left;
+          padding-top:12px;
         }
-        .s.g.cf .bold + a {
-            font-family: os, Arial;
+        .s2 .benefit h2 {
+          margin-left: 12px;
+          font-size: 26px;
         }
-        .t {
-            z-index: 5;
-            position: relative;
+        .box1 .imgc {
+          flex: 0 0 10%;
         }
-        .r {
-            height: 0;
-            flex-basis: 100%;
+        .box1 .imgc img {
+          max-width: 33px;
         }
-        .n .a {
-            text-decoration: underline;
+        .contentc p {
+          margin-top: 0;
         }
-        .n a:hover {
-            text-decoration: underline;
-        }
-        .c {
-            color: #000;
-            background-color: #fff;
-        }
-        .s.g.d .c12 {
-            justify-content: center;
-        }
-        .s.g.d .c12 svg {
-            width: 80px;
-        }
-        .s.g.d p {
-            max-width: 800px;
-            text-align: center;
-        }
-        .gb {
-            background-color: #EBCA71;
-            padding: 12px 25px;
-            font-size: 25px;
-            color: black;
-            font-family: b, Helvetica;
-            text-decoration: none;
-        }
-        .cf .gb {
-            font-weight: bold;
-        }
-        form {
-            width: 100%;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        input {
-            display: block;
-            width: 100%;
-            font-size: 22px;
-            padding: 2px 6px;
-            margin-bottom: 8px;
-            color: white !important;
-            opacity: 1;
-            filter: unset !important;
-            background-color: transparent !important;
-            border: 0;
-            outline: 0;
-            border-bottom: 2px solid white;
-            padding: 3px;
-        }
-        .s.g.fo .c4 {
-            display: flex;
-            flex-direction: column;
-        }
-        .s.g.fo a {
-            font-size: 17px;
-            text-decoration: none;
-            font-family: l, helvetica;
-            line-height: 32px;
-        }
-        .s.g.fo svg {
-            max-width: 230px;
-            margin-bottom: 48px;
-        }
-        .si {
-            margin-top: 32px;
-        }
-        .s.g img {
-            width: 100%;
-        }
-        .t .l a {
-            text-decoration: none;
-        }
-        .mb {
-            text-decoration: none !important;
-            display: inline-block;
-            margin-right: 24px;
-            background: #FFC727;
-            padding: 16px 36px;
-            font-size: 24px;
-            border-radius: 5px;
-            font-family: ro, arial;
-        }
-        .lmb {
-            font-family: ro, Arial;
-            font-size: 24px;
-            text-decoration: none;
-            padding: 16px 36px;
-        }
-        .s.g.cf a, .s.g.cf p {
-            display: block !important;
-            text-align: left;
-            width: 80%;
-            color:white;
-        }
-        .s.g.cf a h2 {
-            border:none;
-            color:white;
-            text-decoration: none;
-        }
-        .s.g.cf a {
-            text-decoration: none;
-        }
-        .s.g.fr .c5 p {
-            max-width: 480px;
-        }
-        input[type="submit"] {
-            border-bottom: 0;
-            background: #FFC727 !important;
-            width: 200px;
-            padding: 8px 10px;
-            border-radius: 8px;
-            margin: 0 auto;
-            color: black !important;
-            font-family: ro, Arial, Helvetica, sans-serif;
-        }
-        .s.g.sd.d img {
-            margin-left: -6%;
-        }
-        .s.g.sd.m {
-            position: relative;
-        }
-        .s.g.sd.m img {
-            position: absolute;
-            width: 25%;
-            left: 0;
-        }
-        .s.g.sd.m h2 {
-            width: 70%;
-            margin-left: 25%;
-        }
-        .s.g.tr * {
-            width: 100%;
-            text-align:center;
-        }
-        .s.g.tr h2 {
-            margin-bottom: 10px;
-        }
-        .s.g.fr h3 {
-         font-family: rol;
-        }
-        .s.g.fr h3 span {
-          font-family: ro;
-        }
-        .s.g.fi .c6 {
-            flex-direction: column;
-            justify-content: center;
-        }
-        .s.g.fi .c6 img {
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        .s.g.fi .c12 {
-            background-color: #ebebeb;
-            padding: 2% 2%;
-            border-radius: 8px;
-        }
-        .s.g.si img {
-           max-width: 400px;
-           margin: 0 auto;
-        }
-        .s.g.si h3 {
-          font-family: rol, Arial;
-        }
-        .s.g.si .c6 {
+        .hi_row {
           flex-direction: column;
-          justify-content: center;
         }
 
-        @font-face {
-            font-family: 'ro';
-            font-display:swap;
-            src: url('f/ro.woff2') format('embedded-opentype'),
-            url('f/ro.woff2') format('woff2'), 
-            url('f/ro.woff2') format('woff'),
-            url('f/ro.woff2')  format('truetype'),
-            url('f/ro.woff2') format('svg');
+        .hi_col {
+          width: 100%;
+          margin-bottom: 20px;
         }
-        @font-face {
-            font-family: 'os';
-            font-display:swap;
-            src: url('f/os.woff2') format('embedded-opentype'),
-            url('f/os.woff2') format('woff2'), 
-            url('f/os.woff2') format('woff'),
-            url('f/os.woff2')  format('truetype'),
-            url('f/os.woff2') format('svg');
+
+        .hi_content {
+          height: auto;
         }
-        @font-face {
-            font-family: 'rol';
-            font-display:swap;
-            src: url('f/rol.woff2') format('embedded-opentype'),
-            url('f/rol.woff2') format('woff2'), 
-            url('f/rol.woff2') format('woff'),
-            url('f/rol.woff2')  format('truetype'),
-            url('f/rol.woff2') format('svg');
+
+        .hi_text_container {
+          padding-top: 20px;
         }
-        h1, h2, h3, h4, p {
-            color:#1C204E;
+
+        .hi_video_container {
+          width: 100%;
         }
-        #cc {
-            color:white;
+
+        .hi_title_static {
+          display: none;
         }
+
+        .hi_col:hover .hi_text_container {
+          padding-top: 20px;
+        }
+
+        .scontent img.m {
+          width: 100%;
+          height: 48vw;
+          min-width: 100%;
+        }
+
+        h1,
+        h1 span {
+          text-align: left;
+          font-size: 36px;
+          font-family: b;
+          max-width: 80%;
+        }
+
+        .scontent p,
+        .scontent p b,
+        .scontent p u {
+          font-family: l, 'Open Sans', Arial;
+          text-align: left;
+          text-decoration: none;
+          font-weight: lighter;
+        }
+
+        .hi_content {
+          background-color: white;
+        }
+
+        .hi_title_static {
+          color: #1C204E;
+        }
+
+        .hi_content {
+          align-items: baseline;
+        }
+
+        .hi_title_static {
+          padding: 12px;
+          margin-bottom: 0;
+        }
+
+        .hi_content p.m {
+          padding: 12px;
+          font-family: l, 'Open Sans', Arial;
+          font-size: 18px;
+          font-weight: lighter;
+          margin-top: 0;
+        }
+
+        .hi_content>a {
+          padding: 12px;
+          text-decoration: none;
+          font-family: b, 'Open Sans', Arial;
+          font-weight: bolder;
+          font-size: 20px;
+          color: #FFC727;
+        }
+
+        .hi_text_content a {
+          text-decoration: none;
+        }
+
+        .hi_text_container {
+          display: none;
+        }
+
+        .box1 {
+          padding-left: 0;
+        }
+
+        .inline-imgs {
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+        }
+
+        .s2 p.big {
+          font-family: l, 'Open Sans', Arial;
+          font-weight: lighter;
+          font-size: 20px;
+          text-align: left;
+          line-height: 26px;
+        }
+
+        .contentc p {
+          font-weight: lighter;
+          font-family: l, 'Open Sans', Arial;
+          font-size: 20px;
+          line-height: 26px;
+        }
+
+        .section.s2 .col-4 img.m {
+          margin: 12px auto;
+          width:100%;
+        }
+      }
+
+      /* END Animation */
     </style>
-    <body>
-        <div class="t">
-            <div class="l d">
-                <a aria-label="Homepage" href="https://switchboard-plus.com/">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="143" height="22" fill="none"><path fill="#1E1E1E" d="m0 15.39 2.32-.22c.14.75.42 1.3.84 1.65.43.35 1.01.52 1.73.52.77 0 1.35-.15 1.74-.46.39-.32.58-.68.58-1.1 0-.27-.08-.5-.25-.68a2 2 0 0 0-.85-.5c-.28-.09-.91-.25-1.9-.49A6.6 6.6 0 0 1 1.5 13a2.9 2.9 0 0 1-.58-3.9c.35-.5.84-.88 1.48-1.14.64-.27 1.42-.4 2.32-.4 1.48 0 2.6.31 3.34.94A3.24 3.24 0 0 1 9.25 11l-2.39.1c-.1-.59-.32-1-.66-1.26-.33-.26-.83-.38-1.5-.38-.7 0-1.23.13-1.63.4a.82.82 0 0 0-.38.7c0 .28.12.5.36.7.3.24 1.03.49 2.19.75 1.16.27 2.01.54 2.57.82.55.28.99.66 1.3 1.15.32.49.48 1.09.48 1.8a3.37 3.37 0 0 1-2.16 3.09 7 7 0 0 1-2.57.41c-1.5 0-2.64-.33-3.44-.99A4.27 4.27 0 0 1 0 15.38Zm13.18 3.68-2.7-8.2h2.2l1.6 5.37 1.47-5.37h2.18l1.42 5.37L21 10.87h2.23l-2.75 8.2H18.3l-1.48-5.27-1.44 5.27h-2.2Zm11.24-9.32v-2h2.26v2h-2.26Zm0 9.32v-8.2h2.26v8.2h-2.26Zm8.51-8.2v1.73h-1.55v3.3c0 .67.01 1.07.04 1.18.03.1.1.2.2.27s.24.1.39.1c.2 0 .51-.06.9-.2l.2 1.68a4.6 4.6 0 0 1-1.79.33 3 3 0 0 1-1.1-.2c-.33-.13-.57-.3-.72-.5-.15-.22-.26-.5-.32-.86a10.1 10.1 0 0 1-.07-1.53V12.6h-1.04v-1.73h1.04V9.24l2.27-1.27v2.9h1.55Zm9.02 2.43-2.23.38a1.52 1.52 0 0 0-.52-.97c-.26-.21-.6-.32-1.03-.32-.56 0-1.01.19-1.35.56-.33.37-.5 1-.5 1.87 0 .98.17 1.66.51 2.07.34.4.8.6 1.38.6.43 0 .78-.12 1.05-.35.27-.24.47-.64.58-1.21l2.22.36a3.75 3.75 0 0 1-1.33 2.22c-.65.5-1.53.75-2.63.75a4.01 4.01 0 0 1-3-1.14 4.3 4.3 0 0 1-1.1-3.14 4.3 4.3 0 0 1 1.11-3.16 4.06 4.06 0 0 1 3.03-1.14c1.04 0 1.87.22 2.48.65a3.54 3.54 0 0 1 1.33 1.96Zm3.98-5.55v4.16a3.39 3.39 0 0 1 2.61-1.23c.52 0 1 .1 1.41.28a2.26 2.26 0 0 1 1.38 1.67c.08.35.12.9.12 1.63v4.81h-2.26v-4.33c0-.86-.05-1.4-.13-1.64a1.06 1.06 0 0 0-.46-.55c-.22-.14-.49-.2-.81-.2-.38 0-.72.08-1.01.26-.3.17-.51.44-.65.8-.14.34-.2.86-.2 1.55v4.11h-2.27V7.75h2.27Zm7.72 11.32V7.75h2.27v4.08a3.25 3.25 0 0 1 2.48-1.15c1.04 0 1.9.37 2.58 1.1.68.71 1.02 1.75 1.02 3.1 0 1.4-.35 2.48-1.04 3.24a3.3 3.3 0 0 1-5.2-.25v1.2h-2.1Zm2.25-4.28c0 .85.14 1.48.42 1.89.4.57.91.86 1.56.86.5 0 .92-.2 1.27-.6.36-.42.53-1.07.53-1.95 0-.93-.17-1.6-.53-2.02a1.7 1.7 0 0 0-1.36-.63c-.54 0-1 .2-1.35.61-.36.4-.54 1.02-.54 1.84Zm7.4.06c0-.72.2-1.42.56-2.09.37-.67.9-1.19 1.57-1.54a4.85 4.85 0 0 1 2.28-.54c1.3 0 2.35.4 3.18 1.21.83.8 1.24 1.83 1.24 3.06 0 1.24-.42 2.27-1.26 3.09a4.32 4.32 0 0 1-3.14 1.22c-.79 0-1.54-.17-2.25-.51a3.6 3.6 0 0 1-1.62-1.5 4.84 4.84 0 0 1-.55-2.4Zm2.33.12c0 .81.2 1.44.6 1.87.4.43.9.65 1.49.65s1.08-.22 1.48-.65c.4-.43.6-1.06.6-1.89 0-.8-.2-1.42-.6-1.85-.4-.43-.9-.65-1.48-.65-.6 0-1.09.22-1.5.65-.4.43-.6 1.06-.6 1.87Zm9.97-1.6-2.05-.35c.23-.8.62-1.39 1.19-1.77a4.5 4.5 0 0 1 2.51-.57c1 0 1.76.12 2.25.35.5.23.84.52 1.04.87.2.35.3 1 .3 1.94l-.02 2.54c0 .72.04 1.25.1 1.6.08.33.22.7.42 1.1H79.1a7.76 7.76 0 0 1-.3-.9 3.81 3.81 0 0 1-2.64 1.08 3 3 0 0 1-2.09-.69 2.25 2.25 0 0 1-.76-1.74 2.24 2.24 0 0 1 1.32-2.07c.41-.2 1.01-.36 1.8-.5a14.1 14.1 0 0 0 2.2-.54v-.22c0-.42-.11-.71-.33-.89-.21-.18-.62-.27-1.21-.27-.4 0-.72.08-.94.23-.23.15-.41.42-.55.8Zm3.03 1.76c-.3.1-.75.2-1.38.33-.63.13-1.04.26-1.23.38-.3.2-.44.46-.44.77 0 .3.11.56.35.79.24.22.54.33.9.33.4 0 .8-.13 1.17-.39.27-.2.45-.43.54-.72.06-.18.09-.54.09-1.06v-.43Zm6.62 3.94H83v-8.2h2.1v1.16c.36-.55.68-.91.97-1.09.29-.17.61-.26.98-.26.51 0 1.01.14 1.49.41l-.7 1.9a2.04 2.04 0 0 0-1.07-.36c-.31 0-.58.08-.8.25-.22.17-.4.47-.52.9-.13.45-.19 1.36-.19 2.76v2.53Zm12.1 0h-2.1v-1.2a3.38 3.38 0 0 1-2.67 1.39c-.98 0-1.83-.38-2.53-1.14A4.54 4.54 0 0 1 89 14.94c0-1.4.34-2.45 1.03-3.17a3.4 3.4 0 0 1 2.58-1.09c.95 0 1.78.38 2.48 1.15V7.75h2.26v11.32Zm-6.04-4.28c0 .88.13 1.51.38 1.9.37.57.88.85 1.53.85.52 0 .96-.2 1.33-.63.36-.43.55-1.06.55-1.9 0-.95-.18-1.63-.53-2.04a1.7 1.7 0 0 0-1.36-.63c-.54 0-1 .2-1.36.62-.36.4-.54 1.02-.54 1.83Zm8.69-4.12h2.1v1.2a3.16 3.16 0 0 1 2.66-1.4c1 .02 1.85.4 2.54 1.14a4.4 4.4 0 0 1 1.04 3.12c0 1.37-.35 2.44-1.05 3.2a3.32 3.32 0 0 1-3.82.86 4.33 4.33 0 0 1-1.2-.92V22H100V10.67Zm2.24 3.97c0 .92.19 1.6.57 2.04a1.78 1.78 0 0 0 2.7.06c.35-.4.53-1.07.53-2 0-.85-.18-1.5-.54-1.91a1.7 1.7 0 0 0-1.34-.63c-.55 0-1.01.21-1.38.62-.36.4-.54 1.01-.54 1.82Zm7.9 4.24V7.55h2.26v11.33h-2.26Zm10.22 0v-1.23a3.54 3.54 0 0 1-4.38 1.05 2.18 2.18 0 0 1-1-1.02c-.2-.44-.3-1.04-.3-1.81v-5.2h2.26v3.77c0 1.16.04 1.87.13 2.13.08.26.23.46.45.62.22.15.5.22.84.22.39 0 .73-.1 1.04-.3.3-.2.52-.46.63-.76.11-.3.17-1.04.17-2.21v-3.47h2.26v8.2h-2.1Zm3.65-2.34 2.27-.33c.1.42.3.74.59.96.3.22.7.33 1.24.33.58 0 1.02-.1 1.32-.31.2-.15.3-.34.3-.58 0-.17-.06-.3-.16-.41a2 2 0 0 0-.76-.29c-1.83-.38-2.98-.74-3.47-1.06a2.1 2.1 0 0 1-1.01-1.84c0-.71.29-1.31.87-1.8.59-.48 1.5-.72 2.72-.72a4.9 4.9 0 0 1 2.61.55c.57.36.96.9 1.18 1.62l-2.14.38a1.25 1.25 0 0 0-.52-.74 1.94 1.94 0 0 0-1.09-.25c-.6 0-1.02.08-1.27.24a.49.49 0 0 0-.04.84c.2.14.91.34 2.11.6 1.2.27 2.05.59 2.53.97.47.39.7.92.7 1.61 0 .76-.32 1.4-.97 1.94-.66.54-1.63.81-2.91.81a4.94 4.94 0 0 1-2.77-.68 3.14 3.14 0 0 1-1.33-1.84Zm12.11-5.98V6.63H132v-2.7h4.12V0h2.75v3.92H143v2.71h-4.13v3.93h-2.75Z"/></svg>
-                </a>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="container">
+        <div class="logo d">
+          <img src="m/l.svg" alt="Logo">
+        </div>
+        <div class="logo m">
+          <img src="m/logom.svg" class="light" alt="Logo">
+          <img src="m/sblightmobile.svg" class="dark" alt="Logo">
+        </div>
+        <a class="nas2 m" href="./quote/">Get a Quote</a>
+        <nav>
+          <a href="./">Home</a>
+          <a href="./about/">About</a>
+          <div class="dropdown">
+            <a href="#">Services</a>
+            <span class="dropdown-arrow m">&gt;</span>
+            <!-- Added span for '>' symbol -->
+            <div class="dropdown-content">
+              <div>
+                <a href="./call-management/"><h4>Advanced Call Management</h4></a>
+                <ul>
+                  <li><a href="./call-management/">Custom Call Flow</a></li>
+                  <li><a href="./call-management/">Call Forwarding & Routing</a></li>
+                  <li><a href="./call-management/">Call Logs & Caller ID</a></li>
+                  <li><a href="./call-management/">Call Park & Shared Lines</a></li>
+                  <li><a href="./call-management/">Do Not Disturb</a></li>
+                  <li><a href="./call-management/">Dial by Extension & Name</a></li>
+                  <li><a href="./call-management/">Ring Groups & Time-Based Routing</a></li>
+                </ul>
+                <a href="./voicemail/"><h4>Voicemail and Messaging</h4></a>
+                <ul>
+                  <li><a href="./voicemail/">Voicemail Messaging</a></li>
+                  <li><a href="./voicemail/">Voicemail Transcription</a></li>
+                  <li><a href="./voicemail/">Instant Messaging and Presence</a></li>
+                  <li><a href="./voicemail/">Intercom One-to-One</a></li>
+                </ul>
+              </div>
+              <div>
+                <a href="./faxing/"><h4>Faxing</h4></a>
+                <ul>
+                  <li><a href="./faxing/">Faxing Services</a></li>
+                </ul>
+                <a href="./contact-center/"><h4>Contact Center & Call Enhancements</h4></a>
+                <ul>
+                  <li><a href="./contact-center/">Auto Attendant/Virtual Receptionist</a></li>
+                  <li><a href="./contact-center/">Contact Center</a></li>
+                  <li><a href="./contact-center/">Find Me/Follow Me</a></li>
+                  <li><a href="./contact-center/">Dashboard/Heads-Up Display</a></li>
+                  <li><a href="./contact-center/">Music on Hold</a></li>
+                </ul>
+                <a href="./conferencing-and-collaboration/"><h4>Conferencing and Collaboration</h4></a>
+                <ul>
+                  <li><a href="./conferencing-and-collaboration/">Conferencing and Video Conferencing</a></li>
+                  <li><a href="./conferencing-and-collaboration/">Conference Room Management</a></li>
+                  <li><a href="./conferencing-and-collaboration/">One-on-One Video</a></li>
+                  <li><a href="./conferencing-and-collaboration/">Paging Groups</a></li>
+                </ul>
+              </div>
+              <div>
+                <a href="./security/"><h4>Security and Compliance</h4></a>
+                <ul>
+                  <li><a href="./security/">Encryption</a></li>
+                  <li><a href="./security/">Enhanced 911 Service</a></li>
+                  <li><a href="./security/">Caller-ID</a></li>
+                  <li><a href="./security/">Call Recording Advanced</a></li>
+                </ul>
+                <a href="./device-and-number-management/"><h4>Device and Number Management</h4></a>
+                <ul>
+                  <li><a href="./device-and-number-management/">IP Desk Phones</a></li>
+                  <li><a href="./device-and-number-management/">Softphones</a></li>
+                  <li><a href="./device-and-number-management/">Hot Desking</a></li>
+                  <li><a href="./device-and-number-management/">Local Phone Numbers</a></li>
+                  <li><a href="./device-and-number-management/">Toll-Free Numbers</a></li>
+                </ul>
+                <a class="m" href="./intl-rates/"><h4>International Call Rates</h4></a>
+              </div>
+              <a href="./intl-rates/" class="d intlnav">International Call Rates</a>
             </div>
-            <div class="l m">
-                <a aria-label="Homepage" href="https://switchboard-plus.com/">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="143" height="22" fill="none"><path fill="#1E1E1E" d="m0 15.39 2.32-.22c.14.75.42 1.3.84 1.65.43.35 1.01.52 1.73.52.77 0 1.35-.15 1.74-.46.39-.32.58-.68.58-1.1 0-.27-.08-.5-.25-.68a2 2 0 0 0-.85-.5c-.28-.09-.91-.25-1.9-.49A6.6 6.6 0 0 1 1.5 13a2.9 2.9 0 0 1-.58-3.9c.35-.5.84-.88 1.48-1.14.64-.27 1.42-.4 2.32-.4 1.48 0 2.6.31 3.34.94A3.24 3.24 0 0 1 9.25 11l-2.39.1c-.1-.59-.32-1-.66-1.26-.33-.26-.83-.38-1.5-.38-.7 0-1.23.13-1.63.4a.82.82 0 0 0-.38.7c0 .28.12.5.36.7.3.24 1.03.49 2.19.75 1.16.27 2.01.54 2.57.82.55.28.99.66 1.3 1.15.32.49.48 1.09.48 1.8a3.37 3.37 0 0 1-2.16 3.09 7 7 0 0 1-2.57.41c-1.5 0-2.64-.33-3.44-.99A4.27 4.27 0 0 1 0 15.38Zm13.18 3.68-2.7-8.2h2.2l1.6 5.37 1.47-5.37h2.18l1.42 5.37L21 10.87h2.23l-2.75 8.2H18.3l-1.48-5.27-1.44 5.27h-2.2Zm11.24-9.32v-2h2.26v2h-2.26Zm0 9.32v-8.2h2.26v8.2h-2.26Zm8.51-8.2v1.73h-1.55v3.3c0 .67.01 1.07.04 1.18.03.1.1.2.2.27s.24.1.39.1c.2 0 .51-.06.9-.2l.2 1.68a4.6 4.6 0 0 1-1.79.33 3 3 0 0 1-1.1-.2c-.33-.13-.57-.3-.72-.5-.15-.22-.26-.5-.32-.86a10.1 10.1 0 0 1-.07-1.53V12.6h-1.04v-1.73h1.04V9.24l2.27-1.27v2.9h1.55Zm9.02 2.43-2.23.38a1.52 1.52 0 0 0-.52-.97c-.26-.21-.6-.32-1.03-.32-.56 0-1.01.19-1.35.56-.33.37-.5 1-.5 1.87 0 .98.17 1.66.51 2.07.34.4.8.6 1.38.6.43 0 .78-.12 1.05-.35.27-.24.47-.64.58-1.21l2.22.36a3.75 3.75 0 0 1-1.33 2.22c-.65.5-1.53.75-2.63.75a4.01 4.01 0 0 1-3-1.14 4.3 4.3 0 0 1-1.1-3.14 4.3 4.3 0 0 1 1.11-3.16 4.06 4.06 0 0 1 3.03-1.14c1.04 0 1.87.22 2.48.65a3.54 3.54 0 0 1 1.33 1.96Zm3.98-5.55v4.16a3.39 3.39 0 0 1 2.61-1.23c.52 0 1 .1 1.41.28a2.26 2.26 0 0 1 1.38 1.67c.08.35.12.9.12 1.63v4.81h-2.26v-4.33c0-.86-.05-1.4-.13-1.64a1.06 1.06 0 0 0-.46-.55c-.22-.14-.49-.2-.81-.2-.38 0-.72.08-1.01.26-.3.17-.51.44-.65.8-.14.34-.2.86-.2 1.55v4.11h-2.27V7.75h2.27Zm7.72 11.32V7.75h2.27v4.08a3.25 3.25 0 0 1 2.48-1.15c1.04 0 1.9.37 2.58 1.1.68.71 1.02 1.75 1.02 3.1 0 1.4-.35 2.48-1.04 3.24a3.3 3.3 0 0 1-5.2-.25v1.2h-2.1Zm2.25-4.28c0 .85.14 1.48.42 1.89.4.57.91.86 1.56.86.5 0 .92-.2 1.27-.6.36-.42.53-1.07.53-1.95 0-.93-.17-1.6-.53-2.02a1.7 1.7 0 0 0-1.36-.63c-.54 0-1 .2-1.35.61-.36.4-.54 1.02-.54 1.84Zm7.4.06c0-.72.2-1.42.56-2.09.37-.67.9-1.19 1.57-1.54a4.85 4.85 0 0 1 2.28-.54c1.3 0 2.35.4 3.18 1.21.83.8 1.24 1.83 1.24 3.06 0 1.24-.42 2.27-1.26 3.09a4.32 4.32 0 0 1-3.14 1.22c-.79 0-1.54-.17-2.25-.51a3.6 3.6 0 0 1-1.62-1.5 4.84 4.84 0 0 1-.55-2.4Zm2.33.12c0 .81.2 1.44.6 1.87.4.43.9.65 1.49.65s1.08-.22 1.48-.65c.4-.43.6-1.06.6-1.89 0-.8-.2-1.42-.6-1.85-.4-.43-.9-.65-1.48-.65-.6 0-1.09.22-1.5.65-.4.43-.6 1.06-.6 1.87Zm9.97-1.6-2.05-.35c.23-.8.62-1.39 1.19-1.77a4.5 4.5 0 0 1 2.51-.57c1 0 1.76.12 2.25.35.5.23.84.52 1.04.87.2.35.3 1 .3 1.94l-.02 2.54c0 .72.04 1.25.1 1.6.08.33.22.7.42 1.1H79.1a7.76 7.76 0 0 1-.3-.9 3.81 3.81 0 0 1-2.64 1.08 3 3 0 0 1-2.09-.69 2.25 2.25 0 0 1-.76-1.74 2.24 2.24 0 0 1 1.32-2.07c.41-.2 1.01-.36 1.8-.5a14.1 14.1 0 0 0 2.2-.54v-.22c0-.42-.11-.71-.33-.89-.21-.18-.62-.27-1.21-.27-.4 0-.72.08-.94.23-.23.15-.41.42-.55.8Zm3.03 1.76c-.3.1-.75.2-1.38.33-.63.13-1.04.26-1.23.38-.3.2-.44.46-.44.77 0 .3.11.56.35.79.24.22.54.33.9.33.4 0 .8-.13 1.17-.39.27-.2.45-.43.54-.72.06-.18.09-.54.09-1.06v-.43Zm6.62 3.94H83v-8.2h2.1v1.16c.36-.55.68-.91.97-1.09.29-.17.61-.26.98-.26.51 0 1.01.14 1.49.41l-.7 1.9a2.04 2.04 0 0 0-1.07-.36c-.31 0-.58.08-.8.25-.22.17-.4.47-.52.9-.13.45-.19 1.36-.19 2.76v2.53Zm12.1 0h-2.1v-1.2a3.38 3.38 0 0 1-2.67 1.39c-.98 0-1.83-.38-2.53-1.14A4.54 4.54 0 0 1 89 14.94c0-1.4.34-2.45 1.03-3.17a3.4 3.4 0 0 1 2.58-1.09c.95 0 1.78.38 2.48 1.15V7.75h2.26v11.32Zm-6.04-4.28c0 .88.13 1.51.38 1.9.37.57.88.85 1.53.85.52 0 .96-.2 1.33-.63.36-.43.55-1.06.55-1.9 0-.95-.18-1.63-.53-2.04a1.7 1.7 0 0 0-1.36-.63c-.54 0-1 .2-1.36.62-.36.4-.54 1.02-.54 1.83Zm8.69-4.12h2.1v1.2a3.16 3.16 0 0 1 2.66-1.4c1 .02 1.85.4 2.54 1.14a4.4 4.4 0 0 1 1.04 3.12c0 1.37-.35 2.44-1.05 3.2a3.32 3.32 0 0 1-3.82.86 4.33 4.33 0 0 1-1.2-.92V22H100V10.67Zm2.24 3.97c0 .92.19 1.6.57 2.04a1.78 1.78 0 0 0 2.7.06c.35-.4.53-1.07.53-2 0-.85-.18-1.5-.54-1.91a1.7 1.7 0 0 0-1.34-.63c-.55 0-1.01.21-1.38.62-.36.4-.54 1.01-.54 1.82Zm7.9 4.24V7.55h2.26v11.33h-2.26Zm10.22 0v-1.23a3.54 3.54 0 0 1-4.38 1.05 2.18 2.18 0 0 1-1-1.02c-.2-.44-.3-1.04-.3-1.81v-5.2h2.26v3.77c0 1.16.04 1.87.13 2.13.08.26.23.46.45.62.22.15.5.22.84.22.39 0 .73-.1 1.04-.3.3-.2.52-.46.63-.76.11-.3.17-1.04.17-2.21v-3.47h2.26v8.2h-2.1Zm3.65-2.34 2.27-.33c.1.42.3.74.59.96.3.22.7.33 1.24.33.58 0 1.02-.1 1.32-.31.2-.15.3-.34.3-.58 0-.17-.06-.3-.16-.41a2 2 0 0 0-.76-.29c-1.83-.38-2.98-.74-3.47-1.06a2.1 2.1 0 0 1-1.01-1.84c0-.71.29-1.31.87-1.8.59-.48 1.5-.72 2.72-.72a4.9 4.9 0 0 1 2.61.55c.57.36.96.9 1.18 1.62l-2.14.38a1.25 1.25 0 0 0-.52-.74 1.94 1.94 0 0 0-1.09-.25c-.6 0-1.02.08-1.27.24a.49.49 0 0 0-.04.84c.2.14.91.34 2.11.6 1.2.27 2.05.59 2.53.97.47.39.7.92.7 1.61 0 .76-.32 1.4-.97 1.94-.66.54-1.63.81-2.91.81a4.94 4.94 0 0 1-2.77-.68 3.14 3.14 0 0 1-1.33-1.84Zm12.11-5.98V6.63H132v-2.7h4.12V0h2.75v3.92H143v2.71h-4.13v3.93h-2.75Z"/></svg>
-                </a>
-            </div>
-            <span class="m b">≡</span>
-            <div class="n d">
-                <a href="https://switchboard-plus.com/">Home</a>
+          </div>
+          <a href="./contact/">Contact</a>
+          <a class="nas2 d" href="./quote/">Get a Quote</a>
+        </nav>
+        <div class="wrapper m">
+          <div class="line half start"></div>
+          <div class="line"></div>
+          <div class="line half end"></div>
+        </div>
+      </div>
+      <div class="cert_burger">
+        <p>Certificates:</p>
+        <br>
+        <img src="m/icons-m.svg" alt="Certifications" loading="lazy" />
+      </div>
+    </div>
+    <div class="section s1">
+      <div class="scontent">
+        <img src="m/phone_mob.svg" class="m" alt="Image">
+        <h1>YOUR PHONES BUT <span>SMARTER</span>
+        </h1>
+        <p>Switchboard Plus is a <b>powerful <u>VoIP phone system</u>
+          </b> that gives you the features and flexibility you need to stay connected with your customers and colleagues. </p>
+      </div>
+      <img src="m/h.svg" class="d" alt="Image">
+      <div class="mobile_arrow m">
+        <a href="#features">
+          <img src="m/arrow_mobile_home.svg" loading="lazy" alt="Arrow">
+        </a>
+      </div>
+      <h2 id="features">Great Customer Experience Starts Here</h2>
+    </div>
+    <!-- Animation -->
+    <div class="hi_row" >
+      <div class="hi_col">
+        <div class="hi_content">
+          <!-- Video first -->
+          <div class="hi_video_container">
+            <video src="m/onphone.webm" muted autoplay loop playsinline webkit-playsinline disablePictureInPicture></video>
+          </div>
+          <!-- Static title visible below the video -->
+          <h2 class="hi_title_static">On the Phone</h2>
+          <p class="m">Experience seamless communication with SB+ phones. Streamline interactions, boost engagement, and keep your team connected-turning every call into a positive experience that strengthens your brand.</p>
+          <a class="m" href="./device-and-number-management/">Learn More &gt;</a>
+          <!-- Text container with title and text -->
+          <div class="hi_text_container">
+            <h2 class="hi_title">On the Phone</h2>
+            <div class="hi_text_content">
+              <p>Experience effortless and customer-focused communication with SB+ phones. Designed to streamline every interaction, we enhance customer engagement, optimize call flow, and keep your team seamlessly connected-making each call a positive experience that strengthens your brand. <a href="./device-and-number-management/"> Find out More ></a>
+              </p>
+              <div class="hi_icon_list">
                 <div>
-                    <a href="#" role="button">Services</a>
-                    <div>
-                        <a href="https://switchboard-plus.com/customer-experience">Customer Experience</a>
-                        <a href="https://switchboard-plus.com/faxing">Faxing & Internet Faxing</a>
-                        <a href="https://switchboard-plus.com/visibility">Complete Visibility</a>
-                        <a href="https://switchboard-plus.com/ai-call-analysis">AI Call Analysis</a>
-                        <a href="https://switchboard-plus.com/intl-pricing">International Dialing Rates</a>
-                        <a href="https://switchboard-plus.com/hipaa-compliant-phones">HIPAA Compliant Phones</a>
-                        <a href="https://switchboard-plus.com/food-button">Ordering Button</a>
-                        <a href="https://switchboard-plus.com/voicemail">Voicemail</a>
-                    </div>
+                  <img src="m/hi_1.svg" alt="Icon" loading="lazy">
+                  <p>Music and Messages on hold</p>
                 </div>
-                <a href="https://switchboard-plus.com/trust">Trust</a>
-                <a href="#contact" role="button">Contact</a>
-            </div>
-        </div>
-        <div class="s g fr">
-            <div class="c5">
                 <div>
-                    <h1>YOUR PHONES<br>BUT <span>SMARTER.</span></h1>
-                    <p>
-                        Leverage Cloud PBX to more effectively onboard employees, manage and scale your voice services.
-                    </p>
-                    <a href="#" class="mb" role="button">Services</a>
-                    <a href="#" class="lmb" role="button">Learn More</a>
+                  <img src="m/hi_2.svg" alt="Icon" loading="lazy">
+                  <p>Multi-level IVR Attendant </p>
                 </div>
-            </div>
-            <div class="c7">
-                <img class="d" src="m/a1.webp" width="2370" height="2223" style="height:auto !important" alt="Home Main Image" />
-            </div>
-			<div class="c6 m">
-				<img class="m" src="m/hm.webp" width="1076" height="1054" style="height: auto !important" alt="Home Main Image" />
-			</div>
-        </div>
-        <div class="s g sd d">
-            <img loading="lazy" src="m/s1.svg" width="1382" height="374" style="height: auto !important" alt="Switchboard Plus image" />
-        </div>
-        <div class="s g sd m">
-            <img loading="lazy" src="m/s1m.svg" alt="Switchboard Plus image" />
-            <h2>ALL YOUR CALLS AND NOTIFICATIONS IN ONE PLACE</h2>
-            <p>With Switchboard Plus, you can easily manage your calls and voicemail, and you can even integrate it with your CRM system to get even more out of your phone system. This can help you save time and be more productive.</p>
-        </div>
-        <div class="s g tr">
-            <div class="c12">
-                <h2>WHAT WE PROVIDE</h2>
-                <p>Switchboard Plus offers a number of benefits to businesses of all sizes, including:</p>
-            </div>
-            <div class="c12">
-                <img loading="lazy" class="d" src="m/s2.svg" alt="Services Description" width="1259" height="432" style="height: auto !important" />
-                <img loading="lazy" class="m" src="m/s2m.svg" alt="Services Description" width="329" height="1134" style="height: auto !important"  />
-            </div>
-        </div>
-        <div class="s g fr">
-            <div class="c3 m">
-                <img loading="lazy" src="m/s3m.webp" alt="Switchboard icon" />
-            </div>
-            <div class="c6">
-                <h3>Switchboard Plus is a <span>powerful VoIP phone system</span> that gives you the <span>features and flexibility</span> you need to stay connected with your customers and colleagues.</h3>
-            </div>
-            <div class="c6 d">
-                <img loading="lazy" src="m/s3.webp" width="481" height="475" style="height: auto !important" alt="Switchboard icon" />
-            </div>
-        </div>
-        <div class="s g fi">
-            <div class="c12">
-                <div class="c6">
-                    <h3>Sustainability</h3>
-                    <p>Switchboard Plus is a cloud-based VoIP phone system, which means that it does not require any physical hardware to operate. This makes it a more environmentally sustainable option than traditional phone systems, which require a large amount of energy to power and cool.</p>
+                <div>
+                  <img src="m/hi_3.svg" alt="Icon" loading="lazy">
+                  <p>Indentify callers in</p>
                 </div>
-                <div class="c6">
-                    <img loading="lazy" src="m/s4.svg" alt="Services Diagram" height="292" width="383" style="height: auto !important"  />
+                <div>
+                  <img src="m/hi_4.svg" alt="Icon" loading="lazy">
+                  <p>Call Queues and Parking</p>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="s g si">
-            <div class="c6">
-                <img loading="lazy" src="m/s6.webp" alt="Check illustration" width="432" height="352" style="height: auto !important" />
+      </div>
+      <!-- Repeat for the other two columns -->
+      <div class="hi_col">
+        <div class="hi_content">
+          <div class="hi_video_container">
+            <video src="m/nextfax.webm" muted autoplay loop playsinline webkit-playsinline disablePictureInPicture></video>
+          </div>
+          <h2 class="hi_title_static">Faxing</h2>
+          <p class="m">Elevate your business communication with customizable call routing, seamless transfers, real-time dashboards, auto attendants, and advanced recording—powerful VoIP features, all without complex setups or IT dependence.</p>
+          <a class="m" href="./faxing/">Learn More &gt;</a>
+          <div class="hi_text_container">
+            <h2 class="hi_title">Faxing</h2>
+            <div class="hi_text_content">
+              <p>One of the many amazing features of Switchboard is our faxing and internet faxing features. Our faxing feature works well with any exisiting fax machines for those who prefer the machine compared to faxing through a computer. <a href="./faxing/"> Find out More ></a>
+              </p>
+              <div class="hi_icon_list">
+                <div>
+                  <img src="m/hi_5.svg" alt="Icon" loading="lazy">
+                  <p>Encrypted Fax</p>
+                </div>
+                <div>
+                  <img src="m/hi_6.svg" alt="Icon" loading="lazy">
+                  <p>Internet Faxing </p>
+                </div>
+                <div>
+                  <img src="m/hi_7.svg" alt="Icon" loading="lazy">
+                  <p>Secured and Innovative</p>
+                </div>
+              </div>
             </div>
-            <div class="c6">
-                <h3>We guarantee that we will lower your phone bill, or we will write you a $1,000 check for the time you spent.</h3>
-            </div>
+          </div>
         </div>
-        <div id="contact" class="s g cf">
-            <div class="c6">
-                <a href="tel:+18454448273"><h2>845-444-8273</h2></a>
-                <p class="bold">63 John Street #3 <br>Kingston, NY 12401</p>
-                <a href="mailto:hello@cgcg.biz">hello@cgcg.biz</a>
+      </div>
+      <div class="hi_col">
+        <div class="hi_content">
+          <div class="hi_video_container">
+            <video src="m/aivoice.webm" muted autoplay loop playsinline webkit-playsinline disablePictureInPicture></video>
+          </div>
+          <h2 class="hi_title_static">AI Voice Analysis</h2>
+          <p class="m">Analyze emotions and intent with precision: decode 53 language-driven emotions, 67 vocal cues, 37 facial movements, and 28 vocal expressions, revealing nuanced sentiments, dynamic reactions, and blended meanings in communication.</p>
+          <a class="m" href="./call-management/">Learn More &gt;</a>
+          <div class="hi_text_container">
+            <h2 class="hi_title">AI Voice Analysis</h2>
+            <div class="hi_text_content">
+              <p>The essence of human feelings extends beyond mere words - it resides within the nuances of sarcastic intonation, delicate facial gestures, empathetic winces of discomfort, laughter intertwined with unease, sighs signaling relief, and a plethora of other subtleties. We are here to assist in deciphering the unspoken. <a href="./call-management/"> Find out More ></a>
+              </p>
+              <div class="hi_icon_list">
+                <div>
+                  <img src="m/hi_8.svg" alt="Icon" loading="lazy">
+                  <p>Vocal call types</p>
+                </div>
+                <div>
+                  <img src="m/hi_9.svg" alt="Icon" loading="lazy">
+                  <p>Discover over 25 patterns of tune rhythm, and timbre </p>
+                </div>
+                <div>
+                  <img src="m/hi_10.svg" alt="Icon" loading="lazy">
+                  <p>Measure dynamic patterns in facial expression</p>
+                </div>
+                <div>
+                  <img src="m/hi_11.svg" alt="Icon" loading="lazy">
+                  <p>Differentiate 28 kinds of vocal expression</p>
+                </div>
+              </div>
             </div>
-            <div class="c6">
-                <form action="https://cgnew.wpengine.com/apis/cgcg/form/home/" method="POST">
-                    <input type="text" aria-label="Name" name="name" placeholder="Your Name">
-                    <input type="text" aria-label="Business Name" name="bname" placeholder="Business Name">
-                    <input type="tel" aria-label="Phone" name="phone" placeholder="Phone">
-                    <input type="email" aria-label="Email" name="email" placeholder="Email">
-                    <input type="text" aria-label="Message" name="message" placeholder="Message">
-                    <input type="submit" value="Send">
-                </form>
-            </div>
+          </div>
         </div>
-        <div class="s g fo">
-            <div class="c4">
+      </div>
+    </div>
+    <div class="section s2">
+      <div class="container">
+        <h2>Personalization is the Core of Our Solutions</h2>
+        <p class="big">We tailor our VoIP solutions to fit the unique needs of your business, ensuring every feature works seamlessly to enhance your communication workflow. From customized call routing to flexible device integration, our system is built around you.</p>
+        <div class="row benefits">
+          <div class="col-4">
+            <div class="benefit">
+              <div class="static_benefit">
+                <img src="m/shield_b.svg" alt="Safety" loading="lazy">
+                <h2>Safety</h2>
+              </div>
+              <p>Our PBX systems are user-friendly and fully HIPAA compliant, prioritizing data security and privacy to ensure your sensitive information is handled with the highest industry standards.</p>
             </div>
-            <div class="c4">
+          </div>
+          <div class="col-4">
+            <div class="benefit">
+              <div class="static_benefit money">
+                <img src="m/cost_b.svg" alt="Cost" loading="lazy">
+                <h2>Reduced Costs</h2>
+              </div>
+              <p>We offer a cost-effective phone system with a simple monthly subscription, giving you full access to its features without the need for a large upfront investment.</p>
             </div>
-            <div class="c4">
-                <p id="cc" style="font-size:14px;margin: 0;">© 2023 FileScience - All Rights Reserved</p>
+          </div>
+          <div class="col-4">
+            <div class="benefit">
+              <div class="static_benefit">
+                <img src="m/sustainable_b.svg" alt="Cost" loading="lazy">
+                <h2>Sustainable</h2>
+              </div>
+              <p>SwitchboardPlus is a cloud-based system that eliminates the need for hardware, offering an eco-friendly alternative to energy-intensive traditional phone systems.</p>
             </div>
+          </div>
         </div>
-        <script nonce="a34g29914">
-            document.getElementById("cc").innerText = "© " + new Date().getFullYear() + " Switchboard Plus - All Rights Reserved";
-            document.querySelector('.b').addEventListener('click', b);
-            function b() {
-                document.querySelector('.n').classList.toggle('d');
-                document.querySelector('.b').innerHTML = document.querySelector('.b').innerHTML == '≡' ? '×' : '≡';
+      </div>
+    </div>
+    <div class="section s3">
+      <div class="container">
+        <h2>Integrate it with your CRM, ERP, PMS and EMR systems</h2>
+        <img src="m/integrate.svg" alt="Integrate With your System" loading="lazy" />
+      </div>
+    </div>
+    <div class="section s4">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <h2>Complete Visibility to your Team Work</h2>
+            <img src="m/home_1.png" alt="Photo of a woman working" loading="lazy" />
+          </div>
+          <div class="col-6">
+            <div class="box1">
+              <div class="imgc">
+                <img src="m/clock.svg" alt="clock" loading="lazy" />
+              </div>
+              <div class="contentc">
+                <h3>Core Calling and Management</h3>
+                <p>If a user knows they will not be at their desk phone for a while, they can forward calls to their cell phone or any other numbers or extension.</p>
+              </div>
+            </div>
+            <div class="box1">
+              <div class="imgc">
+                <img src="m/puzzle.svg" alt="clock" loading="lazy" />
+              </div>
+              <div class="contentc">
+                <h3>Security and Compliance</h3>
+                <p>Have your company calls recorded automatically or through feature codes.</p>
+              </div>
+            </div>
+            <div class="box1">
+              <div class="imgc">
+                <img src="m/shield.svg" alt="clock" loading="lazy" />
+              </div>
+              <div class="contentc">
+                <h3>Conferencing and Collaboration</h3>
+                <p>See a detailed version of call logs. See where the call ended up, who it is from, if it was answered or not, how long the call went on, and more. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="guarentee">
+              <p>We <b>guarantee</b> that we will <b>lower your phone bill</b>, or <b>we will write you a $1,000 check</b> for the time you spent.</p>            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section s5" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <a href="tel:+18454448273">
+              <p>845-444-8273</p>
+            </a>
+            <p class="bold">63 John Street #3 <br>Kingston, NY 12401 </p>
+            <a href="mailto:connect@switchboard-plus.com">connect@switchboard-plus.com</a>
+          </div>
+          <div class="col-6">
+            <form action="https://cgnew.wpengine.com/apis/sb/home/" method="POST">
+              <input type="text" aria-label="Name" name="name" placeholder="Your Name">
+              <input type="text" aria-label="Business Name" name="bname" placeholder="Business Name">
+              <input type="tel" aria-label="Phone" name="phone" placeholder="Phone">
+              <input type="email" aria-label="Email" name="email" placeholder="Email">
+              <input type="text" aria-label="Message" name="message" placeholder="Message">
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section s6">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <img src="m/logoalt.svg" loading="lazy" alt="Logo" />
+          </div>
+          <div class="col-9">
+            <div class="inline-imgs d">
+              <img src="m/iso.svg" loading="lazy" alt="ISO" />
+              <img src="m/hipaa.svg" loading="lazy" alt="HIPAA" />
+              <img src="m/wfw.svg" loading="lazy" alt="Certified Carbon-Negative By Worldsfastest.com" />
+            </div>
+            <div class="inline-imgs m">
+              <img src="m/cert_mobile.svg" loading="lazy" alt="Certificates; ISO, HIPAA and Certified Carbon" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section s7 footermenu">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="../faxing/">Faxing </a></li>
+              <li><a href="../call-management/">Advanced Call Management</a></li>
+              <li><a href="../security/">Security and Compliance</a></li>
+              <li><a href="../contact-center/">Contact Center & Call Enhancements</a></li>
+              <li><a href="../device-and-number-management/">Device and Number Management</a></li>
+              <li><a href="../voicemail/">Voicemail and Messaging</a></li>
+              <li><a href="../conferencing-and-collaboration/">Conferencing and Collaboration</a></li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <h3>About</h3>
+            <ul>
+              <li><a href="../about/">About us</a></li>
+              <li><a href="../contact/">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <a href="tel:+18454448273"><p>845-444-8273</p></a>
+            <p class="bold">63 John Street #3 <br>Kingston, NY 12401 </p>
+            <a href="mailto:connect@switchboard-plus.com">connect@switchboard-plus.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const BurgerIcon = document.querySelector('.wrapper');
+        const nav = document.querySelector('.nav nav');
+        const navContainer = document.querySelector('.nav');
+        const wrapperMenu = document.querySelector('.wrapper');
+        if (BurgerIcon && nav && navContainer) {
+          BurgerIcon.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            navContainer.classList.toggle('open');
+            wrapperMenu.classList.toggle('open');
+            const isOpen = navContainer.classList.contains('open');
+            BurgerIcon.setAttribute('aria-expanded', isOpen);
+          });
+          // Allow toggling with Enter key for keyboard accessibility
+          BurgerIcon.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+              nav.classList.toggle('active');
+              navContainer.classList.toggle('open');
+              const isOpen = navContainer.classList.contains('open');
+              BurgerIcon.setAttribute('aria-expanded', isOpen);
             }
-        </script>
-    </body>
+          });
+        }
+      });
+      document.addEventListener('DOMContentLoaded', () => {
+        // Select the dropdown-arrow element
+        const dropdownArrow = document.querySelector('.dropdown-arrow');
+        const dropdownElement = document.querySelector('.dropdown');
+        // Select the < nav > element within the.nav container
+        const nav = document.querySelector('.nav'); // Adjust selector if necessary
+        // Ensure both elements exist
+        if (dropdownArrow && nav && window.innerWidth < 920) {
+          dropdownElement.addEventListener('click', (event) => {
+            // Check if the user clicked directly on an element that matches ".dropdown-content div a"
+            if (event.target.matches('.dropdown-content div a h4')) {
+              // Do nothing here so the default behavior (e.g., navigation) is preserved
+              return;
+            }
+            // Otherwise, run dropdown toggle behavior
+            event.preventDefault();
+            nav.classList.toggle('level2');
+            dropdownArrow.textContent = dropdownArrow.textContent === '>' ? '<' : '>';
+          });
+        }
+      });
+      document.addEventListener('click', e => e.target.matches('.logo img') && (window.location.href='./'));
+    </script>
+  </body>
 </html>

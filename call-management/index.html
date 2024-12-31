@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/sub.css">
+    <style>
+      /* Page Specific global */
+      /* Light Page */
+      body {
+        background: #F3F3F3;
+      }
+      a, p, h1, h2, h3, h4, ul, li, nav a {
+        color: #1C204E;
+      }
+      .wrapper .line {
+        background: #1c204e;
+      }
+      
+      .section.s1>img {
+        width: 100%;
+      }
+      .s1 {
+        color: white;
+        text-align: center;
+      }
+      .card {
+        width: 33.33%;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        padding: 12px;
+        border-radius: 12px;
+      }
+      .row.cards .col-12 {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+      }
+      .card .title {
+        display: flex;
+        font-family: b, 'Open Sans', Arial;
+        font-weight: bolder;
+        align-items: flex-start;
+      }
+      .title h2 {
+        font-size: 22px;
+        line-height: 28px;
+        margin-left: 12px;
+        margin-top: 0;
+        margin-bottom: 0;
+        align-self: center;
+      }
+      .card p {
+        font-size: 18px;
+        font-family: l, 'Open Sans', Arial;
+        line-height: 24px;
+      }
+      .title img {
+        width: 53px;
+      }
+
+      .col-4 .benefit:hover p {
+        max-height: 300px; /* adjust as needed */
+        opacity: 1;        /* optional, for smooth fade-in */
+      }
+
+      .s1 p {
+        font-size: 24px;
+        max-width: 930px;
+        margin: 0 auto;
+      }
+
+      /* Page Specific Mobile */
+      @media (max-width: 992px) {
+        h1 {
+          margin-top:10px;
+        }
+        .row.cards .col-12 {
+          flex-direction: column;
+        }
+        .card {
+          width: 100%;
+        }
+        .mobile_arrow.m {
+          margin-bottom: 64px;
+        }
+
+        .mobile_arrow.m img {
+          width: 48px;
+          margin-top: 6px;
+        }
+        .col-4 .benefit p {
+          max-height: unset !important;
+          overflow: hidden;
+          transition: max-height 0.3s ease, opacity 0.3s ease;
+          margin: 0;
+          opacity: 1; /* optional, for a smoother fade-in */
+          font-size: 20px;
+          text-align: left;
+          padding-top:12px;
+        }
+        .box1 .imgc {
+          flex: 0 0 10%;
+        }
+        .box1 .imgc img {
+          max-width: 33px;
+        }
+        .contentc p {
+          margin-top: 0;
+        }
+        .scontent img.m {
+          width: 100%;
+          height: 50vw;
+          min-width: 100%;
+        }
+
+        h1,
+        h1 span {
+          text-align: left;
+          font-size: 36px;
+          font-family: b;
+          max-width: 67%;
+        }
+
+        .scontent p,
+        .scontent p b,
+        .scontent p u {
+          font-family: l, 'Open Sans', Arial;
+          text-align: left;
+          text-decoration: none;
+          font-weight: lighter;
+        }
+        .inline-imgs {
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="container">
+        <div class="logo d">
+          <img src="../m/logoalt.svg" alt="Logo">
+        </div>
+        <div class="logo m">
+          <img src="../m/logom.svg" class="light" alt="Logo">
+          <img src="../m/logom.svg" class="dark" alt="Logo">
+        </div>
+        <a class="nas2 m" href="../quote/">Get a Quote</a>
+        <nav>
+          <a href="../">Home</a>
+          <a href="../about/">About</a>
+          <div class="dropdown">
+            <a href="#">Services</a>
+            <span class="dropdown-arrow m">&gt;</span>
+            <!-- Added span for '>' symbol -->
+            <div class="dropdown-content">
+              <div>
+                <a href="../call-management/"><h4>Advanced Call Management</h4></a>
+                <ul>
+                  <li><a href="../call-management/">Custom Call Flow</a></li>
+                  <li><a href="../call-management/">Call Forwarding & Routing</a></li>
+                  <li><a href="../call-management/">Call Logs & Caller ID</a></li>
+                  <li><a href="../call-management/">Call Park & Shared Lines</a></li>
+                  <li><a href="../call-management/">Do Not Disturb</a></li>
+                  <li><a href="../call-management/">Dial by Extension & Name</a></li>
+                  <li><a href="../call-management/">Ring Groups & Time-Based Routing</a></li>
+                </ul>
+                <a href="../voicemail/"><h4>Voicemail and Messaging</h4></a>
+                <ul>
+                  <li><a href="../voicemail/">Voicemail Messaging</a></li>
+                  <li><a href="../voicemail/">Voicemail Transcription</a></li>
+                  <li><a href="../voicemail/">Instant Messaging and Presence</a></li>
+                  <li><a href="../voicemail/">Intercom One-to-One</a></li>
+                </ul>
+              </div>
+              <div>
+                <a href="../faxing/"><h4>Faxing</h4></a>
+                <ul>
+                  <li><a href="../faxing/">Faxing Services</a></li>
+                </ul>
+                <a href="../contact-center/"><h4>Contact Center & Call Enhancements</h4></a>
+                <ul>
+                  <li><a href="../contact-center/">Auto Attendant/Virtual Receptionist</a></li>
+                  <li><a href="../contact-center/">Contact Center</a></li>
+                  <li><a href="../contact-center/">Find Me/Follow Me</a></li>
+                  <li><a href="../contact-center/">Dashboard/Heads-Up Display</a></li>
+                  <li><a href="../contact-center/">Music on Hold</a></li>
+                </ul>
+                <a href="../conferencing-and-collaboration/"><h4>Conferencing and Collaboration</h4></a>
+                <ul>
+                  <li><a href="../conferencing-and-collaboration/">Conferencing and Video Conferencing</a></li>
+                  <li><a href="../conferencing-and-collaboration/">Conference Room Management</a></li>
+                  <li><a href="../conferencing-and-collaboration/">One-on-One Video</a></li>
+                  <li><a href="../conferencing-and-collaboration/">Paging Groups</a></li>
+                </ul>
+              </div>
+              <div>
+                <a href="../security/"><h4>Security and Compliance</h4></a>
+                <ul>
+                  <li><a href="../security/">Encryption</a></li>
+                  <li><a href="../security/">Enhanced 911 Service</a></li>
+                  <li><a href="../security/">Caller-ID</a></li>
+                  <li><a href="../security/">Call Recording Advanced</a></li>
+                </ul>
+                <a href="../device-and-number-management/"><h4>Device and Number Management</h4></a>
+                <ul>
+                  <li><a href="../device-and-number-management/">IP Desk Phones</a></li>
+                  <li><a href="../device-and-number-management/">Softphones</a></li>
+                  <li><a href="../device-and-number-management/">Hot Desking</a></li>
+                  <li><a href="../device-and-number-management/">Local Phone Numbers</a></li>
+                  <li><a href="../device-and-number-management/">Toll-Free Numbers</a></li>
+                </ul>
+                <a class="m" href="../intl-rates/"><h4>International Call Rates</h4></a>
+              </div>
+              <a href="../intl-rates/" class="d intlnav">International Call Rates</a>
+            </div>
+          </div>
+          <a href="../contact/">Contact</a>
+          <a class="nas2 d" href="../quote/">Get a Quote</a>
+        </nav>
+        <div class="wrapper m">
+          <div class="line half start"></div>
+          <div class="line"></div>
+          <div class="line half end"></div>
+        </div>
+      </div>
+      <div class="cert_burger">
+        <p>Certificates:</p>
+        <br>
+        <img src="../m/icons-m.svg" alt="Certifications" loading="lazy" />
+      </div>
+    </div>
+    <div class="section s1">
+      <div class="scontent">
+        <h1>Advanced Call Management</span>
+        </h1>
+        <p>Our Advanced Call Management Suite provides everything your business needs to stay connected with customers and colleagues, no matter where you are. With flexible call handling and routing tools, this service is designed to streamline your communication flow, making every call efficient, organized, and responsive.</p>
+      </div>
+    </div>
+    <div class="section s2">
+      <div class="container">
+        <div class="row cards">
+          <div class="col-12">
+            <div class="card">
+              <div class="title">
+                  <img src="../m/acm-i1.svg" alt="Phone" />
+                  <h2>Custom Call Flow</h2>
+              </div>
+              <p>Create custom call paths with our easy-to-use Call Flow Editor, routing calls based on time, department, or other criteria to streamline communication.</p>
+            </div>
+            <div class="card">
+              <div class="title">
+                  <img src="../m/acm-i2.svg" alt="Phone" />
+                  <h2>Call Forwarding & Routing</h2>
+              </div>
+              <p>Direct calls to the right person with Smart Forwarding and Dynamic Routing, minimizing missed calls and optimizing efficiency.</p>
+            </div>
+            <div class="card">
+              <div class="title">
+                  <img src="../m/acm-i3.svg" alt="Phone" />
+                  <h2>Call Logs & Caller ID</h2>
+              </div>
+              <p>Track call histories and use Caller ID to prioritize and respond to calls effectively.</p>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card">
+              <div class="title">
+                  <img src="../m/acm-i4.svg" alt="Phone" />
+                  <h2>Call Park & Shared Lines</h2>
+              </div>
+              <p>Place calls on hold with Call Park, and use Shared Line Appearances for seamless team collaboration.</p>
+            </div>
+            <div class="card">
+              <div class="title">
+                  <img src="../m/acm-i5.svg" alt="Phone" />
+                  <h2>Ring Groups & Time-Based Routing</h2>
+              </div>
+              <p>Ring Groups ensure calls are answered promptly, while Time-Based Treatment customizes call handling by time or holiday.</p>
+            </div>
+            <div class="card">
+              <div class="title">
+                  <img src="../m/acm-i6.svg" alt="Phone" />
+                  <h2>Dial by Extension & Name</h2>
+              </div>
+              <p>Connect directly by dialing extensions or names for quick, accurate communication.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row mainfeatures">
+          <div class="col-6">
+            <img src="../m/callmanagement.png" alt="Image" />
+          </div>
+          <div class="col-6">
+            <div class="inline-box">
+              <div class="intro">
+                <img src="../m/acm-i7.svg" alt="Phone" />
+                <h2>Seamless Call Management</h2>
+              </div>
+              <p>With custom call flows, forwarding, and routing, every call is directed to the right place, minimizing disruptions and missed opportunities while ensuring efficient communication.</p>
+            </div>
+            <div class="inline-box">
+              <div class="intro">
+                <img src="../m/acm-i8.svg" alt="Phone" />
+                <h2>Enhanced Team Collaboration</h2>
+              </div>
+              <p>Features like Call Park, Shared Lines, and Ring Groups enable teams to work together effortlessly, making it easier to handle high call volumes and maintain exceptional service.</p>
+            </div>
+            <div class="inline-box">
+              <div class="intro">
+                <img src="../m/acm-i9.svg" alt="Phone" />
+                <h2>Improved Productivity and Flexibility</h2>
+              </div>
+              <p>Communicate instantly with Intercom One-to-One, which enables direct, one-on-one voice communication between team members. This feature is perfect for quick updates or urgent messages, delivering the immediacy of voice without needing to place a traditional call.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row learnmore">
+          <div class="col-12">
+            <h2>Advanced Security & Compliance for Your Peace of Mind</h2>
+            <p>Our VoIP system is built with top-notch security protocols, including call encryption and multi-level authentication, ensuring all your communications are secure and compliant with industry standards.</p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section s4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="guarentee">
+              <p>We <b>guarantee</b> that we will <b>lower your phone bill</b>, or <b>we will write you a $1,000 check</b> for the time you spent.</p>            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section s5" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <a href="tel:+18454448273">
+              <p>845-444-8273</p>
+            </a>
+            <p class="bold">63 John Street #3 <br>Kingston, NY 12401 </p>
+            <a href="mailto:connect@switchboard-plus.com">connect@switchboard-plus.com</a>
+          </div>
+          <div class="col-6">
+            <form action="https://cgnew.wpengine.com/apis/sb/home/" method="POST">
+              <input type="text" aria-label="Name" name="name" placeholder="Your Name">
+              <input type="text" aria-label="Business Name" name="bname" placeholder="Business Name">
+              <input type="tel" aria-label="Phone" name="phone" placeholder="Phone">
+              <input type="email" aria-label="Email" name="email" placeholder="Email">
+              <input type="text" aria-label="Message" name="message" placeholder="Message">
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section s6">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <img src="../m/logoalt.svg" loading="lazy" alt="Logo" />
+          </div>
+          <div class="col-9">
+            <div class="inline-imgs d">
+              <img src="../m/iso.svg" loading="lazy" alt="ISO" />
+              <img src="../m/hipaa.svg" loading="lazy" alt="HIPAA" />
+              <img src="../m/wfw.svg" loading="lazy" alt="Certified Carbon-Negative By Worldsfastest.com" />
+            </div>
+            <div class="inline-imgs m">
+              <img src="../m/cert_mobile.svg" loading="lazy" alt="Certificates; ISO, HIPAA and Certified Carbon" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section s7 footermenu">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="../faxing/">Faxing </a></li>
+              <li><a href="../call-management/">Advanced Call Management</a></li>
+              <li><a href="../security/">Security and Compliance</a></li>
+              <li><a href="../contact-center/">Contact Center & Call Enhancements</a></li>
+              <li><a href="../device-and-number-management/">Device and Number Management</a></li>
+              <li><a href="../voicemail/">Voicemail and Messaging</a></li>
+              <li><a href="../conferencing-and-collaboration/">Conferencing and Collaboration</a></li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <h3>About</h3>
+            <ul>
+              <li><a href="../about/">About us</a></li>
+              <li><a href="../contact/">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <a href="tel:+18454448273"><p>845-444-8273</p></a>
+            <p class="bold">63 John Street #3 <br>Kingston, NY 12401 </p>
+            <a href="mailto:connect@switchboard-plus.com">connect@switchboard-plus.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const BurgerIcon = document.querySelector('.wrapper');
+        const nav = document.querySelector('.nav nav');
+        const navContainer = document.querySelector('.nav');
+        const wrapperMenu = document.querySelector('.wrapper');
+        if (BurgerIcon && nav && navContainer) {
+          BurgerIcon.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            navContainer.classList.toggle('open');
+            wrapperMenu.classList.toggle('open');
+            const isOpen = navContainer.classList.contains('open');
+            BurgerIcon.setAttribute('aria-expanded', isOpen);
+          });
+          // Allow toggling with Enter key for keyboard accessibility
+          BurgerIcon.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+              nav.classList.toggle('active');
+              navContainer.classList.toggle('open');
+              const isOpen = navContainer.classList.contains('open');
+              BurgerIcon.setAttribute('aria-expanded', isOpen);
+            }
+          });
+        }
+      });
+      document.addEventListener('DOMContentLoaded', () => {
+        // Select the dropdown-arrow element
+        const dropdownArrow = document.querySelector('.dropdown-arrow');
+        const dropdownElement = document.querySelector('.dropdown');
+        // Select the < nav > element within the.nav container
+        const nav = document.querySelector('.nav'); // Adjust selector if necessary
+        // Ensure both elements exist
+        if (dropdownArrow && nav && window.innerWidth < 920) {
+          dropdownElement.addEventListener('click', (event) => {
+            // Check if the user clicked directly on an element that matches ".dropdown-content div a"
+            if (event.target.matches('.dropdown-content div a h4')) {
+              // Do nothing here so the default behavior (e.g., navigation) is preserved
+              return;
+            }
+            // Otherwise, run dropdown toggle behavior
+            event.preventDefault();
+            nav.classList.toggle('level2');
+            dropdownArrow.textContent = dropdownArrow.textContent === '>' ? '<' : '>';
+          });
+        }
+      });
+      document.addEventListener('click', e => e.target.matches('.logo img') && (window.location.href='../'));
+    </script>
+  </body>
+</html>

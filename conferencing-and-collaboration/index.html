@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/sub.css">
+    <style>
+            /* Page Specific global */
+      /* Light Page */
+      body {
+        background: #F3F3F3;
+      }
+      a, p, h1, h2, h3, h4, ul, li, nav a {
+        color: #1C204E;
+      }
+      .wrapper .line {
+        background: #1c204e;
+      }
+      
+      .section.s1>img {
+        width: 100%;
+      }
+      .s1 {
+        color: white;
+        text-align: center;
+      }
+      .row.internal {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;      
+        margin-bottom: 18px;
+      }
+      .row.internal > .col-6 {
+        flex: 1;
+        display: flex;
+        align-items: stretch;
+      }
+      .card {
+        display: flex;
+        gap: 12px;
+        padding: 20px;
+        background: white;
+        border-radius: 12px;
+        flex-direction: row;
+        flex: 1;
+
+      }
+      .cardcontent p {
+        font-size: 18px;
+        font-family: l, 'Open Sans', Arial;
+        font-weight: lighter;
+        line-height: 24px;
+      }
+      .cardimg {
+        flex: 0 0 48px;
+      }
+      .cardcontent {
+        flex: 0 0 calc(100% - 60px);
+      }
+      .cardimg img {
+        width: 100%;
+      }
+      .cardcontent h2 {
+        margin-top: 0;
+        line-height: 30px;
+        font-size: 24px;
+      }
+      /* Page Specific Mobile */
+      @media (max-width: 992px) {
+        h1 {
+          margin-top:10px;
+        }
+        h1,
+        h1 span {
+          text-align: left;
+          font-size: 36px;
+          font-family: b;
+          max-width: 67%;
+        }
+
+        .scontent p,
+        .scontent p b,
+        .scontent p u {
+          font-family: l, 'Open Sans', Arial;
+          text-align: left;
+          text-decoration: none;
+          font-weight: lighter;
+        }
+        .inline-imgs {
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="container">
+        <div class="logo d">
+          <img src="../m/logoalt.svg" alt="Logo">
+        </div>
+        <div class="logo m">
+          <img src="../m/logom.svg" class="light" alt="Logo">
+          <img src="../m/logom.svg" class="dark" alt="Logo">
+        </div>
+        <a class="nas2 m" href="../quote/">Get a Quote</a>
+        <nav>
+          <a href="../">Home</a>
+          <a href="../about/">About</a>
+          <div class="dropdown">
+            <a href="#">Services</a>
+            <span class="dropdown-arrow m">&gt;</span>
+            <!-- Added span for '>' symbol -->
+            <div class="dropdown-content">
+              <div>
+                <a href="../call-management/"><h4>Advanced Call Management</h4></a>
+                <ul>
+                  <li><a href="../call-management/">Custom Call Flow</a></li>
+                  <li><a href="../call-management/">Call Forwarding & Routing</a></li>
+                  <li><a href="../call-management/">Call Logs & Caller ID</a></li>
+                  <li><a href="../call-management/">Call Park & Shared Lines</a></li>
+                  <li><a href="../call-management/">Do Not Disturb</a></li>
+                  <li><a href="../call-management/">Dial by Extension & Name</a></li>
+                  <li><a href="../call-management/">Ring Groups & Time-Based Routing</a></li>
+                </ul>
+                <a href="../voicemail/"><h4>Voicemail and Messaging</h4></a>
+                <ul>
+                  <li><a href="../voicemail/">Voicemail Messaging</a></li>
+                  <li><a href="../voicemail/">Voicemail Transcription</a></li>
+                  <li><a href="../voicemail/">Instant Messaging and Presence</a></li>
+                  <li><a href="../voicemail/">Intercom One-to-One</a></li>
+                </ul>
+              </div>
+              <div>
+                <a href="../faxing/"><h4>Faxing</h4></a>
+                <ul>
+                  <li><a href="../faxing/">Faxing Services</a></li>
+                </ul>
+                <a href="../contact-center/"><h4>Contact Center & Call Enhancements</h4></a>
+                <ul>
+                  <li><a href="../contact-center/">Auto Attendant/Virtual Receptionist</a></li>
+                  <li><a href="../contact-center/">Contact Center</a></li>
+                  <li><a href="../contact-center/">Find Me/Follow Me</a></li>
+                  <li><a href="../contact-center/">Dashboard/Heads-Up Display</a></li>
+                  <li><a href="../contact-center/">Music on Hold</a></li>
+                </ul>
+                <a href="../conferencing-and-collaboration/"><h4>Conferencing and Collaboration</h4></a>
+                <ul>
+                  <li><a href="../conferencing-and-collaboration/">Conferencing and Video Conferencing</a></li>
+                  <li><a href="../conferencing-and-collaboration/">Conference Room Management</a></li>
+                  <li><a href="../conferencing-and-collaboration/">One-on-One Video</a></li>
+                  <li><a href="../conferencing-and-collaboration/">Paging Groups</a></li>
+                </ul>
+              </div>
+              <div>
+                <a href="../security/"><h4>Security and Compliance</h4></a>
+                <ul>
+                  <li><a href="../security/">Encryption</a></li>
+                  <li><a href="../security/">Enhanced 911 Service</a></li>
+                  <li><a href="../security/">Caller-ID</a></li>
+                  <li><a href="../security/">Call Recording Advanced</a></li>
+                </ul>
+                <a href="../device-and-number-management/"><h4>Device and Number Management</h4></a>
+                <ul>
+                  <li><a href="../device-and-number-management/">IP Desk Phones</a></li>
+                  <li><a href="../device-and-number-management/">Softphones</a></li>
+                  <li><a href="../device-and-number-management/">Hot Desking</a></li>
+                  <li><a href="../device-and-number-management/">Local Phone Numbers</a></li>
+                  <li><a href="../device-and-number-management/">Toll-Free Numbers</a></li>
+                </ul>
+                <a class="m" href="../intl-rates/"><h4>International Call Rates</h4></a>
+              </div>
+              <a href="../intl-rates/" class="d intlnav">International Call Rates</a>
+            </div>
+          </div>
+          <a href="../contact/">Contact</a>
+          <a class="nas2 d" href="../quote/">Get a Quote</a>
+        </nav>
+        <div class="wrapper m">
+          <div class="line half start"></div>
+          <div class="line"></div>
+          <div class="line half end"></div>
+        </div>
+      </div>
+      <div class="cert_burger">
+        <p>Certificates:</p>
+        <br>
+        <img src="../m/icons-m.svg" alt="Certifications" loading="lazy" />
+      </div>
+    </div>
+    <div class="section s1">
+      <div class="scontent">
+        <h1>Conferencing and Collaboration</h1>
+        <p>Manage in-person spaces with Conference Room Management to streamline scheduling and resources. For personal discussions, One-on-One Video provides direct, face-to-face interaction—perfect for quick updates. Finally, Paging Groups let you broadcast announcements or urgent news to multiple users simultaneously, ensuring everyone remains informed and aligned.</p>
+      </div>
+    </div>
+    <div class="section s2">
+      <div class="container">
+        <div class="row cards">
+          <div class="row internal">
+            <div class="col-6">
+              <div class="card">
+                <div class="cardimg">
+                  <img src="../m/conf-1.svg" alt="Image" />
+                </div>
+                <div class="cardcontent">
+                  <h2>Conferencing and Video Conferencing</h2>
+                  <p>Bring teams together with high-quality audio, video, and screen sharing, reducing travel costs and boosting collaboration.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card">
+                <div class="cardimg">
+                  <img src="../m/conf-2.svg" alt="Image" />
+                </div>
+                <div class="cardcontent">
+                  <h2>Paging Groups</h2>
+                  <p>Broadcast urgent announcements to select groups instantly, ensuring everyone stays informed and can respond promptly.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row internal">
+            <div class="col-6">
+              <div class="card">
+                <div class="cardimg">
+                  <img src="../m/conf-3.svg" alt="Image" />
+                </div>
+                <div class="cardcontent">
+                  <h2>One-on-One Video</h2>
+                  <p>Connect individually for quick updates or private conversations, fostering personal, face-to-face interactions that build trust.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card">
+                <div class="cardimg">
+                  <img src="../m/conf-4.svg" alt="Image" />
+                </div>
+                <div class="cardcontent">
+                  <h2>Conference Room Management</h2>
+                  <p>Streamline in-person meetings with intuitive room scheduling, preventing double bookings and keeping everyone on track.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mainfeatures">
+          <div class="col-6">
+            <div class="inline-box">
+              <div class="intro">
+                <img src="../m/conf-5.svg" loading="lazy" alt="icon" />
+                <h2>Boost Team Collaboration</h2>
+              </div>
+              <p>Conferencing (audio/video) and One-on-One Video keep your team connected, regardless of location, improving communication and decision-making.</p>
+            </div>
+            <div class="inline-box">
+              <div class="intro">
+                <img src="../m/conf-6.svg" loading="lazy" alt="icon" />
+                <h2>Enhance Organization</h2>
+              </div>
+              <p>Conference Room Management and Paging Groups streamline meetings and announcements, helping everyone stay informed and on schedule.</p>
+            </div>
+            <div class="inline-box">
+              <div class="intro">
+                <img src="../m/conf-7.svg" loading="lazy" alt="icon" />
+                <h2>Save Time and Costs</h2>
+              </div>
+              <p>By reducing travel needs and managing resources efficiently, your business operates more productively while cutting expenses.</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <img src="../m/conferencing-collab-main.png" alt="Image" />
+          </div>
+        </div>
+        <div class="row learnmore">
+          <div class="col-12">
+            <h2>Advanced Security & Compliance for Your Peace of Mind</h2>
+            <p>Our VoIP system is built with top-notch security protocols, including call encryption and multi-level authentication, ensuring all your communications are secure and compliant with industry standards.</p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section s4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="guarentee">
+              <p>We <b>guarantee</b> that we will <b>lower your phone bill</b>, or <b>we will write you a $1,000 check</b> for the time you spent.</p>            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section s5" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <a href="tel:+18454448273">
+              <p>845-444-8273</p>
+            </a>
+            <p class="bold">63 John Street #3 <br>Kingston, NY 12401 </p>
+            <a href="mailto:connect@switchboard-plus.com">connect@switchboard-plus.com</a>
+          </div>
+          <div class="col-6">
+            <form action="https://cgnew.wpengine.com/apis/sb/home/" method="POST">
+              <input type="text" aria-label="Name" name="name" placeholder="Your Name">
+              <input type="text" aria-label="Business Name" name="bname" placeholder="Business Name">
+              <input type="tel" aria-label="Phone" name="phone" placeholder="Phone">
+              <input type="email" aria-label="Email" name="email" placeholder="Email">
+              <input type="text" aria-label="Message" name="message" placeholder="Message">
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section s6">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <img src="../m/logoalt.svg" loading="lazy" alt="Logo" />
+          </div>
+          <div class="col-9">
+            <div class="inline-imgs d">
+              <img src="../m/iso.svg" loading="lazy" alt="ISO" />
+              <img src="../m/hipaa.svg" loading="lazy" alt="HIPAA" />
+              <img src="../m/wfw.svg" loading="lazy" alt="Certified Carbon-Negative By Worldsfastest.com" />
+            </div>
+            <div class="inline-imgs m">
+              <img src="../m/cert_mobile.svg" loading="lazy" alt="Certificates; ISO, HIPAA and Certified Carbon" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section s7 footermenu">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="../faxing/">Faxing </a></li>
+              <li><a href="../call-management/">Advanced Call Management</a></li>
+              <li><a href="../security/">Security and Compliance</a></li>
+              <li><a href="../contact-center/">Contact Center & Call Enhancements</a></li>
+              <li><a href="../device-and-number-management/">Device and Number Management</a></li>
+              <li><a href="../voicemail/">Voicemail and Messaging</a></li>
+              <li><a href="../conferencing-and-collaboration/">Conferencing and Collaboration</a></li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <h3>About</h3>
+            <ul>
+              <li><a href="../about/">About us</a></li>
+              <li><a href="../contact/">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <a href="tel:+18454448273"><p>845-444-8273</p></a>
+            <p class="bold">63 John Street #3 <br>Kingston, NY 12401 </p>
+            <a href="mailto:connect@switchboard-plus.com">connect@switchboard-plus.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const BurgerIcon = document.querySelector('.wrapper');
+        const nav = document.querySelector('.nav nav');
+        const navContainer = document.querySelector('.nav');
+        const wrapperMenu = document.querySelector('.wrapper');
+        if (BurgerIcon && nav && navContainer) {
+          BurgerIcon.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            navContainer.classList.toggle('open');
+            wrapperMenu.classList.toggle('open');
+            const isOpen = navContainer.classList.contains('open');
+            BurgerIcon.setAttribute('aria-expanded', isOpen);
+          });
+          // Allow toggling with Enter key for keyboard accessibility
+          BurgerIcon.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+              nav.classList.toggle('active');
+              navContainer.classList.toggle('open');
+              const isOpen = navContainer.classList.contains('open');
+              BurgerIcon.setAttribute('aria-expanded', isOpen);
+            }
+          });
+        }
+      });
+      document.addEventListener('DOMContentLoaded', () => {
+        // Select the dropdown-arrow element
+        const dropdownArrow = document.querySelector('.dropdown-arrow');
+        const dropdownElement = document.querySelector('.dropdown');
+        // Select the < nav > element within the.nav container
+        const nav = document.querySelector('.nav'); // Adjust selector if necessary
+        // Ensure both elements exist
+        if (dropdownArrow && nav && window.innerWidth < 920) {
+          dropdownElement.addEventListener('click', (event) => {
+            // Check if the user clicked directly on an element that matches ".dropdown-content div a"
+            if (event.target.matches('.dropdown-content div a h4')) {
+              // Do nothing here so the default behavior (e.g., navigation) is preserved
+              return;
+            }
+            // Otherwise, run dropdown toggle behavior
+            event.preventDefault();
+            nav.classList.toggle('level2');
+            dropdownArrow.textContent = dropdownArrow.textContent === '>' ? '<' : '>';
+          });
+        }
+      });
+      document.addEventListener('click', e => e.target.matches('.logo img') && (window.location.href='../'));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+
+.row.learnmore h2 {
+    font-size: 50px;
+    text-align: center;
+    font-family: b, 'Open Sans', Arial;
+    font-weight: bolder;
+    line-height: 60px;
+    color: #685ABC;
+    margin-bottom: 0;
+  }
+  .row.learnmore p {
+    font-size: 20px;
+    font-family: l, 'Open Sans', Arial;
+    font-weight: lighter;
+    line-height: 24px;
+    text-align: center;
+    color: #1C204E;
+    margin-top: 17px;
+  }
+  
+  .row.learnmore a {
+    text-decoration: none;
+    padding: 15px;
+    background: #685ABC;
+    color:white;
+    font-family: b, 'Open Sans', Arial;
+    font-weight:bolder;
+    font-size:20px;
+    line-height: 24px;
+    width: 210px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+  }
+  .row.learnmore .col-12 {
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 840px
+  }
+    
+.row.mainfeatures {
+    padding-top: 64px;
+    display: flex;
+    align-items: center;
+  }
+  .inline-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .intro {
+    display: flex;
+    flex-direction: row;
+  }
+  .intro img {
+    width: 52px;
+    margin-right: 10px;
+    height: 52px;
+    align-self: center;
+  }
+  .intro h2 {
+    font-size: 28px;
+    font-family: b, 'Open Sans', Arial;
+    font-weight: bolder;
+    line-height: 28px;
+  }
+  .inline-box p {
+    font-family: l, 'Open Sans', Arial;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 0;
+    padding-right: 24px;
+  }
+  .col-6.hasimg {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.scontent p {
+    font-size: 20px;
+    font-family: l, 'Open Sans', Arial;
+    font-weight: lighter;
+    line-height: 26px;
+    max-width: 840px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+  }
+  .s1 p {
+    font-size: 20px;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  .scontent h1 {
+    margin-top: 96px;
+    
+  }
+  .scontent {
+    padding-bottom: 64px;
+  }
+
+
+
+
+
+  @media screen and (max-width: 992px) {
+    .scontent h1 {
+        margin-top: 36px;
+      }
+      .row.learnmore h2, .row.learnmore p {
+        text-align: center;
+    }
+    .row.learnmore h2 {
+        font-size:36px;
+        line-height: 36px;
+    }
+  }
