@@ -186,6 +186,7 @@
     </style>
   </head>
   <body>
+    <a class="skip-link" href="#MainContent">Skip to main content</a>
     <div class="nav">
       <div class="container">
         <div class="logo d">
@@ -200,7 +201,7 @@
           <a href="../">Home</a>
           <a href="../about/">About</a>
           <div class="dropdown">
-            <a href="#">Services</a>
+            <a href="#" role="button">Services</a>
             <span class="dropdown-arrow m">&gt;</span>
             <!-- Added span for '>' symbol -->
             <div class="dropdown-content">
@@ -280,7 +281,7 @@
         <img src="../m/icons-m.svg" alt="Certifications" loading="lazy" />
       </div>
     </div>
-    <div class="section s1">
+    <div class="section s1" id="MainContent">
       <div class="scontent">
         <h1>Security and Compliance</h1>
         <p>We integrate robust protocols to safeguard sensitive data, maintain reliable emergency support, and comply with regulatory requirements, giving your business the confidence to communicate freely and securely.</p>
@@ -517,7 +518,7 @@
           });
         }
       });
-      
+
       document.addEventListener('DOMContentLoaded', function() {
         // 1. Get all links in the .selectors
         const selectorLinks = document.querySelectorAll('.selectors a');
