@@ -255,79 +255,6 @@
               <table id="table">
   
               </table>
-              <script>
-                  function readTextFile(file, callback) {
-                  var rawFile = new XMLHttpRequest();
-                  rawFile.overrideMimeType("application/json");
-                  rawFile.open("GET", file, true);
-                  rawFile.onreadystatechange = function() {
-                      if (rawFile.readyState === 4 && rawFile.status == "200") {
-                          callback(rawFile.responseText);
-                      }
-                  }
-                  rawFile.send(null);
-              }
-  
-              // define global variabel list
-              var list;
-              readTextFile("../intl.json", function(text){
-                  // assign value to list and make it globally accessible
-                  list = JSON.parse(text);
-                  //const list = JSON.parse(text);
-                  var selectElement = document.getElementById('countryDropDown');
-                  for(var i = 0; i < list.length; i++) {
-                      selectElement.add(new Option(Object.keys(list[i])[0], Object.keys(list[i])[0]));
-                  }
-                  console.log(list);
-              });
-              function GenerateTable() {
-                  var selectElement = document.getElementById('countryDropDown');
-                  var selectedCountry = selectElement.options[selectElement.selectedIndex].value;
-                  var table = document.getElementById('table');
-                  table.innerHTML = '';
-                  var tr = document.createElement('tr');
-                  var th = document.createElement('th');
-                  th.innerHTML = 'Country';
-                  tr.appendChild(th);
-                  th = document.createElement('th');
-                  th.innerHTML = 'Type';
-                  tr.appendChild(th);
-                  th = document.createElement('th');
-                  th.innerHTML = 'Rate Per Minute';
-                  tr.appendChild(th);
-                  table.appendChild(tr);
-                  for(var i = 0; i < list.length; i++) {
-                      if(Object.keys(list[i])[0] == selectedCountry) {
-                          console.log(list[i][selectedCountry]);
-                          // create table row
-                          var tr = document.createElement('tr');
-                          // put country name with rowspan equal to object length
-                          var td = document.createElement('td');
-                          td.innerHTML = Object.keys(list[i])[0];
-                          td.rowSpan = Object.keys(list[i])[0].length;
-                          tr.appendChild(td);
-                          // loop through other elements in the object and add them accordingly
-                          console.log(Object.keys(list[i][selectedCountry]).length);
-                          for(var j = 0; j < Object.keys(list[i][selectedCountry]).length; j++) {
-                              console.log(j);
-                              var td = document.createElement('td');
-                              console.log(Object.keys(list[i][selectedCountry])[j]);
-                              td.innerHTML = Object.keys(list[i][selectedCountry])[j];
-                              
-                              tr.appendChild(td);
-                              td = document.createElement('td');
-                              console.log(list[i][selectedCountry][Object.keys(list[i][selectedCountry])[j]].cost);
-                              td.innerHTML = list[i][selectedCountry][Object.keys(list[i][selectedCountry])[j]].cost;
-                              tr.appendChild(td);
-                              table.appendChild(tr);
-                              tr = document.createElement('tr');
-                          }
-                      }
-                  }
-              }
-              // add event to call function when select element is changed
-              document.getElementById('countryDropDown').addEventListener('change', GenerateTable);
-              </script>
             </div>
           </div>
 
@@ -417,7 +344,82 @@
         </div>
       </div>
     </div>
-    <script>
+    <script nonce="a34g29914">
+
+function readTextFile(file, callback) {
+                  var rawFile = new XMLHttpRequest();
+                  rawFile.overrideMimeType("application/json");
+                  rawFile.open("GET", file, true);
+                  rawFile.onreadystatechange = function() {
+                      if (rawFile.readyState === 4 && rawFile.status == "200") {
+                          callback(rawFile.responseText);
+                      }
+                  }
+                  rawFile.send(null);
+              }
+  
+              // define global variabel list
+              var list;
+              readTextFile("../intl.json", function(text){
+                  // assign value to list and make it globally accessible
+                  list = JSON.parse(text);
+                  //const list = JSON.parse(text);
+                  var selectElement = document.getElementById('countryDropDown');
+                  for(var i = 0; i < list.length; i++) {
+                      selectElement.add(new Option(Object.keys(list[i])[0], Object.keys(list[i])[0]));
+                  }
+                  console.log(list);
+              });
+              function GenerateTable() {
+                  var selectElement = document.getElementById('countryDropDown');
+                  var selectedCountry = selectElement.options[selectElement.selectedIndex].value;
+                  var table = document.getElementById('table');
+                  table.innerHTML = '';
+                  var tr = document.createElement('tr');
+                  var th = document.createElement('th');
+                  th.innerHTML = 'Country';
+                  tr.appendChild(th);
+                  th = document.createElement('th');
+                  th.innerHTML = 'Type';
+                  tr.appendChild(th);
+                  th = document.createElement('th');
+                  th.innerHTML = 'Rate Per Minute';
+                  tr.appendChild(th);
+                  table.appendChild(tr);
+                  for(var i = 0; i < list.length; i++) {
+                      if(Object.keys(list[i])[0] == selectedCountry) {
+                          console.log(list[i][selectedCountry]);
+                          // create table row
+                          var tr = document.createElement('tr');
+                          // put country name with rowspan equal to object length
+                          var td = document.createElement('td');
+                          td.innerHTML = Object.keys(list[i])[0];
+                          td.rowSpan = Object.keys(list[i])[0].length;
+                          tr.appendChild(td);
+                          // loop through other elements in the object and add them accordingly
+                          console.log(Object.keys(list[i][selectedCountry]).length);
+                          for(var j = 0; j < Object.keys(list[i][selectedCountry]).length; j++) {
+                              console.log(j);
+                              var td = document.createElement('td');
+                              console.log(Object.keys(list[i][selectedCountry])[j]);
+                              td.innerHTML = Object.keys(list[i][selectedCountry])[j];
+                              
+                              tr.appendChild(td);
+                              td = document.createElement('td');
+                              console.log(list[i][selectedCountry][Object.keys(list[i][selectedCountry])[j]].cost);
+                              td.innerHTML = list[i][selectedCountry][Object.keys(list[i][selectedCountry])[j]].cost;
+                              tr.appendChild(td);
+                              table.appendChild(tr);
+                              tr = document.createElement('tr');
+                          }
+                      }
+                  }
+              }
+              // add event to call function when select element is changed
+              document.getElementById('countryDropDown').addEventListener('change', GenerateTable);
+
+
+
       document.addEventListener('DOMContentLoaded', () => {
         const BurgerIcon = document.querySelector('.wrapper');
         const nav = document.querySelector('.nav nav');
