@@ -765,3 +765,35 @@ input::-webkit-input-placeholder {
     top: 0;
   }
   
+
+
+  /* Chrome, Safari, Opera */
+::-webkit-input-placeholder {
+    color: #fff;
+  }
+  
+  /* Firefox 19+ (prefix variants) */
+  :-moz-placeholder {
+    color: #fff;
+    opacity: 1; /* ensure placeholder isn’t faded in Firefox */
+  }
+  ::-moz-placeholder {
+    color: #fff;
+    opacity: 1;
+  }
+  
+  /* Internet Explorer 10-11 */
+  :-ms-input-placeholder {
+    color: #fff;
+  }
+  
+  /* Microsoft Edge */
+  ::-ms-input-placeholder {
+    color: #fff;
+  }
+  
+  /* Standard modern browsers */
+  ::placeholder {
+    color: #fff;
+  }
+  
