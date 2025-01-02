@@ -104,6 +104,7 @@ nav a:hover {
     min-width: 800px;
     width: 100vw;
     left:0;
+    margin-top: 18px;
 }
 
 nav ul a {
@@ -124,6 +125,7 @@ nav a,nav h4 {
     margin: 10px 0;
     font-family: b, 'Open Sans', Arial;
     font-size: 24px;
+    margin-top: 24px;
 }
 
 nav>.dropdown>a,nav>a {
@@ -148,8 +150,8 @@ nav>.dropdown>a,nav>a {
     display: block;
     font-family: l, 'Open Sans', Arial;
     font-weight: lighter;
-    line-height: 22px;
-    font-size: 20px;
+    line-height: 24px;
+    font-size: 18px;
     margin-bottom: 8px;
 
 }
@@ -163,8 +165,14 @@ nav>.dropdown>a,nav>a {
 }
 
 .dropdown-content>div {
-    width: 33%;
-    float: left
+    width: 30%;
+    float: left;
+    margin-left: 1.6%;
+    margin-right: 1.6%;
+    display: block;
+    margin-bottom: 48px;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 .d.intlnav {
 	position: relative;
@@ -177,9 +185,10 @@ nav>.dropdown>a,nav>a {
 	align-items: center;
 	font-family: b, 'Open Sans', Arial;
 	font-weight: lighter;
-	font-size: 36px;
+	font-size: 28px;
 	color: #fff;
-	line-height: 36px;
+	line-height: 30px;
+    margin-top:12px;
 }
 .nav {
     margin-top: 32px
@@ -528,6 +537,9 @@ nav>.dropdown>a,nav>a {
 
     .nav .container {
         flex-flow: row
+    }
+    .dropdown > a {
+        padding-bottom: 24px;
     }
     .scontent {
         padding-top: 40px;
