@@ -164,16 +164,7 @@ nav>.dropdown>a,nav>a {
     display: block
 }
 
-.dropdown-content>div {
-    width: 30%;
-    float: left;
-    margin-left: 1.6%;
-    margin-right: 1.6%;
-    display: block;
-    margin-bottom: 32px;
-    padding-top: 48px;
-    padding-bottom: 48px;
-}
+
 .d.intlnav {
 	position: relative;
 	display: flex;
@@ -540,6 +531,16 @@ nav>.dropdown>a,nav>a {
     }
     .dropdown > a {
         padding-bottom: 24px;
+    }
+    .dropdown-content>div {
+        width: 30%;
+        float: left;
+        margin-left: 1.6%;
+        margin-right: 1.6%;
+        display: block;
+        margin-bottom: 32px;
+        padding-top: 48px;
+        padding-bottom: 48px;
     }
     .scontent {
         padding-top: 40px;
