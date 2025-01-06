@@ -461,15 +461,21 @@ nav>.dropdown>a,nav>a {
         font-size: 28px;
         line-height: 28px
     }
-
     .section.s5 .row .col-6>a {
         text-align: left;
         display: block;
         font-family: l,"Open Sans",Arial;
         font-weight: lighter;
-        font-size: 28px
+        font-size: 20px;
+        line-height: 28px;
     }
-
+    .section.s5 .row .col-6:nth-of-type(1) {
+        margin-bottom: 48px;
+      }
+      .section.s5 .row .col-6:nth-of-type(1) p {
+        margin-bottom: 16px !important;
+        margin-top: 16px;
+      }
     input::placeholder {
         color: #2b354e;
         font-size: 22px;
