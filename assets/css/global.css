@@ -164,23 +164,6 @@ nav>.dropdown>a,nav>a {
     display: block
 }
 
-
-.d.intlnav {
-	position: relative;
-	display: flex;
-	width: 100%;
-	text-align: center;
-	justify-content: center;
-	align-content: center;
-	background: #7681F7;
-	align-items: center;
-	font-family: b, 'Open Sans', Arial;
-	font-weight: lighter;
-	font-size: 28px;
-	color: #fff;
-	line-height: 30px;
-    margin-top:12px;
-}
 .nav {
     margin-top: 32px
 }
@@ -196,12 +179,13 @@ nav>.dropdown>a,nav>a {
     margin: 0;
     color:#1C204E;
     text-align: center;
-    line-height: 60px;
+    line-height: 58px;
   }
   .guarentee {
     padding: 70px;
     background: #FFC727;
     border-radius: 28px;
+    margin-bottom: 48px;
   }
   .guarentee p b {
     font-weight: bold;
