@@ -505,6 +505,12 @@ nav>.dropdown>a,nav>a {
     .guarentee .m {
         margin: 0 auto;
     }
+    .footermenu .col-4:nth-of-type(3) * {
+        font-family: b, 'Open Sans', Arial;
+        font-weight: bolder;
+        font-size: 20px;
+        line-height: 28px;
+    }
 }
 
 @media (min-width:992px) {
@@ -549,6 +555,12 @@ nav>.dropdown>a,nav>a {
     .section.s5 {
         padding-top: 48px;
         padding-bottom: 48px;
+    }
+    .footermenu .col-4:nth-of-type(3) * {
+        font-family: b, 'Open Sans', Arial;
+        font-weight: bolder;
+        font-size: 24px;
+        line-height: 32px;
     }
 }
 
@@ -716,7 +728,7 @@ nav>.dropdown>a,nav>a {
     list-style: none;
     padding-left: 0;
   }
-
+  
   .section.footermenu .row {
     display: flex;
     align-items: flex-start;
