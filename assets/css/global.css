@@ -799,4 +799,7 @@ input::-webkit-input-placeholder {
   ::placeholder {
     color: #2b354e;
   }
+  input::placeholder {
+    color: #2b354e !important
+  }
   
