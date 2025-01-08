@@ -106,6 +106,7 @@
   @media screen and (max-width: 992px) {
     .scontent h1 {
         margin-top: 36px;
+        line-height: 36px;
       }
       .row.learnmore h2, .row.learnmore p {
         text-align: center;
