@@ -772,31 +772,31 @@ input::-webkit-input-placeholder {
 
   /* Chrome, Safari, Opera */
 ::-webkit-input-placeholder {
-    color: #fff;
+    color: #2b354e;
   }
   
   /* Firefox 19+ (prefix variants) */
   :-moz-placeholder {
-    color: #fff;
+    color: #2b354e;
     opacity: 1; /* ensure placeholder isn’t faded in Firefox */
   }
   ::-moz-placeholder {
-    color: #fff;
+    color: #2b354e;
     opacity: 1;
   }
   
   /* Internet Explorer 10-11 */
   :-ms-input-placeholder {
-    color: #fff;
+    color: #2b354e;
   }
   
   /* Microsoft Edge */
   ::-ms-input-placeholder {
-    color: #fff;
+    color: #2b354e;
   }
   
   /* Standard modern browsers */
   ::placeholder {
-    color: #fff;
+    color: #2b354e;
   }
   
