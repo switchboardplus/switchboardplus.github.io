@@ -66,6 +66,9 @@
         line-height: 30px;
         font-size: 24px;
       }
+      .cardimg.d {
+        align-items: baseline;
+      }
 
       /* Page Specific Mobile */
       @media (max-width: 992px) {
@@ -100,6 +103,25 @@
           display: flex;
           justify-content: center;
           flex-direction: row;
+        }
+        .cardimg.m {
+          width: 48px;
+        }
+        .cardcontent p {
+          width: 100%;
+        }
+        .cardcontent h2 {
+          width: calc(100% - 60px);
+          margin-left: 12px;
+          margin-top: 12px;
+        }
+        .cardcontent {
+          flex: 0 0 100%;
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .card {
+          padding: 18px;
         }
       }
     </style>
@@ -211,10 +233,13 @@
           <div class="row internal">
             <div class="col-6">
               <div class="card">
-                <div class="cardimg">
+                <div class="cardimg d">
                   <img src="../m/cc-1.svg" alt="Image" />
                 </div>
                 <div class="cardcontent">
+                  <div class="cardimg m">
+                    <img src="../m/cc-1.svg" alt="Image" />
+                  </div>
                   <h2>Virtual Receptionist</h2>
                   <p>The Virtual Receptionist guides callers through a customizable menu to the right department or individual, ensuring calls are handled professionally and reducing wait times.</p>
                 </div>
@@ -222,10 +247,13 @@
             </div>
             <div class="col-6">
               <div class="card">
-                <div class="cardimg">
+                <div class="cardimg d">
                   <img src="../m/cc-2.svg" alt="Image" />
                 </div>
                 <div class="cardcontent">
+                  <div class="cardimg m">
+                    <img src="../m/cc-2.svg" alt="Image" />
+                  </div>
                   <h2>Contact Center</h2>
                   <p>Manage high call volumes efficiently with tools like advanced routing, monitoring, and real-time insights to provide fast, organized service to your customers.</p>
                 </div>
@@ -235,10 +263,13 @@
           <div class="row internal">
             <div class="col-6">
               <div class="card">
-                <div class="cardimg">
+                <div class="cardimg d">
                   <img src="../m/cc-3.svg" alt="Image" />
                 </div>
                 <div class="cardcontent">
+                  <div class="cardimg m">
+                    <img src="../m/cc-3.svg" alt="Image" />
+                  </div>
                   <h2>Find Me/Follow Me</h2>
                   <p>Stay connected by routing calls to your preferred devices based on your schedule or location, ensuring you never miss an important call while on the move.</p>
                 </div>
@@ -246,10 +277,13 @@
             </div>
             <div class="col-6">
               <div class="card">
-                <div class="cardimg">
+                <div class="cardimg d">
                   <img src="../m/cc-4.svg" alt="Image" />
                 </div>
                 <div class="cardcontent">
+                  <div class="cardimg m">
+                    <img src="../m/cc-4.svg" alt="Image" />
+                  </div>
                   <h2>Dashboard/Heads-Up Display</h2>
                   <p>Real-time dashboards give clear visibility into call queues, active calls, and team availability, helping managers and teams stay informed and proactive.</p>
                 </div>
@@ -259,10 +293,13 @@
           <div class="row internal">
             <div class="col-6">
               <div class="card">
-                <div class="cardimg">
+                <div class="cardimg d">
                   <img src="../m/cc-5.svg" alt="Image" />
                 </div>
                 <div class="cardcontent">
+                  <div class="cardimg m">
+                    <img src="../m/cc-5.svg" alt="Image" />
+                  </div>
                   <h2>Music on Hold</h2>
                   <p>Engage callers with customizable music while they wait, creating a pleasant experience that reduces drop-off rates and reinforces your brand image.</p>
                 </div>
