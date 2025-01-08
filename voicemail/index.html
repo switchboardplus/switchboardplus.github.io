@@ -91,6 +91,25 @@
           justify-content: center;
           flex-direction: row;
         }
+
+        .cardimg.m {
+          width: 48px;
+        }
+        .cardcontent p {
+          width: 100%;
+        }
+        .cardcontent h2 {
+          width: calc(100% - 60px);
+          margin-left: 12px;
+        }
+        .cardcontent {
+          flex: 0 0 100%;
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .card {
+          padding: 18px;
+        }
       }
     </style>
   </head>
@@ -201,10 +220,13 @@
           <div class="row internal">
             <div class="col-6">
               <div class="card">
-                <div class="cardimg">
+                <div class="cardimg d">
                   <img src="../m/voicemailmessaging.svg" alt="Image" />
                 </div>
                 <div class="cardcontent">
+                  <div class="cardimg m">
+                    <img src="../m/voicemailmessaging.svg" alt="Image" />
+                  </div>
                   <h2>Voicemail Messaging</h2>
                   <p>Our voicemail messaging service allows you to receive and manage voicemails from any device, anywhere. With voicemail-to-email, you can receive voicemails as email attachments, making it easy to listen to and manage messages on the go.</p>
                 </div>
@@ -212,10 +234,13 @@
             </div>
             <div class="col-6">
               <div class="card">
-                <div class="cardimg">
+                <div class="cardimg d">
                   <img src="../m/impresence.svg" alt="Image" />
                 </div>
                 <div class="cardcontent">
+                  <div class="cardimg m">
+                    <img src="../m/impresence.svg" alt="Image" />
+                  </div>
                   <h2>Instant Messaging and Presence</h2>
                   <p>Coordinate efficiently with Instant Messaging and Presence indicators, ensuring seamless real-time communication and team availability tracking.</p>
                 </div>
@@ -225,10 +250,13 @@
           <div class="row internal">
             <div class="col-6">
               <div class="card">
-                <div class="cardimg">
+                <div class="cardimg d">
                   <img src="../m/voicemailtranscription.svg" alt="Image" />
                 </div>
                 <div class="cardcontent">
+                  <div class="cardimg m">
+                    <img src="../m/voicemailtranscription.svg" alt="Image" />
+                  </div>
                   <h2>Voicemail Transcription</h2>
                   <p>Save time with Voicemail Transcription, converting audio messages into text for quick scanning and prioritization.</p>
                 </div>
@@ -236,10 +264,13 @@
             </div>
             <div class="col-6">
               <div class="card">
-                <div class="cardimg">
+                <div class="cardimg d">
                   <img src="../m/intercomonetoone.svg" alt="Image" />
                 </div>
                 <div class="cardcontent">
+                  <div class="cardimg m">
+                    <img src="../m/intercomonetoone.svg" alt="Image" />
+                  </div>
                   <h2>Intercom One-to-One</h2>
                   <p>Connect instantly with Intercom One-to-One for quick, direct voice communication without the need for a traditional call.</p>
                 </div>
