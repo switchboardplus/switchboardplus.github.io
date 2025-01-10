@@ -511,6 +511,39 @@ nav>.dropdown>a,nav>a {
         font-size: 20px;
         line-height: 28px;
     }
+      /* Chrome, Safari, Opera */
+    ::-webkit-input-placeholder {
+        color: #2b354e;
+    }
+    
+    /* Firefox 19+ (prefix variants) */
+    :-moz-placeholder {
+        color: #2b354e;
+        opacity: 1; /* ensure placeholder isn’t faded in Firefox */
+    }
+    ::-moz-placeholder {
+        color: #2b354e;
+        opacity: 1;
+    }
+    
+    /* Internet Explorer 10-11 */
+    :-ms-input-placeholder {
+        color: #2b354e;
+    }
+    
+    /* Microsoft Edge */
+    ::-ms-input-placeholder {
+        color: #2b354e;
+    }
+    
+    /* Standard modern browsers */
+    ::placeholder {
+        color: #2b354e;
+    }
+    input::placeholder {
+        color: #2b354e !important
+    }
+  
 }
 
 @media (min-width:992px) {
@@ -562,6 +595,39 @@ nav>.dropdown>a,nav>a {
         font-size: 24px;
         line-height: 32px;
     }
+      /* Chrome, Safari, Opera */
+    ::-webkit-input-placeholder {
+        color: #fff;
+    }
+    
+    /* Firefox 19+ (prefix variants) */
+    :-moz-placeholder {
+        color: #fff;
+        opacity: 1; /* ensure placeholder isn’t faded in Firefox */
+    }
+    ::-moz-placeholder {
+        color: #fff;
+        opacity: 1;
+    }
+    
+    /* Internet Explorer 10-11 */
+    :-ms-input-placeholder {
+        color: #fff;
+    }
+    
+    /* Microsoft Edge */
+    ::-ms-input-placeholder {
+        color: #fff;
+    }
+    
+    /* Standard modern browsers */
+    ::placeholder {
+        color: #fff;
+    }
+    input::placeholder {
+        color: #fff !important
+    }
+  
 }
 
 .nas2 {
@@ -750,9 +816,6 @@ nav>.dropdown>a,nav>a {
   .row.learnmore {
 	padding-bottom: 64px;
 }
-input::-webkit-input-placeholder {
-    color:white !important;
-}
 .skip-link {
     position: absolute;
     top: -40px;
@@ -770,36 +833,3 @@ input::-webkit-input-placeholder {
   
 
 
-  /* Chrome, Safari, Opera */
-::-webkit-input-placeholder {
-    color: #2b354e;
-  }
-  
-  /* Firefox 19+ (prefix variants) */
-  :-moz-placeholder {
-    color: #2b354e;
-    opacity: 1; /* ensure placeholder isn’t faded in Firefox */
-  }
-  ::-moz-placeholder {
-    color: #2b354e;
-    opacity: 1;
-  }
-  
-  /* Internet Explorer 10-11 */
-  :-ms-input-placeholder {
-    color: #2b354e;
-  }
-  
-  /* Microsoft Edge */
-  ::-ms-input-placeholder {
-    color: #2b354e;
-  }
-  
-  /* Standard modern browsers */
-  ::placeholder {
-    color: #2b354e;
-  }
-  input::placeholder {
-    color: #2b354e !important
-  }
-  
