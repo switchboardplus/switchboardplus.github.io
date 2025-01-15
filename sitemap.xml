@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Home Page -->
+    <url>
+        <loc>https://switchboard-plus.com/</loc>
+    </url>
+    
+    <!-- About -->
+    <url>
+        <loc>https://switchboard-plus.com/about/</loc>
+    </url>
+    
+    <!-- Services -->
+    <url>
+        <loc>https://switchboard-plus.com/call-management/</loc>
+    </url>
+    <url>
+        <loc>https://switchboard-plus.com/voicemail/</loc>
+    </url>
+    <url>
+        <loc>https://switchboard-plus.com/faxing/</loc>
+    </url>
+    <url>
+        <loc>https://switchboard-plus.com/contact-center/</loc>
+    </url>
+    <url>
+        <loc>https://switchboard-plus.com/conferencing-and-collaboration/</loc>
+    </url>
+    <url>
+        <loc>https://switchboard-plus.com/security/</loc>
+    </url>
+    <url>
+        <loc>https://switchboard-plus.com/device-and-number-management/</loc>
+    </url>
+    <url>
+        <loc>https://switchboard-plus.com/intl-rates/</loc>
+    </url>
+
+    <!-- Contact -->
+    <url>
+        <loc>https://switchboard-plus.com/contact/</loc>
+    </url>
+    
+    <!-- Get a Quote -->
+    <url>
+        <loc>https://switchboard-plus.com/quote/</loc>
+    </url>
+</urlset>
