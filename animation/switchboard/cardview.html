@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Card View</title>
+        
+<link rel="stylesheet" href="css/icpacksb.css">
+        <style>
+html {
+      font-size: 100%;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+
+@font-face {
+  font-family: 'Nexa';
+  src: url(font/Nexa-Regular.otf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url(font/Nexa-Light.otf);
+  font-weight: 100;
+}
+body{
+  margin: 0;
+  background-color: #1C204E;
+}
+li{
+  list-style: none;
+}
+
+i{
+  font-size: 28px;
+}
+
+.customer-experience{
+  height: 100vh;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+  font-family: 'Nexa';
+}
+
+.card1 {
+  width: 320px;
+  height: 585px;
+  padding-left: 32px;
+  padding-right: 32px;
+  transition: transform 0.5s, box-shadow 0.5s, scale 0.5s;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  background-color: #E3EDFD;
+  border-radius: 14px;
+}
+.card2 {
+  width: 320px;
+  height: 585px;
+  padding-left: 32px;
+  padding-right: 32px;
+  transition: transform 0.5s, box-shadow 0.5s, scale 0.5s;
+  cursor: pointer;
+  transform: rotate(2deg);
+  background-color:#7881EF;
+  border-radius: 14px;
+}
+.card3{
+  width: 320px;
+  height: 585px;
+  padding-left: 32px;
+  padding-right: 32px;
+  transition: transform 0.5s, box-shadow 0.5s, scale 0.5s;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  background-color:#665BB6;
+  border-radius: 14px;
+}
+.card-title{
+  margin-top: 44px;
+  font-family: 'Nexa';
+  font-weight: 200;
+  font-size: 44px;
+  line-height: 1;
+}
+
+.card-content {
+  max-width: 320px;
+  text-align: left;
+  color: whitesmoke;
+  font-family: 'Nexa';
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 100;
+}
+.list-icon{
+  font-size: 18px;
+  line-height: 2;
+  color: whitesmoke;
+}
+.listline{
+  display: flex;
+  align-items: flex-start;
+}
+
+
+ .button-findout{
+  padding: 8px;
+  width: 180px;
+  margin-block-start: 34px;
+  background-color: white;
+  border-radius: 41px;
+  border: none;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #111118;
+  font-family: 'Nexa';
+  text-decoration: none;
+  text-align: center;
+ }
+ 
+ .icon-findmore{
+  font-size: 18px ;
+ }
+
+.card1:hover, .card2:hover, .card3:hover {
+  transform: rotate(0deg);
+  z-index: 9;
+  box-shadow: 0 8px 20px rgba(0 0 0 / 0.5);
+  scale: 1.03;
+}
+
+
+        </style>
+    </head>
+    <body>
+      <div class="customer-experience">
+        <div class="card-container">
+            <div class="card1" >
+              <div class="card-title">On the Phone</div>
+              <div class="card-content" style="color: #111118;">
+                <p>Designed to streamline every interaction, we enhance customer engagement, optimize call flow, and keep your team seamlessly connected—making each call a positive experience that strengthens your brand.</p>
+              </div>
+              <div class="list-icon" style="color: #111118;">
+                <li><i class="icon-identification"></i> <span class="i-name">Identify callers in</span></li>
+                <li><i class="icon-pause"></i> <span class="i-name">Music and Messages on hold</span></li>
+                <li><i class="icon-microphone"></i> <span class="i-name">Multi-level IVR Attendant</span></li>
+              </div>
+              <a class="button-findout" href="#" style="margin-block-start: 62px;">Find out More<i class="icon-findmore"></i></a>
+            </div>
+            <div class="card2" >
+              <div class="card-title" style="color: whitesmoke;">Faxing made easy</div>
+              <div class="card-content">
+                <p>One of the many amazing features of Switchboard is our faxing and internet faxing features. Our faxing feature works well with any exisiting fax machines for those who prefer the machine compared to faxing through a computer.</p>
+              </div>
+              <div class="list-icon">
+                <li><i class="icon-lock"></i> <span class="i-name">Encrypted Fax</span></li>
+                <li><i class="icon-printer"></i> <span class="i-name">Internet Faxing</span></li>
+              </div>
+              <a class="button-findout" href="#" style="margin-block-start: 62px;">Find out More<i class="icon-findmore"></i></a>
+            </div>
+            <div class="card3" >
+              <div class="card-title" style="color: whitesmoke; margin-block-start: 32px;">AI Voice Analysis</div>
+              <div class="card-content">
+                <p>The essence of human feelings extends beyond mere words - it resides within the nuances of sarcastic intonation, delicate facial gestures, empathetic winces of discomfort, laughter intertwined with unease, sighs signaling relief, and a plethora of other subtleties. </p>
+              </div>
+              <div class="list-icon">
+                <li><div class="listline"><i class="icon-pattern"></i> <span class="i-name">Over 25 patterns of tune rhythm, and timbre</span></div></li>
+                <li><div class="listline"><i class="icon-treeface"></i> <span class="i-name">Measure dynamic patterns in facial expression </span></div></li>
+              </div>
+              <a class="button-findout" href="#">Find out More<i class="icon-findmore"></i></a>
+            </div>
+          </div>
+      </div>    
+    </body>
+</html>

@@ -24,7 +24,7 @@
     <meta name="twitter:title" content="Switchboard Plus: Secure Cloud-Based VoIP Solutions for Businesses">
     <meta name="twitter:description" content="Switchboard Plus offers HIPAA-compliant VoIP solutions, AI voice analysis, and advanced call management features to help businesses stay connected.">
     <meta name="twitter:image" content="http://www.switchboard-plus.com/m/l.svg">
-
+    <link rel="stylesheet" href="assets/css/i.css">
     <style>
       /* Page Specific global */
       .section.s1>img {
@@ -553,6 +553,145 @@
           margin-top: -40px;
         }
       }
+
+
+      li{
+        list-style: none;
+      }
+
+      i{
+        font-size: 28px;
+      }
+
+      .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 40px;
+        font-family: 'l', 'Open Sans', Arial;
+      }
+
+      .card1 {
+        width: 358px;
+        height: 585px;
+        padding-left: 32px;
+        padding-right: 32px;
+        transition: transform 0.5s, box-shadow 0.5s, scale 0.5s;
+        transform: rotate(-2deg);
+        background-color: #E3EDFD;
+        border-radius: 14px;
+      }
+      .card2 {
+        width: 358px;
+        height: 585px;
+        padding-left: 32px;
+        padding-right: 32px;
+        transition: transform 0.5s, box-shadow 0.5s, scale 0.5s;
+        transform: rotate(2deg);
+        background-color:#7881EF;
+        border-radius: 14px;
+      }
+      .card3{
+        width: 358px;
+        height: 585px;
+        padding-left: 32px;
+        padding-right: 32px;
+        transition: transform 0.5s, box-shadow 0.5s, scale 0.5s, z-index 0.5s;;
+        transform: rotate(-2deg);
+        background-color:#665BB6;
+        border-radius: 14px;
+      }
+      .card-title{
+        margin-top: 44px;
+        font-family: 'b';
+        font-weight: 200;
+        font-size: 44px;
+        line-height: 1;
+      }
+
+      .card-content {
+        max-width: 320px;
+        text-align: left;
+        color: whitesmoke;
+        font-family: 'l', 'Open Sans', Arial;
+        font-size: 17px;
+        line-height: 22px;
+        font-weight: 100;
+      }
+      .list-icon{
+        font-size: 18px;
+        line-height: 2;
+        color: whitesmoke;
+      }
+      .listline{
+        display: flex;
+        align-items: flex-start;
+      }
+      
+      .card-content p {
+        font-family: l, 'Open Sans', Arial;
+      }
+      .i-name {
+        font-family: b, 'Open Sans', Arial;
+      }
+
+      .button-findout{
+        padding: 8px;
+        width: 180px;
+        margin-block-start: 34px;
+        background-color: white;
+        border-radius: 41px;
+        border: none;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #111118;
+        font-family: 'b';
+        text-decoration: none;
+        text-align: center;
+        transition: box-shadow 0.5s;
+      }
+      
+      .icon-findmore{
+        font-size: 18px ;
+      }
+      .button-findout:hover{
+        box-shadow: 0 3px 5px rgba(0 0 0 / 0.5);
+      }
+      .card1:hover, .card2:hover, .card3:hover {
+        transform: rotate(0deg);
+        z-index: 9;
+        box-shadow: 0 8px 20px rgba(0 0 0 / 0.5);
+        scale: 1.03;
+      }
+
+      /*mobile version*/
+      @media only screen and (max-width: 600px) and (min-width: 200px){
+        
+          .card-container{
+            transform: scale(.85);
+          }
+          .card1.scale-up{
+            transform: rotate(0deg);
+            z-index: 9;
+            box-shadow: 0 8px 20px rgba(0 0 0 / 0.5);
+            scale: 1.03;
+          }
+          .card2.scale-up{
+            transform: rotate(0deg);
+            z-index: 9;
+            box-shadow: 0 8px 20px rgba(0 0 0 / 0.5);
+            scale: 1.03;
+          }
+          .card3.scale-up{
+            transform: rotate(0deg);
+            z-index: 9;
+            box-shadow: 0 8px 20px rgba(0 0 0 / 0.5);
+            scale: 1.03;
+          }
+      }
+        
       /* END Animation */
     </style>
   </head>
@@ -669,110 +808,43 @@
     </div>
     <!-- Animation -->
     <div class="hi_row" >
-      <div class="hi_col">
-        <div class="hi_content">
-          <!-- Video first -->
-          <div class="hi_video_container">
-            <video src="m/onphone.webm" muted autoplay loop playsinline webkit-playsinline disablePictureInPicture></video>
-          </div>
-          <!-- Static title visible below the video -->
-          <h2 class="hi_title_static">On the Phone</h2>
-          <p class="m">Experience seamless communication with SB+ phones. Streamline interactions, boost engagement, and keep your team connected-turning every call into a positive experience that strengthens your brand.</p>
-          <a class="m" href="./device-and-number-management/">Learn More &gt;</a>
-          <!-- Text container with title and text -->
-          <div class="hi_text_container">
-            <h2 class="hi_title">On the Phone</h2>
-            <div class="hi_text_content">
-              <p>Experience effortless and customer-focused communication with SB+ phones. Designed to streamline every interaction, we enhance customer engagement, optimize call flow, and keep your team seamlessly connected-making each call a positive experience that strengthens your brand. <a href="./device-and-number-management/"> Find out More ></a>
-              </p>
-              <div class="hi_icon_list">
-                <div>
-                  <img src="m/hi_1.svg" alt="Icon" loading="lazy">
-                  <p>Music and Messages on hold</p>
-                </div>
-                <div>
-                  <img src="m/hi_2.svg" alt="Icon" loading="lazy">
-                  <p>Multi-level IVR Attendant </p>
-                </div>
-                <div>
-                  <img src="m/hi_3.svg" alt="Icon" loading="lazy">
-                  <p>Indentify callers in</p>
-                </div>
-                <div>
-                  <img src="m/hi_4.svg" alt="Icon" loading="lazy">
-                  <p>Call Queues and Parking</p>
-                </div>
+      <div class="customer-experience">
+        <div class="card-container">
+            <div class="card1">
+              <div class="card-title">On the Phone</div>
+              <div class="card-content" style="color: #111118;">
+                <p>Designed to streamline every interaction, we enhance customer engagement, optimize call flow, and keep your team seamlessly connected—making each call a positive experience that strengthens your brand.</p>
               </div>
+              <div class="list-icon" style="color: #111118;">
+                <li><i class="icon-identification"></i> <span class="i-name">Identify callers in</span></li>
+                <li><i class="icon-pause"></i> <span class="i-name">Music and Messages on hold</span></li>
+                <li><i class="icon-microphone"></i> <span class="i-name">Multi-level IVR Attendant</span></li>
+              </div>
+              <a class="button-findout" href="#" style="margin-block-start: 24px;">Find out More<i class="icon-findmore"></i></a>
+            </div>
+            <div class="card2">
+              <div class="card-title" style="color: whitesmoke;">Faxing made easy</div>
+              <div class="card-content">
+                <p>One of the many amazing features of Switchboard is our faxing and internet faxing features. Our faxing feature works well with any exisiting fax machines for those who prefer the machine compared to faxing through a computer.</p>
+              </div>
+              <div class="list-icon">
+                <li><i class="icon-lock"></i> <span class="i-name">Encrypted Fax</span></li>
+                <li><i class="icon-printer"></i> <span class="i-name">Internet Faxing</span></li>
+              </div>
+              <a class="button-findout" href="#" style="margin-block-start: 76px;">Find out More<i class="icon-findmore"></i></a>
+            </div>
+            <div class="card3">
+              <div class="card-title" style="color: whitesmoke; margin-block-start: 32px;">AI Voice Analysis</div>
+              <div class="card-content">
+                <p>The essence of human feelings extends beyond mere words - it resides within the nuances of sarcastic intonation, delicate facial gestures, empathetic winces of discomfort, laughter intertwined with unease, sighs signaling relief, and a plethora of other subtleties. </p>
+              </div>
+              <div class="list-icon">
+                <li><div class="listline"><i class="icon-pattern"></i> <span class="i-name">Over 25 patterns of tune rhythm, and timbre</span></div></li>
+                <li><div class="listline"><i class="icon-treeface"></i> <span class="i-name">Measure dynamic patterns in facial expression&nbsp;</span></div></li>
+              </div>
+              <a class="button-findout" href="#">Find out More<i class="icon-findmore"></i></a>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- Repeat for the other two columns -->
-      <div class="hi_col">
-        <div class="hi_content">
-          <div class="hi_video_container">
-            <video src="m/nextfax.webm" muted autoplay loop playsinline webkit-playsinline disablePictureInPicture></video>
-          </div>
-          <h2 class="hi_title_static">Faxing</h2>
-          <p class="m">Elevate your business communication with customizable call routing, seamless transfers, real-time dashboards, auto attendants, and advanced recording—powerful VoIP features, all without complex setups or IT dependence.</p>
-          <a class="m" href="./faxing/">Learn More &gt;</a>
-          <div class="hi_text_container">
-            <h2 class="hi_title">Faxing</h2>
-            <div class="hi_text_content">
-              <p>One of the many amazing features of Switchboard is our faxing and internet faxing features. Our faxing feature works well with any exisiting fax machines for those who prefer the machine compared to faxing through a computer. <a href="./faxing/"> Find out More ></a>
-              </p>
-              <div class="hi_icon_list">
-                <div>
-                  <img src="m/hi_5.svg" alt="Icon" loading="lazy">
-                  <p>Encrypted Fax</p>
-                </div>
-                <div>
-                  <img src="m/hi_6.svg" alt="Icon" loading="lazy">
-                  <p>Internet Faxing </p>
-                </div>
-                <div>
-                  <img src="m/hi_7.svg" alt="Icon" loading="lazy">
-                  <p>Secured and Innovative</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="hi_col">
-        <div class="hi_content">
-          <div class="hi_video_container">
-            <video src="m/aivoice.webm" muted autoplay loop playsinline webkit-playsinline disablePictureInPicture></video>
-          </div>
-          <h2 class="hi_title_static">AI Voice Analysis</h2>
-          <p class="m">Analyze emotions and intent with precision: decode 53 language-driven emotions, 67 vocal cues, 37 facial movements, and 28 vocal expressions, revealing nuanced sentiments, dynamic reactions, and blended meanings in communication.</p>
-          <a class="m" href="./call-management/">Learn More &gt;</a>
-          <div class="hi_text_container">
-            <h2 class="hi_title">AI Voice Analysis</h2>
-            <div class="hi_text_content">
-              <p>The essence of human feelings extends beyond mere words - it resides within the nuances of sarcastic intonation, delicate facial gestures, empathetic winces of discomfort, laughter intertwined with unease, sighs signaling relief, and a plethora of other subtleties. We are here to assist in deciphering the unspoken. <a href="./call-management/"> Find out More ></a>
-              </p>
-              <div class="hi_icon_list">
-                <div>
-                  <img src="m/hi_8.svg" alt="Icon" loading="lazy">
-                  <p>Vocal call types</p>
-                </div>
-                <div>
-                  <img src="m/hi_9.svg" alt="Icon" loading="lazy">
-                  <p>Discover over 25 patterns of tune rhythm, and timbre </p>
-                </div>
-                <div>
-                  <img src="m/hi_10.svg" alt="Icon" loading="lazy">
-                  <p>Measure dynamic patterns in facial expression</p>
-                </div>
-                <div>
-                  <img src="m/hi_11.svg" alt="Icon" loading="lazy">
-                  <p>Differentiate 28 kinds of vocal expression</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
     <div class="section s2">
