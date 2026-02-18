@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Switchboard Plus: Security & Compliance You Can Trust</title>
+    <meta name="lang" content="en">
+    <link rel="icon" href="m/fav.png" type="image/png">
+
+    <!-- SEO Title & Description for the Security and Compliance page -->
+    <meta name="description" content="Protect your business with Switchboard Plus's advanced security protocols and regulatory compliance, including HIPAA, SOC 2, GDPR, and CCPA. Trust our secure hosting, strict permissions, and audit logging to keep your data safe.">
+    <meta name="keywords" content="Switchboard Plus, Security and Compliance, HIPAA, SOC 2, GDPR, CCPA, ISO 27001, data security, secure VoIP, encryption, sandboxed hosting, audit logging, E911, Caller-ID, advanced call recording">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.switchboard-plus.com/security-and-compliance">
+    <meta property="og:title" content="Switchboard Plus: Security & Compliance">
+    <meta property="og:description" content="Safeguard sensitive data with robust encryption, strict permissions, and industry-leading security standards. Switchboard Plus ensures HIPAA, SOC 2, GDPR, and CCPA readiness.">
+    <meta property="og:image" content="http://www.switchboard-plus.com/m/l.svg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.switchboard-plus.com/security-and-compliance">
+    <meta name="twitter:title" content="Switchboard Plus: Security & Compliance">
+    <meta name="twitter:description" content="Trust Switchboard Plus for end-to-end data protection and regulatory compliance, including HIPAA, SOC 2 Type II, GDPR, and CCPA. Our strict security culture ensures peace of mind.">
+    <meta name="twitter:image" content="http://www.switchboard-plus.com/m/l.svg">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/sub.css">
+    <style>
+      /* Page Specific global */
+      /* Light Page */
+      body {
+        background: #F3F3F3;
+      }
+      a, p, h1, h2, h3, h4, ul, li, nav a {
+        color: #1C204E;
+      }
+      .wrapper .line {
+        background: #1c204e;
+      }
+      
+      .section.s1>img {
+        width: 100%;
+      }
+      .s1 {
+        color: white;
+        text-align: center;
+      }
+
+      .selectee {
+        display: none;
+      }
+
+      .selectee.active {
+        display: flex; 
+      }
+      .selectors {
+        display: flex;
+        flex-direction: column;
+      }
+      .selectee {
+        flex-direction: column;
+      }
+      .selectors a {
+        background: #fff;
+        margin-bottom: 24px;
+        padding: 24px 32px;
+        text-decoration: none;
+        font-family: b, 'Open Sans', Arial;
+        font-size: 18px;
+        border-radius: 12px;
+        color: #000;
+        position: relative;
+      }
+      .selectors a.on {
+        color: #fff;
+        background: #685ABC;
+      }
+      .selectees p {
+        font-family: l, 'Open Sans', Arial;
+        font-weight: lighter;
+      }
+      .selectees {
+        padding: 18px;
+        padding-top: 0;
+      }
+      .row.staticaccordion {
+        align-items: flex-start;
+        align-content: flex-start;
+        min-height: 640px;
+      }
+      .selectees img {
+        max-width: 600px;
+      }
+      .selectors a::after {
+        content: '>';
+        position: absolute;
+        right: 21px;
+        font-size: 36px;
+        top: 10px;
+        font-family: l, 'Open Sans', Arial;
+      }
+      .selectors {
+        position: relative;
+      }
+      
+      .cbox {
+        background: #fff;
+        padding: 20px;
+        border-radius: 16px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+      }
+      .row.mainfeatures {
+        align-items: stretch;
+        gap: 3%;
+        padding-top:32px;
+        padding-bottom: 32px;
+
+      }
+      .row.mainfeatures p {
+        font-family: l, 'Open Sans', Arial;
+        font-weight: lighter;
+        font-size:18px;
+        line-height: 29px
+      }
+      .cbox img {
+        width: 80px;
+        margin: 0 auto;
+      }
+      .cbox h2 {
+        font-size:30px;
+        line-height: 36px;
+        margin-top:16px;
+        margin-bottom: 16px;
+        text-align: center;
+      }
+      .row.mainfeatures .col-3 {
+        display: flex;
+      }
+      .col-12.wecare h2 {
+        max-width: 580px;
+      }
+      
+      .col-12.wecare h2 {
+        max-width: 580px;
+      }
+      .banner {
+        padding: 4% 9%;
+        text-align: center;
+        background: #1C204E;
+        border-radius: 25px;
+        margin-top: 32px;
+      }
+      .banner h2 {
+        color: #fff;
+        font-size: 50px;
+        line-height: 60px;
+        margin: 16px 0;
+      }
+      .banner p {
+        font-size: 20px;
+        color: #fff;
+        font-family: l, 'Open Sans', Arial;
+        line-height: 26px;
+      }
+      /* Page Specific Mobile */
+      @media (max-width: 992px) {
+        h1 {
+          margin-top:10px;
+        }
+        .mobile_arrow.m {
+          margin-bottom: 64px;
+        }
+
+        .mobile_arrow.m img {
+          width: 48px;
+          margin-top: 6px;
+        }
+        h1,
+        h1 span {
+          text-align: left;
+          font-size: 36px;
+          font-family: b;
+        }
+
+        .scontent p,
+        .scontent p b,
+        .scontent p u {
+          font-family: l, 'Open Sans', Arial;
+          text-align: left;
+          text-decoration: none;
+          font-weight: lighter;
+        }
+        .inline-imgs {
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+        }
+        .banner h2 {
+          font-size: 28px;
+          text-align: center;
+          line-height: 36px;
+        }
+      }
+      
+
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#MainContent">Skip to main content</a>
+    <div class="nav">
+      <div class="container">
+        <div class="logo d">
+          <img src="../m/logoalt.svg" alt="Logo">
+        </div>
+        <div class="logo m">
+          <img src="../m/logom.svg" class="light" alt="Logo">
+          <img src="../m/logom.svg" class="dark" alt="Logo">
+        </div>
+        <a class="nas2 m" href="../quote/">Get a Quote</a>
+        <nav>
+          <a href="../">Home</a>
+          <a href="../about/">About</a>
+          <div class="dropdown">
+            <a href="#" role="button">Services</a>
+            <span class="dropdown-arrow m">&gt;</span>
+            <!-- Added span for '>' symbol -->
+            <div class="dropdown-content">
+              <div>
+                <a href="../call-management/"><h4>Advanced Call Management</h4></a>
+                <ul>
+                  <li><a href="../call-management/">Custom Call Flow</a></li>
+                  <li><a href="../call-management/">Call Forwarding & Routing</a></li>
+                  <li><a href="../call-management/">Call Logs & Caller ID</a></li>
+                  <li><a href="../call-management/">Call Park & Shared Lines</a></li>
+                  <li><a href="../call-management/">Do Not Disturb</a></li>
+                  <li><a href="../call-management/">Dial by Extension & Name</a></li>
+                  <li><a href="../call-management/">Ring Groups & Time-Based Routing</a></li>
+                </ul>
+                <a href="../voicemail/"><h4>Voicemail and Messaging</h4></a>
+                <ul>
+                  <li><a href="../voicemail/">Voicemail Messaging</a></li>
+                  <li><a href="../voicemail/">Voicemail Transcription</a></li>
+                  <li><a href="../voicemail/">Instant Messaging and Presence</a></li>
+                  <li><a href="../voicemail/">Intercom One-to-One</a></li>
+                </ul>
+              </div>
+              <div>
+                <a href="../faxing/"><h4>Faxing</h4></a>
+                <ul>
+                  <li><a href="../faxing/">Faxing Services</a></li>
+                </ul>
+                <a href="../contact-center/"><h4>Contact Center & Call Enhancements</h4></a>
+                <ul>
+                  <li><a href="../contact-center/">Auto Attendant/Virtual Receptionist</a></li>
+                  <li><a href="../contact-center/">Contact Center</a></li>
+                  <li><a href="../contact-center/">Find Me/Follow Me</a></li>
+                  <li><a href="../contact-center/">Dashboard/Heads-Up Display</a></li>
+                  <li><a href="../contact-center/">Music on Hold</a></li>
+                </ul>
+                <a href="../conferencing-and-collaboration/"><h4>Conferencing and Collaboration</h4></a>
+                <ul>
+                  <li><a href="../conferencing-and-collaboration/">Conferencing and Video Conferencing</a></li>
+                  <li><a href="../conferencing-and-collaboration/">Conference Room Management</a></li>
+                  <li><a href="../conferencing-and-collaboration/">One-on-One Video</a></li>
+                  <li><a href="../conferencing-and-collaboration/">Paging Groups</a></li>
+                </ul>
+              </div>
+              <div>
+                <a href="../security/"><h4>Security and Compliance</h4></a>
+                <ul>
+                  <li><a href="../security/">Encryption</a></li>
+                  <li><a href="../security/">Enhanced 911 Service</a></li>
+                  <li><a href="../security/">Caller-ID</a></li>
+                  <li><a href="../security/">Call Recording Advanced</a></li>
+                </ul>
+                <a href="../device-and-number-management/"><h4>Device and Number Management</h4></a>
+                <ul>
+                  <li><a href="../device-and-number-management/">IP Desk Phones</a></li>
+                  <li><a href="../device-and-number-management/">Softphones</a></li>
+                  <li><a href="../device-and-number-management/">Hot Desking</a></li>
+                  <li><a href="../device-and-number-management/">Local Phone Numbers</a></li>
+                  <li><a href="../device-and-number-management/">Toll-Free Numbers</a></li>
+                </ul>
+                <a href="../intl-rates/"><h4>International Call Rates</h4></a>
+              </div>
+            </div>
+          </div>
+          <a href="../contact/">Contact</a>
+          <a class="nas2 d" href="../quote/">Get a Quote</a>
+        </nav>
+        <div class="wrapper m">
+          <div class="line half start"></div>
+          <div class="line"></div>
+          <div class="line half end"></div>
+        </div>
+      </div>
+      <div class="cert_burger">
+        <p>Certificates:</p>
+        <br>
+        <img src="../m/icons-m.svg" alt="Certifications" loading="lazy" />
+      </div>
+    </div>
+<section class="section s1" id="MainContent">
+  <div class="scontent">
+    <h1>Privacy Policy</h1>
+    <p><strong>Last Updated:</strong> February 18, 2026</p>
+  </div>
+</section>
+
+<section class="section s2">
+  <div class="container">
+
+    <h2>1. Introduction</h2>
+    <p>Welcome to Switchboardplus, LLC ("Switchboardplus," "we," "us," or "our"). We provide a secure, cloud-based Voice over IP (VoIP) phone system, including advanced call management, contact center solutions, and other communication services (collectively, the "Services").</p>
+    <p>This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Services. Our practices are designed to comply with major privacy frameworks, including GDPR and CCPA.</p>
+
+    <h2>2. Information We Collect</h2>
+
+    <h3>Personal Data</h3>
+    <ul>
+      <li><strong>Contact Information:</strong> Name, business name, email address, and phone number.</li>
+      <li><strong>Account Information:</strong> Username, password, and account details.</li>
+      <li><strong>Billing Information:</strong> Payment details processed securely by third-party processors.</li>
+    </ul>
+
+    <h3>Service Data</h3>
+    <ul>
+      <li><strong>Call Data:</strong> Call logs, recordings, voicemails, faxes, metadata, and AI-powered voice analysis data.</li>
+      <li><strong>Usage Data:</strong> Feature usage, session duration, and dashboard interactions.</li>
+      <li><strong>Device & Connection Data:</strong> IP address, browser type, OS, and device identifiers.</li>
+    </ul>
+
+    <h3>Data from Third Parties</h3>
+    <p>Information received through CRM or EMR integrations if enabled by the customer.</p>
+
+    <h2>3. How We Use Your Information</h2>
+    <ul>
+      <li>Provide and manage services</li>
+      <li>Improve features and user experience</li>
+      <li>Ensure security and regulatory compliance</li>
+      <li>Communicate administrative updates</li>
+      <li>Marketing communications (with consent)</li>
+    </ul>
+
+    <h2>4. How We Share Your Information</h2>
+    <p>We do not sell personal data. Information may be shared:</p>
+    <ul>
+      <li>With trusted service providers</li>
+      <li>To comply with legal obligations</li>
+      <li>During business transfers</li>
+      <li>With explicit user consent</li>
+    </ul>
+
+    <h2>5. Data Security</h2>
+    <ul>
+      <li><strong>Encryption:</strong> AES‑256 at rest, TLS 1.2+ in transit</li>
+      <li><strong>Secure Hosting:</strong> Single-tenant, sandboxed VPC environments</li>
+      <li><strong>Access Controls:</strong> Strict permissions with immediate enforcement</li>
+      <li><strong>Compliance:</strong> SOC II, HIPAA, GDPR, CCPA</li>
+    </ul>
+
+    <h2>6. Data Retention</h2>
+    <p>Data is retained only as long as necessary unless a longer period is required by law.</p>
+
+    <h2>7. Your Privacy Rights</h2>
+    <p>Depending on your location, you may have rights to access, correct, delete, restrict, object to processing, or request portability of your personal data.</p>
+
+    <h2>8. Children's Privacy</h2>
+    <p>Our services are not intended for individuals under 18, and we do not knowingly collect their data.</p>
+
+    <h2>9. Changes to This Privacy Policy</h2>
+    <p>We may update this policy periodically. Updates take effect immediately upon posting.</p>
+
+    <h2>10. Contact Us</h2>
+    <p>
+      Switchboardplus, LLC<br>
+      63 John Street #3<br>
+      Kingston, NY 12401<br>
+      Email: <a href="mailto:connect@switchboard-plus.com">connect@switchboard-plus.com</a><br>
+      Phone: <a href="tel:+18454448273">845‑444‑8273</a>
+    </p>
+
+  </div>
+</section>
+
+    <div class="section s4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="guarentee">
+              <p>We <b>guarantee</b> that we will <b>lower your phone bill</b>, or <b>we will write you a $1,000 check</b> for the time you spent.</p>            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section s5" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <a href="tel:+18454448273">
+              <p>845-444-8273</p>
+            </a>
+            <p class="bold">63 John Street #3 <br>Kingston, NY 12401 </p>
+            <a href="mailto:connect@switchboard-plus.com">connect@switchboard-plus.com</a>
+          </div>
+          <div class="col-6">
+            <form action="https://cgnew.wpengine.com/apis/sb/home/" method="POST">
+              <input type="text" aria-label="Name" name="name" placeholder="Your Name">
+              <input type="text" aria-label="Business Name" name="bname" placeholder="Business Name">
+              <input type="tel" aria-label="Phone" name="phone" placeholder="Phone">
+              <input type="email" aria-label="Email" name="email" placeholder="Email">
+              <input type="text" aria-label="Message" name="message" placeholder="Message">
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section s6">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <img src="../m/logoalt.svg" loading="lazy" alt="Logo" />
+          </div>
+          <div class="col-9">
+            <div class="inline-imgs d">
+              <img src="../m/iso.svg" loading="lazy" alt="ISO" />
+              <img src="../m/hipaa.svg" loading="lazy" alt="HIPAA" />
+              <img src="../m/wfw.svg" loading="lazy" alt="Certified Carbon-Negative By Worldsfastest.com" />
+            </div>
+            <div class="inline-imgs m">
+              <img src="../m/cert_mobile.svg" loading="lazy" alt="Certificates; ISO, HIPAA and Certified Carbon" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section s7 footermenu">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="../faxing/">Faxing </a></li>
+              <li><a href="../call-management/">Advanced Call Management</a></li>
+              <li><a href="../security/">Security and Compliance</a></li>
+              <li><a href="../contact-center/">Contact Center & Call Enhancements</a></li>
+              <li><a href="../device-and-number-management/">Device and Number Management</a></li>
+              <li><a href="../voicemail/">Voicemail and Messaging</a></li>
+              <li><a href="../conferencing-and-collaboration/">Conferencing and Collaboration</a></li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <h3>About</h3>
+            <ul>
+              <li><a href="../about/">About us</a></li>
+              <li><a href="../contact/">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <a href="tel:+18454448273"><p>845-444-8273</p></a>
+            <p class="bold">63 John Street #3 <br>Kingston, NY 12401 </p>
+            <a href="mailto:connect@switchboard-plus.com">connect@switchboard-plus.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script nonce="a34g29914">
+      document.addEventListener('DOMContentLoaded', () => {
+        const BurgerIcon = document.querySelector('.wrapper');
+        const nav = document.querySelector('.nav nav');
+        const navContainer = document.querySelector('.nav');
+        const wrapperMenu = document.querySelector('.wrapper');
+        if (BurgerIcon && nav && navContainer) {
+          BurgerIcon.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            navContainer.classList.toggle('open');
+            wrapperMenu.classList.toggle('open');
+            const isOpen = navContainer.classList.contains('open');
+            BurgerIcon.setAttribute('aria-expanded', isOpen);
+          });
+          // Allow toggling with Enter key for keyboard accessibility
+          BurgerIcon.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+              nav.classList.toggle('active');
+              navContainer.classList.toggle('open');
+              const isOpen = navContainer.classList.contains('open');
+              BurgerIcon.setAttribute('aria-expanded', isOpen);
+            }
+          });
+        }
+      });
+      document.addEventListener('DOMContentLoaded', () => {
+        // Select the dropdown-arrow element
+        const dropdownArrow = document.querySelector('.dropdown-arrow');
+        const dropdownElement = document.querySelector('.dropdown');
+        // Select the < nav > element within the.nav container
+        const nav = document.querySelector('.nav'); // Adjust selector if necessary
+        // Ensure both elements exist
+        if (dropdownArrow && nav && window.innerWidth < 920) {
+          dropdownElement.addEventListener('click', (event) => {
+            // Check if the user clicked directly on an element that matches ".dropdown-content div a"
+            if (event.target.matches('.dropdown-content div a h4')) {
+              // Do nothing here so the default behavior (e.g., navigation) is preserved
+              return;
+            }
+            // Otherwise, run dropdown toggle behavior
+            event.preventDefault();
+            nav.classList.toggle('level2');
+            dropdownArrow.textContent = dropdownArrow.textContent === '>' ? '<' : '>';
+          });
+        }
+      });
+
+      document.addEventListener('DOMContentLoaded', function() {
+        // 1. Get all links in the .selectors
+        const selectorLinks = document.querySelectorAll('.selectors a');
+        // 2. Get all .selectee sections
+        const selectees = document.querySelectorAll('.selectee');
+      
+        // Optional: Show the first one by default (if desired)
+        // document.getElementById('selector1').classList.add('active');
+        // selectorLinks[0].classList.add('on'); // if you want the first link to be “on” by default
+      
+        // 3. Add click event listeners to each link
+        selectorLinks.forEach(link => {
+          link.addEventListener('click', function(e) {
+            e.preventDefault();
+      
+            // a) Which selectee ID do we need to open?
+            const openId = this.getAttribute('data-open');
+      
+            // b) Hide ALL selectees first
+            selectees.forEach(selectee => {
+              selectee.classList.remove('active');
+            });
+      
+            // c) Show the target selectee
+            const target = document.getElementById(openId);
+            if (target) {
+              target.classList.add('active');
+            }
+      
+            // d) Remove "on" class from all links, then add it to the clicked link
+            selectorLinks.forEach(linkItem => linkItem.classList.remove('on'));
+            this.classList.add('on');
+          });
+        });
+      });
+      document.addEventListener('click', e => e.target.matches('.logo img') && (window.location.href='../'));
+      </script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" nonce="a34g29914" data-cf-beacon='{"version":"2024.11.0","token":"2a535ae032c347d4bdc8bc128646afce","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
