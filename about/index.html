@@ -6,7 +6,7 @@
     <title>Switchboard Plus: About & Team – Secure VoIP Expertise</title>
     <meta name="lang" content="en">
     <link rel="icon" href="m/fav.png" type="image/png">
-    
+
     <!-- SEO Title & Description for the About & Team page -->
     <meta name="description" content="Learn how Switchboard Plus meets SOC II, GDPR, and CCPA standards while offering robust data ownership and secure hosting. Meet our expert team dedicated to delivering cutting-edge communication solutions worldwide.">
     <meta name="keywords" content="Switchboard Plus, VoIP solutions, About Switchboard Plus, compliance, SOC II, GDPR, CCPA, secure hosting, data ownership, data privacy, AES 256 encryption, TLS 1.2, conference room management, one-on-one video, paging groups, meet the team">
@@ -27,8 +27,6 @@
     <link rel="stylesheet" href="../assets/css/global.css">
     <link rel="stylesheet" href="../assets/css/sub.css">
     <style>
-      /* Page Specific global */
-      /* Light Page */
       body {
         background: #F3F3F3;
       }
@@ -49,145 +47,595 @@
         background: #1c204e;
       }
 
-      .section.s1>img {
-        width: 100%;
+      /* ── Hero ── */
+      .section.s1 {
+        background: #F3F3F3;
+        padding-top: 64px;
+        padding-bottom: 64px;
       }
 
-      .s1 {
-        color: white;
-        text-align: center;
+      .hero-row {
+        align-items: center;
+        flex-wrap: wrap;
       }
 
-      .row.internal {
+      .hero-content {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-right: 40px;
+      }
+
+      .hero-content h1 {
+        font-size: 52px;
+        line-height: 1.1;
+        margin-bottom: 24px;
+        color: #1C204E;
+      }
+
+      .hero-content h1 span {
+        color: #685ABC;
+      }
+
+      .hero-content > p {
+        font-family: l, 'Open Sans', Arial;
+        font-weight: lighter;
+        font-size: 18px;
+        line-height: 28px;
+        color: #1C204E;
+        margin-bottom: 32px;
+      }
+
+      .hero-stats {
         display: flex;
-        align-items: stretch;
+        gap: 36px;
+        flex-wrap: wrap;
+      }
+
+      .hero-stat-value {
+        font-family: b, 'Open Sans', Arial;
+        font-size: 28px;
+        color: #1C204E;
+        line-height: 1.1;
+      }
+
+      .hero-stat-value sup {
+        font-size: 14px;
+      }
+
+      .hero-stat-label {
+        font-family: l, 'Open Sans', Arial;
+        font-size: 11px;
+        letter-spacing: 0.08em;
+        color: #7D7D7D;
+        margin-top: 2px;
+      }
+
+      .hero-image-wrap {
+        flex: 0 0 50%;
+        max-width: 50%;
+        display: flex;
+        align-self: stretch;
+      }
+
+      .hero-image-wrap img {
+        width: 100%;
+        border-radius: 12px;
+      }
+
+      /* ── Console Mockup ── */
+      .console-mockup {
+        background: linear-gradient(160deg, #12103a 0%, #0e0c2e 60%, #1a1040 100%);
+        border-radius: 18px;
+        padding: 28px 24px 24px;
+        box-shadow: 0 32px 80px rgba(10,8,40,0.55), inset 0 1px 0 rgba(255,255,255,0.06);
+        width: 80%;
+        box-sizing: border-box;
+        margin-left: auto;
+      }
+
+      .console-header {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 22px;
+      }
+
+      .console-live-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #4ade80;
+        box-shadow: 0 0 6px #4ade80;
+        flex-shrink: 0;
+      }
+
+      .console-label {
+        font-family: l, 'Open Sans', Arial;
+        font-size: 11px;
+        letter-spacing: 0.12em;
+        color: #6b6a8e;
+        font-weight: lighter;
+      }
+
+      .console-list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .console-row {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        background: rgba(255,255,255,0.04);
+        border-radius: 12px;
+        padding: 13px 16px;
+        border: 1px solid rgba(255,255,255,0.05);
+      }
+
+      .console-row.selected {
+        background: rgba(104,90,188,0.22);
+        border-color: rgba(104,90,188,0.3);
+      }
+
+      .console-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: b, 'Open Sans', Arial;
+        font-size: 13px;
+        color: #fff;
+        flex-shrink: 0;
+        letter-spacing: 0.02em;
+      }
+
+      .console-row-info {
+        flex: 1;
+        min-width: 0;
+      }
+
+      .console-row-name {
+        font-family: b, 'Open Sans', Arial;
+        font-size: 14px;
+        color: #e8e6f4;
+        line-height: 1.3;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .console-row-sub {
+        font-family: l, 'Open Sans', Arial;
+        font-size: 12px;
+        color: #6b6a8e;
+        font-weight: lighter;
+        margin-top: 2px;
+      }
+
+      .console-row-time {
+        font-family: l, 'Open Sans', Arial;
+        font-size: 13px;
+        color: #6b6a8e;
+        font-weight: lighter;
+        flex-shrink: 0;
+      }
+
+      .console-row-time.muted {
+        color: #6b6a8e;
+      }
+
+      .console-green-dot {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: #4ade80;
+        box-shadow: 0 0 10px #4ade80, 0 0 20px rgba(74,222,128,0.3);
+        flex-shrink: 0;
+        animation: pulse-green 2s ease-in-out infinite;
+      }
+
+      @keyframes pulse-green {
+        0%, 100% { box-shadow: 0 0 8px #4ade80, 0 0 16px rgba(74,222,128,0.3); transform: scale(1); }
+        50%       { box-shadow: 0 0 16px #4ade80, 0 0 32px rgba(74,222,128,0.5); transform: scale(1.15); }
+      }
+
+      .console-live-dot {
+        animation: pulse-green 2s ease-in-out infinite;
+      }
+
+      .console-mockup {
+        animation: fade-up 0.7s ease both;
+      }
+
+      @keyframes fade-up {
+        from { opacity: 0; transform: translateY(18px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+
+      .console-row {
+        animation: row-in 0.5s ease both;
+      }
+      .console-row:nth-child(1) { animation-delay: 0.15s; }
+      .console-row:nth-child(2) { animation-delay: 0.28s; }
+      .console-row:nth-child(3) { animation-delay: 0.41s; }
+      .console-row:nth-child(4) { animation-delay: 0.54s; }
+
+      @keyframes row-in {
+        from { opacity: 0; transform: translateX(12px); }
+        to   { opacity: 1; transform: translateX(0); }
+      }
+
+      .console-row-time.ticker {
+        font-variant-numeric: tabular-nums;
+      }
+
+      /* ── About Company Section ── */
+      .section.s2 {
+        background: #F3F3F3;
+        padding-top: 64px;
+        padding-bottom: 64px;
+      }
+
+      .section-eyebrow {
+        font-family: l, 'Open Sans', Arial;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        color: #7D7D7D;
+        margin-bottom: 12px;
+      }
+
+      .section.s2 h2 {
+        font-size: 40px;
+        line-height: 1.1;
+        margin-bottom: 36px;
+        color: #1C204E;
+      }
+
+      .section.s2 h2 span {
+        color: #685ABC;
+      }
+
+      .about-cols {
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+
+      .about-cols > .col-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+
+      .stats-dark-card {
+        background: #1C204E;
+        border-radius: 16px;
+        padding: 32px;
+        margin-right: 24px;
+      }
+
+      .card-eyebrow {
+        font-family: l, 'Open Sans', Arial;
+        font-size: 11px;
+        letter-spacing: 0.1em;
+        color: #7D7D7D;
+        margin-bottom: 20px;
+      }
+
+      .stat-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+      }
+
+      .stat-item:last-child {
+        border-bottom: none;
+      }
+
+      .stat-item span {
+        font-family: l, 'Open Sans', Arial;
+        font-size: 16px;
+        color: #ABABAB;
+        font-weight: lighter;
+      }
+
+      .stat-item strong {
+        font-family: b, 'Open Sans', Arial;
+        font-size: 22px;
+        color: #ffffff;
+      }
+
+      .about-text p {
+        font-family: l, 'Open Sans', Arial;
+        font-size: 17px;
+        line-height: 27px;
+        color: #1C204E;
+        font-weight: lighter;
+        margin-bottom: 16px;
+      }
+
+      /* ── Compliance Banner ── */
+      .compliance-banner {
+        background: #FFC727;
+        padding: 28px 0;
+      }
+
+      .compliance-banner p {
+        font-family: l, 'Open Sans', Arial;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1C204E;
+        margin-bottom: 20px;
+        font-weight: lighter;
+      }
+
+      .compliance-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        border: 1px solid rgba(28,32,78,0.35);
+        border-radius: 999px;
+        padding: 5px 14px;
+        font-family: l, 'Open Sans', Arial;
+        font-size: 13px;
+        color: #1C204E;
+        font-weight: lighter;
+      }
+
+      .badge::before {
+        content: '●';
+        font-size: 8px;
+        color: #1C204E;
+      }
+
+      /* ── Security Section ── */
+      .section.s3 {
+        background: #F3F3F3;
+        padding-top: 64px;
+        padding-bottom: 64px;
+      }
+
+      .section.s3 h2 {
+        font-size: 40px;
+        line-height: 1.1;
+        margin-bottom: 12px;
+        color: #1C204E;
+      }
+
+      .section.s3 h2 span {
+        color: #685ABC;
+      }
+
+      .section.s3 > .container > p.intro {
+        font-family: l, 'Open Sans', Arial;
+        font-size: 17px;
+        line-height: 27px;
+        color: #1C204E;
+        font-weight: lighter;
+        max-width: 560px;
+        margin-bottom: 40px;
+      }
+
+      .row.grids {
+        align-items: flex-start;
         flex-wrap: wrap;
         margin-bottom: 18px;
       }
 
-      .row.internal>.col-6 {
-        flex: 1;
-        display: flex;
-        align-items: stretch;
+      .row.grids .col-4 {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
       }
-      .person {
-            margin: 0 auto;
-            width: 250px;
-        }
 
-        .personImg img, picture img, picture source {
-            width: 250px;
-            border-radius: 50%;
-            height: 250px;
-            object-fit: cover;
-        }
+      .aboutcard {
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 24px;
+        margin: 8px;
+        height: calc(100% - 16px);
+      }
 
-        .personImg::before {
-            position: absolute;
-            content: '';
-            background-image: url('../m/el.svg');
-            width: 250px;
-            height: 250px;
-            z-index: -1;
-            margin-left: 19px;
-            transform: rotate(104deg);
-            margin-top: -10px;
-            background-repeat: no-repeat;
-        }
-        .row.ourteam .col-12 {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .name p {
-            font-family: l, 'Open Sans', Arial;
-            font-size: 20px;
-            line-height: 26px;
-            font-weight: lighter;
-            font-size: 20x;
-            text-align: center;
-            color: #2B354E;
-            margin-bottom: 10px;
-        }
-        .title p {
-            font-size: 20px;
-            line-height: 26px;
-            font-family: l, 'Open Sans', Arial;
-            font-weight: lighter;
-            text-align: center;
-            color: #7D7D7D;
-            margin-top: 3px !important;
-        }
-        .row.compliancecg p {
-          font-family: l, 'Open Sans', Arial;
-          font-size: 20px;
-          line-height: 26px;
-          max-width: 800px;
-          margin: 0 auto;
-          margin-top:12px;
-        }
-        
-      .row.ourteamintro h2 {
-        text-align: center;
+      .aboutcard-icon {
+        width: 36px;
+        height: 36px;
+        margin-bottom: 14px;
       }
-      .row.grids {
-        align-items: flex-start;
-      }
-      .row.grids h2 {
-        font-size: 28px;
-        line-height: 28px;
-        margin-bottom: 12px;
-      }
-      .row.grids p {
-        font-family: l, 'Open Sans', Arial;
-        font-weight: lighter;
+
+      .aboutcard h2 {
         font-size: 18px;
         line-height: 24px;
+        margin-bottom: 8px;
+        color: #1C204E;
       }
-      .row.grids .aboutcard {
-        padding: 12px;
+
+      .aboutcard p {
+        font-family: l, 'Open Sans', Arial;
+        font-weight: lighter;
+        font-size: 15px;
+        line-height: 23px;
+        color: #1C204E;
       }
-      .row.compliancecg {
-        margin-top: 32px;
+
+      /* ── Contact (s5) updated form ── */
+       .s5 h2 {
+      font-size: 58px;
+      color: white;
+      line-height: 58px;
+      font-family: b, 'Open Sans', Arial;
+      font-weight: bolder;
+    }
+    .section.s5 h2 + p {
+      font-size: 20px;
+      font-family: l, 'Open Sans', Arial;
+      font-weight: lighter;
+    }
+    .s5 h3 {
+      font-size: 24px;
+      font-family: b, 'Open Sans', Arial;
+      font-weight: bolder;
+      color: #fff;
+      line-height: 24px;
+    }
+    .s5 p.bold, .s5 .infocontainer a p, .s5 .infocontainer a {
+      font-size: 20px;
+      font-family: l, 'Open Sans', Arial;
+      line-height: 26px;
+      font-weight: lighter;
+    }
+    .infocontainer {
+      display: flex;
+      gap: 64px;
+    }
+    
+    input, select {
+      width: 100% !important;
+      height: 48px;
+      font-size: 20px !important;
+      background: #fff !important;
+      color: black !important;
+      border: 0 !important;
+      font-family: l, 'Open Sans', Arial !important;
+      font-weight: lighter !important;
+      margin-bottom: 18px !important;
+    }
+    form input::placeholder {
+      display: none !important;
+      color: transparent !important;
+      font-size: 0 !important;
+    }
+    label {
+      font-size: 16px;
+      text-align: left;
+      align-self: flex-start;
+      font-family: l, 'Open Sans', Arial;
+      color: #fff !important;
+      line-height: 18px;
+      margin-bottom: 4px;
+    }
+    form {
+      padding-left: 5vw;
+    }
+    form input[type="submit"] {
+      color: white !important;
+      background-color: #000 !important;
+      border-radius: 0 !important;
+    }
+    /* Page Specific Mobile */
+    @media (max-width: 992px) {
+      h1 {
+        margin-top:10px;
+      }
+      h1,
+      h1 span {
+        text-align: left;
+        font-size: 36px;
+        font-family: b;
+        max-width: 67%;
+      }
+
+      .scontent p,
+      .scontent p b,
+      .scontent p u {
+        font-family: l, 'Open Sans', Arial;
+        text-align: left;
+        text-decoration: none;
+        font-weight: lighter;
+      }
+      .inline-imgs {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+      }
+      
+      .section.s5 {
+        background: #685ABC !important;
+      }
+      .section.s5 h3, .section.s5 p, .section.s5 a {
+        color: #fff !important;
+      }
+      .infocontainer {
+        flex-direction: column;
+        gap: 0;
         margin-bottom: 32px;
-        text-align: center;
       }
-      /* Page Specific Mobile */
+      form {
+        padding: 0;
+      }
+      form input, form select {
+        font-size: 20px !important;
+        height: 36px !important;
+      }
+      .section.s5 form input[type="submit"] {
+        color: #fff !important;
+        height: 48px !important;
+        line-height: 24px !important;
+        font-size: 24px !important;
+      }
+    }
+    
+      /* ── Mobile ── */
       @media (max-width: 992px) {
-        h1 {
-          margin-top: 10px;
+        .hero-content,
+        .hero-image-wrap {
+          flex: 0 0 100%;
+          max-width: 100%;
+          padding-right: 0;
         }
 
-        h1,
-        h1 span {
-          text-align: left;
+        .hero-image-wrap {
+          margin-top: 32px;
+        }
+
+        .console-mockup {
+          width: 100%;
+          margin-left: 0;
+        }
+
+        .hero-content h1 {
           font-size: 36px;
-          font-family: b;
-          max-width: 67%;
         }
 
-        .scontent p,
-        .scontent p b,
-        .scontent p u {
-          font-family: l, 'Open Sans', Arial;
-          text-align: left;
-          text-decoration: none;
-          font-weight: lighter;
+        .about-cols > .col-6 {
+          flex: 0 0 100%;
+          max-width: 100%;
         }
 
-        .inline-imgs {
-          display: flex;
-          justify-content: center;
-          flex-direction: row;
+        .stats-dark-card {
+          margin-right: 0;
+          margin-bottom: 24px;
+        }
+
+        .row.grids .col-4 {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+
+        .section.s3 h2 {
+          font-size: 28px;
+        }
+
+        .section.s2 h2 {
+          font-size: 28px;
+        }
+
+        .hero-stats {
+          gap: 24px;
         }
       }
-      @media screen and (min-width: 800px) and (max-width: 1200px) {
-        .section .col-3 {
-          width: 50%;
-          flex: 0 0 50% !important;
-          max-width: unset;
 
+      @media screen and (min-width: 800px) and (max-width: 1200px) {
+        .row.grids .col-4 {
+          flex: 0 0 50%;
+          max-width: 50%;
         }
       }
     </style>
@@ -210,7 +658,6 @@
           <div class="dropdown">
             <a href="#" role="button">Services</a>
             <span class="dropdown-arrow m">&gt;</span>
-            <!-- Added span for '>' symbol -->
             <div class="dropdown-content">
               <div>
                 <a href="../call-management/"><h4>Advanced Call Management</h4></a>
@@ -287,391 +734,187 @@
         <img src="../m/icons-m.svg" alt="Certifications" loading="lazy" />
       </div>
     </div>
+
+    <!-- Hero -->
     <div class="section s1" id="MainContent">
-      <div class="scontent">
-        <h1>About</h1>
-        <p>Manage in-person spaces with Conference Room Management to streamline scheduling and resources. For personal discussions, One-on-One Video provides direct, face-to-face interaction—perfect for quick updates. Finally, Paging Groups let you broadcast announcements or urgent news to multiple users simultaneously, ensuring everyone remains informed and aligned.</p>
+      <div class="container">
+        <div class="row hero-row">
+          <div class="hero-content">
+            <h1>The phone system your business <span>actually deserves.</span></h1>
+            <p>We build secure, no-nonsense communications for teams that can't afford a dropped call – backed by a guarantee no one else dares to make.</p>
+            <div class="hero-stats">
+              <div class="hero-stat">
+                <div class="hero-stat-value">12<sup>yrs</sup></div>
+                <div class="hero-stat-label">BUILDING VOIP</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-value">99.999%</div>
+                <div class="hero-stat-label">UPTIME SLA</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-value">$1,000</div>
+                <div class="hero-stat-label">GUARANTEE</div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-image-wrap">
+            <div class="console-mockup">
+              <div class="console-header">
+                <span class="console-live-dot"></span>
+                <span class="console-label">LIVE · SWITCHBOARD+ CONSOLE</span>
+              </div>
+              <div class="console-list">
+                <div class="console-row">
+                  <div class="console-avatar" style="background:#7C6FCF;">NM</div>
+                  <div class="console-row-info">
+                    <div class="console-row-name">Nick Martin</div>
+                    <div class="console-row-sub">Sales · ext. 102</div>
+                  </div>
+                  <div class="console-row-time ticker" id="console-timer">2m 14s</div>
+                </div>
+                <div class="console-row selected">
+                  <div class="console-avatar" style="background:#D4714E;">RG</div>
+                  <div class="console-row-info">
+                    <div class="console-row-name">Ring Group · Support</div>
+                    <div class="console-row-sub">Round-robin · 4 agents</div>
+                  </div>
+                  <span class="console-green-dot"></span>
+                </div>
+                <div class="console-row">
+                  <div class="console-avatar" style="background:#4A9D9D;">MA</div>
+                  <div class="console-row-info">
+                    <div class="console-row-name">Mo Abdelalim</div>
+                    <div class="console-row-sub">Voicemail · 0:14</div>
+                  </div>
+                  <div class="console-row-time">10:42</div>
+                </div>
+                <div class="console-row">
+                  <div class="console-avatar" style="background:#7B5EA7;">AR</div>
+                  <div class="console-row-info">
+                    <div class="console-row-name">Auto Attendant</div>
+                    <div class="console-row-sub">Level 2 menu · busy hour</div>
+                  </div>
+                  <div class="console-row-time muted">live</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- About Switchboard+ -->
     <div class="section s2">
       <div class="container">
+        <p class="section-eyebrow">• WHO WE ARE</p>
+        <h2>About <span>Switchboard+</span></h2>
+        <div class="row about-cols">
+          <div class="col-6">
+            <div class="stats-dark-card">
+              <p class="card-eyebrow">BY THE NUMBERS</p>
+              <div class="stat-item">
+                <span>Operating since</span>
+                <strong>2012</strong>
+              </div>
+              <div class="stat-item">
+                <span>Active extensions</span>
+                <strong>28K+</strong>
+              </div>
+              <div class="stat-item">
+                <span>Average call latency</span>
+                <strong>38ms</strong>
+              </div>
+              <div class="stat-item">
+                <span>Customer retention</span>
+                <strong>97%</strong>
+              </div>
+              <div class="stat-item">
+                <span>First-response time</span>
+                <strong>&lt;90s</strong>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 about-text">
+            <p>We've spent over a decade building communications infrastructure that businesses depend on every minute of every day – with a singular obsession for uptime, security, and the human on the other end of the line.</p>
+            <p>Founded in 2012, Switchboard+ began with a single belief: that small and mid-sized businesses shouldn't have to choose between enterprise-grade reliability and a bill they can actually understand.</p>
+            <p>Today we operate sandboxed, single-tenant infrastructure in carrier-neutral data centers across the U.S., serving healthcare practices, law firms, contact centers, and growing teams who'd rather not babysit a phone system.</p>
+            <p>We pick up our own phones. We answer our own tickets. And we put a thousand dollars on the line every time we sign you up.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Compliance Banner -->
+    <div class="section compliance-banner">
+      <div class="container">
+        <p>We align with OWASP best practices to combat injection and broken access control. For PCI DSS, we employ controls that protect payment card data and uphold confidentiality, integrity, and availability.</p>
+        <div class="compliance-badges">
+          <span class="badge">SOC II</span>
+          <span class="badge">GDPR</span>
+          <span class="badge">CCPA</span>
+          <span class="badge">HIPAA ALIGNED</span>
+          <span class="badge">PCI DSS</span>
+          <span class="badge">OWASP</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Security & Compliance -->
+    <div class="section s3">
+      <div class="container">
+        <p class="section-eyebrow">• BUILT SECURE BY DEFAULT</p>
+        <h2>Security &amp; <span>compliance</span>, no asterisks.</h2>
+        <p class="intro">Every feature we ship is reviewed against the frameworks that govern our customers – and the threat models that don't sit still.</p>
         <div class="row grids">
           <div class="col-4">
             <div class="aboutcard">
+              <img src="../m/sec-1.svg" alt="" class="aboutcard-icon" loading="lazy" />
               <h2>Industry-Leading Compliance</h2>
-              <p>Switchboard Plus meets rigorous security standards like SOC II, GDPR, and CCPA. By continuously adopting new frameworks, we ensure your data remains protected and compliant.</p>
+              <p>We meet SOC II, GDPR, and CCPA standards – and continuously adopt new frameworks as they emerge.</p>
             </div>
           </div>
           <div class="col-4">
             <div class="aboutcard">
-              <h2>Data Ownership & Privacy</h2>
-              <p>Your data stays yours. We never use it outside your permissions, maintaining full alignment with privacy regulations and your specific requirements.</p>
+              <img src="../m/sec-2.svg" alt="" class="aboutcard-icon" loading="lazy" />
+              <h2>Data Ownership &amp; Privacy</h2>
+              <p>Your data stays yours. We never use it outside your permissions and maintain full alignment with your regulations.</p>
             </div>
           </div>
           <div class="col-4">
             <div class="aboutcard">
+              <img src="../m/sec-3.svg" alt="" class="aboutcard-icon" loading="lazy" />
               <h2>Secure Hosting</h2>
-              <p>We host your data in sandboxed, single-tenant environments with dedicated VPCs, isolating your information for maximum protection and regulatory compliance.</p>
+              <p>Sandboxed, single-tenant VPCs isolate your information for maximum protection and regulatory compliance.</p>
             </div>
           </div>
         </div>
         <div class="row grids">
           <div class="col-4">
             <div class="aboutcard">
+              <img src="../m/sec-4.svg" alt="" class="aboutcard-icon" loading="lazy" />
               <h2>Audit Logging</h2>
-              <p>Gain visibility into data usage with configurable logs. Export them to your SIEM for monitoring and receive alerts that support consistent compliance.</p>
+              <p>Configurable logs export to your SIEM. Real-time alerts keep monitoring consistent across your stack.</p>
             </div>
           </div>
           <div class="col-4">
             <div class="aboutcard">
+              <img src="../m/sec-5.svg" alt="" class="aboutcard-icon" loading="lazy" />
               <h2>Strict Permissions</h2>
-              <p>We enforce immediate changes to access rights, letting only authorized individuals see the data they're permitted to view-no exceptions.</p>
+              <p>Role-based access with immediate revocation. Only authorized individuals see the data they're permitted to.</p>
             </div>
           </div>
           <div class="col-4">
             <div class="aboutcard">
+              <img src="../m/sec-6.svg" alt="" class="aboutcard-icon" loading="lazy" />
               <h2>Robust Encryption</h2>
-              <p>All data is encrypted at rest with AES 256 and in transit with TLS 1.2+. We deploy strong exfiltration controls to keep information secure.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row compliancecg">
-          <div class="col-12">
-            <img src="../m/compliancecg.svg" loading="lazy" alt="Compliance" />
-            <p>We align with OWASP best practices to combat threats like injection and broken access control. For PCI DSS, we employ measures that protect payment card data and uphold confidentiality, integrity, and availability.</p>
-          </div>
-        </div>
-        <div class="row ourteamintro">
-          <div class="col-12">
-            <h2>Our Team</h2>
-          </div>
-        </div>
-        <div class="row ourteam">
-          <div class="col-12">
-            <div class="col-3">
-              <div class="person">
-                <div class="personImg">
-                  <picture>
-                    <source type="image/avif" srcset="../m/team/avif/nmv3.avif">
-                    <img alt="Nick Martin" src="../m/team/webp/nmv3.png">
-                  </picture>
-                </div>
-                <div class="name">
-                  <p>Nick Martin</p>
-                </div>
-                <div class="title">
-                  <p>CEO</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="person">
-                <div class="personImg">
-                  <picture>
-                    <source type="image/avif" srcset="../m/team/avif/mo.avif">
-                    <img alt="Mo Abdelalim" src="../m/team/webp/mo.jpg">
-                  </picture>
-                </div>
-                <div class="name">
-                  <p>Mo Abdelalim</p>
-                </div>
-                <div class="title">
-                  <p>Director of Engineering - Web</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="person">
-                <div class="personImg">
-                  <picture>
-                    <source type="image/avif" srcset="../m/team/avif/jordan.avif">
-                    <img alt="Jordan Mesches" src="../m/team/webp/jordan.png">
-                  </picture>
-                </div>
-                <div class="name">
-                  <p>Jordan Mesches</p>
-                </div>
-                <div class="title">
-                  <p>Engineering Manager</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="person">
-                <div class="personImg">
-                  <picture>
-                    <source type="image/avif" srcset="../m/team/avif/mark.avif">
-                    <img alt="Mark Brayman" src="../m/team/webp/mark.jpg">
-                  </picture>
-                </div>
-                <div class="name">
-                  <p>Mark Brayman</p>
-                </div>
-                <div class="title">
-                  <p>Director of Operations</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="person">
-                <div class="personImg">
-                  <picture>
-                    <source type="image/avif" srcset="../m/team/avif/angelr.avif">
-                    <img alt="Angel Rojas" src="../m/team/webp/angelr.jpg">
-                  </picture>
-                </div>
-                <div class="name">
-                  <p>Angel Rojas</p>
-                </div>
-                <div class="title">
-                  <p>Guardian Analyst II</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="person">
-                <div class="personImg">
-                  <picture>
-                    <source type="image/avif" srcset="../m/team/avif/nicole.avif">
-                    <img alt="Nicole Shakarishvili" src="../m/team/webp/nicole.png">
-                  </picture>
-                </div>
-                <div class="name">
-                  <p>Nicole Shakarishvili</p>
-                </div>
-                <div class="title">
-                  <p>UI/UX Architect</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="person">
-                <div class="personImg">
-                  <picture>
-                    <source type="image/avif" srcset="../m/team/avif/matt.avif">
-                    <img alt="Matthew Pisano" src="../m/team/webp/matt.jpg">
-                  </picture>
-                </div>
-                <div class="name">
-                  <p>Matthew Pisano</p>
-                </div>
-                <div class="title">
-                  <p>Guardian Engineer I</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="person">
-                <div class="personImg">
-                  <picture>
-                    <source type="image/avif" srcset="../m/team/avif/isaiah.avif">
-                    <img alt="Isaiah Pratt" src="../m/team/webp/isaiah.jpg">
-                  </picture>
-                </div>
-                <div class="name">
-                  <p>Isaiah Pratt</p>
-                </div>
-                <div class="title">
-                  <p>Executive Assistant</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="person">
-                <div class="personImg">
-                  <picture>
-                    <source type="image/avif" srcset="../m/team/webp/francisco.jpg">
-                    <img alt="Francisco Rosa" src="../m/team/webp/francisco.jpg">
-                  </picture>
-                </div>
-                <div class="name">
-                  <p>Francisco Rosa</p>
-                </div>
-                <div class="title">
-                  <p>Manager - ITOps</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="person">
-                <div class="personImg">
-                  <picture>
-                    <source type="image/avif" srcset="../m/team/avif/michael.avif">
-                    <img alt="Michael Nkadi" src="../m/team/webp/michael.png">
-                  </picture>
-                </div>
-                <div class="name">
-                  <p>Michael Nkadi</p>
-                </div>
-                <div class="title">
-                  <p>Network Architect</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="person">
-                <div class="personImg">
-                  <picture>
-                    <source type="image/avif" srcset="../m/team/avif/nicklas.avif">
-                    <img alt="Niklas Hallstein" src="../m/team/webp/nicklas.jpg">
-                  </picture>
-                </div>
-                <div class="name">
-                  <p>Niklas Hallstein</p>
-                </div>
-                <div class="title">
-                  <p>Guardian Engineer I</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="person">
-                <div class="personImg">
-                  <picture>
-                    <source type="image/avif" srcset="../m/team/sungmin.jpeg">
-                    <img alt="Sungmin Kim" src="../m/team/sungmin.jpeg">
-                  </picture>
-                </div>
-                <div class="name">
-                  <p>Sungmin Kim</p>
-                </div>
-                <div class="title">
-                  <p>Guardian Engineer I</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="person">
-                <div class="personImg">
-                  <picture>
-                    <source type="image/avif" srcset="../m/team/avif/bryce.avif">
-                    <img alt="Bryce Haynes" src="../m/team/webp/bryce.jpg">
-                  </picture>
-                </div>
-                <div class="name">
-                  <p>Bryce Haynes</p>
-                </div>
-                <div class="title">
-                  <p>Guardian Analyst I</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="person">
-                <div class="personImg">
-                  <picture>
-                    <source type="image/avif" srcset="../m/team/avif/jason.avif">
-                    <img alt="Jason Brewer" src="../m/team/webp/jason.jpg">
-                  </picture>
-                </div>
-                <div class="name">
-                  <p>Jason Brewer</p>
-                </div>
-                <div class="title">
-                  <p>Guardian Analyst I</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="person">
-                <div class="personImg">
-                  <picture>
-                    <source type="image/avif" srcset="../m/team/avif/castulo.avif">
-                    <img alt="Castulo Velazquez" src="../m/team/castulo.jpg">
-                  </picture>
-                </div>
-                <div class="name">
-                  <p>Castulo Velazquez</p>
-                </div>
-                <div class="title">
-                  <p>Guardian Analyst I</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="person">
-                <div class="personImg">
-                  <picture>
-                    <source type="image/avif" srcset="../m/team/avif/holder.avif">
-                    <img alt="Abhinav Srinivasan" src="../m/team/webp/holder.jpg">
-                  </picture>
-                </div>
-                <div class="name">
-                  <p>Abhinav Srinivasan</p>
-                </div>
-                <div class="title">
-                  <p>Guardian Analyst I</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="person">
-                <div class="personImg">
-                  <picture>
-                    <source type="image/avif" srcset="../m/team/avif/alan.avif">
-                    <img alt="Alan Rojas" src="../m/team/alan.jpg">
-                  </picture>
-                </div>
-                <div class="name">
-                  <p>Alan Rojas</p>
-                </div>
-                <div class="title">
-                  <p>Guardian Analyst I</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="person">
-                <div class="personImg">
-                  <picture>
-                    <source type="image/avif" srcset="../m/team/avif/bohdan.avif">
-                    <img alt="Bohdan Nakonechnyi" src="../m/team/bohdan.jpg">
-                  </picture>
-                </div>
-                <div class="name">
-                  <p>Bohdan Nakonechnyi</p>
-                </div>
-                <div class="title">
-                  <p>Guardian Analyst I</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="person">
-                <div class="personImg">
-                  <picture>
-                    <source type="image/avif" srcset="../m/team/avif/wilson.avif">
-                    <img alt="Warren Wilson" src="../m/team/webp/wilson.jpg">
-                  </picture>
-                </div>
-                <div class="name">
-                  <p>Warren Wilson</p>
-                </div>
-                <div class="title">
-                  <p>Guardian Analyst I</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="person">
-                <div class="personImg">
-                  <picture>
-                    <source type="image/avif" srcset="../m/team/avif/bruno.avif">
-                    <img alt="Bruno Rocha" src="../m/team/webp/bruno.jpg">
-                  </picture>
-                </div>
-                <div class="name">
-                  <p>Bruno Rocha</p>
-                </div>
-                <div class="title">
-                  <p>Network Administrator</p>
-                </div>
-              </div>
+              <p>AES-256 at rest, TLS 1.2+ in transit, and strong exfiltration controls keeping information secure.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Guarantee -->
     <div class="section s4">
       <div class="container">
         <div class="row">
@@ -683,29 +926,54 @@
         </div>
       </div>
     </div>
+
+    <!-- Contact -->
     <div class="section s5" id="contact">
       <div class="container">
         <div class="row">
           <div class="col-6">
-            <a href="tel:+18454448273">
-              <p>845-444-8273</p>
-            </a>
+            <h2>Join a new era of smart phones.</h2>
+            <p>Contact us to learn more about our services.</p>
+            <h3>Address</h3>
             <p class="bold">63 John Street #3 <br>Kingston, NY 12401 </p>
-            <a href="mailto:connect@switchboard-plus.com">connect@switchboard-plus.com</a>
+            <div class="infocontainer">
+              <div class="subcontainer">
+                <h3>Phone</h3>
+                <a href="tel:+18454448273">
+                  <p>845-444-8273</p>
+                </a>
+              </div>
+              <div class="subcontainer">
+                <h3>Email</h3>
+                <a href="mailto:connect@switchboard-plus.com">connect@switchboard-plus.com</a>
+              </div>
+            </div>
           </div>
           <div class="col-6">
             <form action="https://cgnew.wpengine.com/apis/sb/home/" method="POST">
+              <label>Your Name</label>
               <input type="text" aria-label="Name" name="name" placeholder="Your Name">
+              <label>Business Name</label>
               <input type="text" aria-label="Business Name" name="bname" placeholder="Business Name">
+              <label>Phone</label>
               <input type="tel" aria-label="Phone" name="phone" placeholder="Phone">
+              <label>Email</label>
               <input type="email" aria-label="Email" name="email" placeholder="Email">
+              <label>How would you like to be contacted?</label>
+              <select name="contact" aria-label="How would you like to be contacted?">
+                <option value="phone">Phone</option>
+                <option value="email">Email</option>
+              </select>
+              <label>Message</label>
               <input type="text" aria-label="Message" name="message" placeholder="Message">
+              <input type="hidden" id="reason" name="reason" value="">
               <input type="submit" value="Submit">
             </form>
           </div>
         </div>
       </div>
     </div>
+
     <div class="section s6">
       <div class="container">
         <div class="row">
@@ -741,10 +1009,12 @@
             </ul>
           </div>
           <div class="col-4">
-            <h3>About</h3>
+            <h3>About us</h3>
             <ul>
-              <li><a href="../about/">About us</a></li>
-              <li><a href="../contact/">Contact Us</a></li>
+              <li><a href="../about/">Contact Us</a></li>
+              <li><a href="../about/">Press</a></li>
+              <li><a href="../about/">Careers</a></li>
+              <li><a href="../about/">Leadership Team</a></li>
             </ul>
           </div>
           <div class="col-4">
@@ -802,6 +1072,18 @@
         }
       });
       document.addEventListener('click', e => e.target.matches('.logo img') && (window.location.href='../'));
+
+      (function() {
+        const el = document.getElementById('console-timer');
+        if (!el) return;
+        let secs = 2 * 60 + 14;
+        setInterval(() => {
+          secs++;
+          const m = Math.floor(secs / 60);
+          const s = secs % 60;
+          el.textContent = m + 'm ' + (s < 10 ? '0' : '') + s + 's';
+        }, 1000);
+      })();
     </script>
   </body>
 </html>
