@@ -1,0 +1,5 @@
+Contact: mailto:connect@switchboard-plus.com
+Preferred-Languages: en
+Canonical: https://switchboard-plus.com/.well-known/security.txt
+Policy: https://switchboard-plus.com/security
+Expires: 2027-07-23T00:00:00.000Z
