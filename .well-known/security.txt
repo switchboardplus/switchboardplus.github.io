@@ -1,5 +1,4 @@
 Contact: mailto:connect@switchboard-plus.com
+Expires: 2027-07-24T00:00:00.000Z
 Preferred-Languages: en
 Canonical: https://switchboard-plus.com/.well-known/security.txt
-Policy: https://switchboard-plus.com/privacy-policy/
-Expires: 2027-07-23T00:00:00.000Z

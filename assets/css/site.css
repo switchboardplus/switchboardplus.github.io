@@ -145,4 +145,4 @@
 
 /* --- Layout fixes (2026-07-24): hero caption clearing the console panel; left padding on first proof cell --- */
 .hero-command-tableau{padding-bottom:5.75rem}
-.hero-proof-cell:first-child{padding-left:.75rem}
+@media (min-width:640px){.hero-proof-cell:first-child{padding-left:.75rem}}
