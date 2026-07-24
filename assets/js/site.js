@@ -46,23 +46,27 @@
     motionEls.forEach((el) => el.classList.add('is-visible'));
   }
 
-  // Quote form: compose an email draft
+  // Quote form: submit to the Switchboard Plus form handler
   const form = document.querySelector('form[aria-describedby="quote-form-note"]');
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      const d = new FormData(form);
-      const subject = 'Switchboard Plus quote request';
-      const lines = [
-        'Name: ' + (d.get('name') || ''),
-        'Business: ' + (d.get('business') || ''),
-        'Phone: ' + (d.get('phone') || ''),
-        'Email: ' + (d.get('email') || ''),
-        '',
-        'What should work better: ' + (d.get('message') || '')
-      ];
-      window.location.href = 'mailto:connect@switchboard-plus.com?subject=' +
-        encodeURIComponent(subject) + '&body=' + encodeURIComponent(lines.join('\n'));
+      const btn = form.querySelector('button[type="submit"]');
+      const status = document.getElementById('quote-form-status');
+      btn.disabled = true;
+      fetch(form.action, {
+        method: 'POST',
+        mode: 'no-cors',
+        body: new URLSearchParams(new FormData(form))
+      }).then(() => {
+        form.reset();
+        status.textContent = 'Thank you, We have received your message.';
+        status.classList.remove('hidden');
+      }).catch(() => {
+        status.textContent = 'Something went wrong sending your message. Please call 845 444 8273 or email connect@switchboard-plus.com.';
+        status.classList.remove('hidden');
+        btn.disabled = false;
+      });
     });
   }
 })();

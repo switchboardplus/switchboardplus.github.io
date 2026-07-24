@@ -1,5 +1,5 @@
 /*
-  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'nonce-a34g29914'; script-src-attr 'none'; style-src 'self' 'nonce-a34g29914'; style-src-attr 'none'; font-src 'self'; img-src 'self' data: blob:; connect-src 'self'; form-action 'self' mailto:; frame-ancestors 'none'; frame-src 'none'; manifest-src 'none'; worker-src 'none'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'nonce-a34g29914'; script-src-attr 'none'; style-src 'self' 'nonce-a34g29914'; style-src-attr 'none'; font-src 'self'; img-src 'self' data: blob:; connect-src 'self' https://cgnew.wpengine.com; form-action 'self' https://cgnew.wpengine.com; frame-ancestors 'none'; frame-src 'none'; manifest-src 'none'; worker-src 'none'; upgrade-insecure-requests
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
