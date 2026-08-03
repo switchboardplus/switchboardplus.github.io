@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="380 17 44 63" role="img" aria-labelledby="title desc">
+  <title id="title">Microsoft Dynamics 365</title>
+  <desc id="desc">Dynamics 365 folded ribbon symbol</desc>
+  <defs>
+    <linearGradient id="d365-left" x1="385" y1="19" x2="412" y2="57" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0b53ce"/>
+      <stop offset="1" stop-color="#7252aa"/>
+    </linearGradient>
+    <linearGradient id="d365-right" x1="423" y1="38" x2="397" y2="76" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#94b9ff"/>
+      <stop offset="0.52" stop-color="#538fff"/>
+      <stop offset="1" stop-color="#2266e3"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#d365-left)" d="M380.11 17.59 423.13 32.95v21.1c0 1.7-1.68 2.89-3.28 2.32l-9.01-3.22V41.21c0-2.56-1.59-4.85-3.98-5.75l-4.19-1.57c-.8-.3-1.66.29-1.66 1.15v14.61l-20.9-7.46v-24.6Z"/>
+  <path fill="url(#d365-right)" d="M423.13 37.26c0 2.58-1.61 4.89-4.04 5.78l-27.92 10.2v24.58l31.96-11.68V37.26Z"/>
+  <path fill="#b0adff" fill-opacity=".62" d="m410.84 46.06-9.84 3.6v14.42c0 .86.86 1.45 1.66 1.15l4.2-1.58c2.4-.9 3.98-3.19 3.98-5.75V46.06Z"/>
+</svg>
